@@ -1,0 +1,54 @@
+{
+  "name": "jondeaves",
+  "private": true,
+  "description": "Jon Deaves personal portfolio",
+  "version": "2.0.0",
+  "license": "MIT",
+  "author": "Jon Deaves <hello@jondeaves.me>",
+  "contributors": [
+    "Jon Deaves <hello@jondeaves.me>"
+  ],
+  "homepage": "https://jondeaves.me",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jondeaves/jondeaves"
+  },
+  "bugs": {
+    "url": "https://github.com/jondeaves/jondeaves/issues"
+  },
+  "dependencies": {
+    "fela": "~10.2.0",
+    "fela-dom": "~10.2.0",
+    "fela-monolithic": "~10.2.0",
+    "fela-plugin-named-keys": "~10.2.0",
+    "fela-utils": "~10.2.0",
+    "gatsby": "^2.1.5",
+    "gatsby-plugin-fela": "~0.0.7",
+    "gatsby-plugin-typescript": "~2.0.8",
+    "gatsby-plugin-typography": "~2.2.7",
+    "lodash": "~4.17.11",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-fela": "~10.2.0",
+    "react-typography": "~0.16.18",
+    "typography": "~0.16.18",
+    "typography-theme-wordpress-2016": "~0.16.18"
+  },
+  "devDependencies": {
+    "@types/lodash": "~4.14.121",
+    "@types/typography": "~0.16.2",
+    "awesome-typescript-loader": "~5.2.1",
+    "prettier": "~1.16.4",
+    "tslint": "~5.12.1",
+    "tslint-config-prettier": "~1.18.0",
+    "tslint-react": "~3.6.0",
+    "typescript": "~3.3.3"
+  }
+}
