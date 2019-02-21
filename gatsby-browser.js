@@ -1,11 +1,11 @@
-import React from 'react';
-import { rehydrate } from 'fela-dom';
-import { RendererProvider } from 'react-fela';
-import { createRenderer } from 'fela';
+const React = require('react');
+const rehydrate = require('fela-dom');
+const RendererProvider = require('react-fela');
+const createRenderer = require('fela');
 
-import FelaConfig from './fela.config';
+const FelaConfig = require('./fela.config');
 
-export const wrapRootElement = ({ element }, pluginOptions) => {
+export const wrapRootElement = ({ element }) => {
   const renderer = createRenderer(FelaConfig);
   rehydrate(renderer);
   const ConnectedRootElement = (

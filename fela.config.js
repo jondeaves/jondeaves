@@ -1,5 +1,5 @@
-import monolithic from 'fela-monolithic';
-import namedKeys from 'fela-plugin-named-keys';
+const monolithic = require('fela-monolithic');
+const { default: namedKeys } = require('fela-plugin-named-keys');
 
 const plugins = [];
 const enhancers = [];
@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== 'production') {
   devMode = true;
 }
 
-export default {
+module.exports = {
   plugins,
   enhancers,
   devMode,
