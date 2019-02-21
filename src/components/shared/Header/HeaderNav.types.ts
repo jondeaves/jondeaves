@@ -1,7 +1,7 @@
 import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
-import { ITheme } from '../../../../Theme';
+import { ITheme } from '../../../Theme';
 
 // tslint:disable-next-line:no-empty-interface
 export interface IOwnProps {}

@@ -1,9 +1,9 @@
 import React from 'react';
 import { connect } from 'react-fela';
 
-import { ITheme } from '../../../../Theme';
+import { ITheme } from '../../../Theme';
 
-import Link from '../../Link';
+import Link from '../Link';
 
 import HeaderStyles from './HeaderNav.styles';
 import { IOwnProps, IProps, IStyles } from './HeaderNav.types';

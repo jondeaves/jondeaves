@@ -55,7 +55,5 @@ export default (): IStyles => ({
       display: 'block',
       textDecoration: 'none',
     },
-
-    // a:active, > a:hover, > a:visited
   },
 });
