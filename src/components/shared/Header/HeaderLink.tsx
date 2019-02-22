@@ -18,9 +18,7 @@ export const HeaderLink: React.FunctionComponent<IProps> = ({
   return React.createElement(
     `h${level}`,
     { className: isPrimary ? styles.primary : styles.secondary },
-    <Link to={uri} label={title} className={styles.link}>
-      {title}
-    </Link>,
+    <Link to={uri} label={title} className={styles.link} />,
   );
 };
 

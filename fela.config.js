@@ -1,4 +1,4 @@
-const monolithic = require('fela-monolithic');
+const { default: monolithic } = require('fela-monolithic');
 const { default: namedKeys } = require('fela-plugin-named-keys');
 
 const plugins = [];
