@@ -12,7 +12,6 @@ import Main from '../components/shared/Main';
 export const Home: React.FunctionComponent<IHomeProps> = ({
   data: { allHeaderLinks, allFooterLinks, site, pageContent },
 }) => {
-  console.log(allHeaderLinks, allFooterLinks);
   const { title: pageTitle, description } = site.siteMetadata;
   const {
     metaTitle,

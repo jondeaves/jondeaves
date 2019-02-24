@@ -17,6 +17,8 @@ export interface IStyles {
   heading: IStyle & {
     atDesktop: IStyle;
 
+    atTablet: IStyle;
+
     '>p': IStyle;
   };
 
