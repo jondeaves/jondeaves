@@ -5,12 +5,14 @@ import Helmet from 'react-helmet';
 import IHomeProps from '../types/pages/Home';
 
 import Bio from '../components/shared/Bio';
+import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
 import Main from '../components/shared/Main';
 
 export const Home: React.FunctionComponent<IHomeProps> = ({
-  data: { site, pageContent },
+  data: { allHeaderLinks, allFooterLinks, site, pageContent },
 }) => {
+  console.log(allHeaderLinks, allFooterLinks);
   const { title: pageTitle, description } = site.siteMetadata;
   const {
     metaTitle,
@@ -34,6 +36,8 @@ export const Home: React.FunctionComponent<IHomeProps> = ({
 
         {/* <BlogList uiLanguage={uiLanguage} entries={edges} /> */}
       </Main>
+
+      <Footer links={allFooterLinks} />
     </React.Fragment>
   );
 };
@@ -64,6 +68,32 @@ export const query = graphql`
         title
         fluid {
           ...GatsbyContentfulFluid_withWebp
+        }
+      }
+    }
+
+    allHeaderLinks: allContentfulNavLink(
+      filter: { location: { eq: "header" } }
+      sort: { fields: [order], order: ASC }
+    ) {
+      edges {
+        node {
+          title
+          uri
+          external
+        }
+      }
+    }
+
+    allFooterLinks: allContentfulNavLink(
+      filter: { location: { eq: "footer" } }
+      sort: { fields: [order], order: ASC }
+    ) {
+      edges {
+        node {
+          title
+          uri
+          external
         }
       }
     }
