@@ -1,5 +1,4 @@
-import { FluidObject } from 'gatsby-image';
-
+import IFluidImage from '../IFluidImage';
 import IMarkdownBody from '../IMarkdownBody';
 import ISiteMetadata from '../ISiteMetadata';
 
@@ -15,7 +14,7 @@ export default interface IHomeProps {
 
       body: IMarkdownBody;
 
-      featuredImage: FluidObject;
+      featuredImage: IFluidImage;
     };
   };
 }

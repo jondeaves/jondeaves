@@ -21,8 +21,6 @@ export const Home: React.FunctionComponent<IHomeProps> = ({
     },
   } = pageContent;
 
-  console.log(html, featuredImage);
-
   return (
     <React.Fragment>
       <Header />
@@ -64,8 +62,8 @@ export const query = graphql`
 
       featuredImage {
         title
-        fluid(maxWidth: 1280) {
-          src
+        fluid {
+          ...GatsbyContentfulFluid_withWebp
         }
       }
     }

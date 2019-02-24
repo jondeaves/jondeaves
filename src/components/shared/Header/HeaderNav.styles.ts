@@ -11,7 +11,7 @@ export default (): IStyles => ({
       lineHeight: '80px',
       position: 'absolute',
       right: '20px',
-      top: '-22px',
+      top: '-21px',
     },
   },
 

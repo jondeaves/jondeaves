@@ -5,17 +5,20 @@ import { ITheme } from '../../../Theme';
 
 import SectionTitle from './SectionTitle';
 
+import classnames from 'classnames';
+
 import SectionStyles from './Section.styles';
 import { IOwnProps, IProps, IStyles } from './Section.types';
 
 export const Section: React.FunctionComponent<IProps> = ({
   children,
+  className,
   isPrimary,
   uri,
   styles,
   title,
 }: IProps) => (
-  <section className={styles.container}>
+  <section className={classnames(styles.container, className)}>
     <SectionTitle title={title || ''} uri={uri} level={isPrimary ? 1 : 2} />
     {children}
   </section>

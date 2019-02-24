@@ -14,10 +14,9 @@ export const Bio: React.FunctionComponent<IProps> = ({
   image,
   styles,
 }: IProps) => (
-  <Section>
-    <div className={styles.image}>
-      <Img fluid={image} />
-    </div>
+  <Section className={styles.container}>
+    <Img alt={image.title} fluid={image.fluid} className={styles.image} />
+    <div className={styles.overlay} />
     <div
       className={styles.heading}
       dangerouslySetInnerHTML={{ __html: html }}
@@ -26,15 +25,3 @@ export const Bio: React.FunctionComponent<IProps> = ({
 );
 
 export default connect<IOwnProps, IStyles, ITheme>(BioStyles as any)(Bio);
-
-{
-  /* <section className={styles.container}>
-<div className={styles.image}>
-  <Img fluid={image} />
-</div>
-<div
-  className={styles.heading}
-  dangerouslySetInnerHTML={{ __html: html }}
-/>
-</section> */
-}

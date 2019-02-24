@@ -1,21 +1,23 @@
 import { IStyle } from 'fela';
-import { FluidObject } from 'gatsby-image';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
+import IFluidImage from '../../../types/IFluidImage';
 
 export interface IOwnProps {
   html: string;
-  image: FluidObject;
+  image: IFluidImage;
 }
 
 export interface IStyles {
-  container: {
-    atDesktop: IStyle;
-  };
+  container: IStyle;
+
+  overlay: IStyle;
 
   heading: IStyle & {
     atDesktop: IStyle;
+
+    '>p': IStyle;
   };
 
   image: IStyle;

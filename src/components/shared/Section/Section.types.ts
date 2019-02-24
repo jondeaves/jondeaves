@@ -5,6 +5,7 @@ import { ITheme } from '../../../Theme';
 
 export interface IOwnProps {
   children?: React.ReactNode;
+  className?: string;
   ident?: string;
   isFull?: boolean;
   isLarge?: boolean;
@@ -18,7 +19,7 @@ export interface IOwnProps {
 }
 
 export interface IStyles {
-  container: {
+  container: IStyle & {
     atDesktop: IStyle;
   };
 }
