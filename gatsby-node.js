@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const Promise = require('bluebird');
 const path = require('path');
+const config = require('./src/config');
 
 function generatePages(graphql, createPage) {
   return new Promise((resolve, reject) => {
@@ -40,10 +41,10 @@ function generatePages(graphql, createPage) {
         const next = index === 0 ? {} : posts[index - 1].node;
 
         createPage({
-          path: `/blog/${post.node.slug}`,
+          path: `${config.postPathPrefix}${post.node.slug}`,
           component: blogPost,
           context: {
-            fullPath: `/blog/${post.node.slug}`,
+            fullPath: `${config.postPathPrefix}${post.node.slug}`,
             slug: post.node.slug,
             previous,
             next,

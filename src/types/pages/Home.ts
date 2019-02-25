@@ -10,7 +10,7 @@ export default interface IHomeProps {
 
     allHeaderLinks: INavLink;
 
-    featuredBlogPosts: { edges: IContentfulPost[] };
+    featuredPosts: { edges: IContentfulPost[] };
 
     pageContent: {
       metaTitle: string;

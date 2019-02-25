@@ -8,17 +8,11 @@ import Bio from '../components/shared/Bio';
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
 import Main from '../components/shared/Main';
+import Posts from '../components/shared/Posts';
 
 export const Home: React.FunctionComponent<IHomeProps> = ({
-  data: {
-    allFooterLinks,
-    allHeaderLinks,
-    featuredBlogPosts,
-    pageContent,
-    site,
-  },
+  data: { allFooterLinks, allHeaderLinks, featuredPosts, pageContent, site },
 }) => {
-  console.log(featuredBlogPosts);
   const { title: pageTitle, description } = site.siteMetadata;
   const {
     metaTitle,
@@ -40,7 +34,7 @@ export const Home: React.FunctionComponent<IHomeProps> = ({
 
         <Bio html={html} image={featuredImage} />
 
-        {/* <BlogList entries={featuredBlogPosts} /> */}
+        <Posts posts={featuredPosts} />
       </Main>
 
       <Footer links={allFooterLinks} />
@@ -104,7 +98,7 @@ export const query = graphql`
       }
     }
 
-    featuredBlogPosts: allContentfulPost(
+    featuredPosts: allContentfulPost(
       filter: { featured: { eq: true } }
       sort: { fields: [publishedDate], order: DESC }
     ) {
@@ -113,11 +107,12 @@ export const query = graphql`
           title
           slug
           category
+          tags
 
           cover {
             title
-            fixed(width: 390, height: 300) {
-              ...GatsbyContentfulFixed_withWebp
+            fluid(maxWidth: 390, maxHeight: 300) {
+              ...GatsbyContentfulFluid_withWebp
             }
           }
         }

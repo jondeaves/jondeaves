@@ -1,9 +1,9 @@
-import IFixedImage from './IFixedImage';
+import IFluidImage from './IFluidImage';
 
 export default interface IContentfulPost {
   node: {
     category: string;
-    cover: IFixedImage;
+    cover: IFluidImage;
     publishedDate: string;
     slug: string;
     tags: string[];

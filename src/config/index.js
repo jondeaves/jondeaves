@@ -15,4 +15,6 @@ module.exports = {
 
   // The FQDN of the site; deployed or local
   siteUrl: process.env.SITE_URL ? process.env.SITE_URL : 'https://jondeaves.me',
+
+  postPathPrefix: '/posts/',
 };
