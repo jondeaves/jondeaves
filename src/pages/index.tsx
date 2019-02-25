@@ -10,8 +10,15 @@ import Header from '../components/shared/Header';
 import Main from '../components/shared/Main';
 
 export const Home: React.FunctionComponent<IHomeProps> = ({
-  data: { allHeaderLinks, allFooterLinks, site, pageContent },
+  data: {
+    allFooterLinks,
+    allHeaderLinks,
+    featuredBlogPosts,
+    pageContent,
+    site,
+  },
 }) => {
+  console.log(featuredBlogPosts);
   const { title: pageTitle, description } = site.siteMetadata;
   const {
     metaTitle,
@@ -24,7 +31,7 @@ export const Home: React.FunctionComponent<IHomeProps> = ({
 
   return (
     <React.Fragment>
-      <Header />
+      <Header links={allHeaderLinks} />
       <Main>
         <Helmet>
           <title>{metaTitle || pageTitle}</title>
@@ -33,7 +40,7 @@ export const Home: React.FunctionComponent<IHomeProps> = ({
 
         <Bio html={html} image={featuredImage} />
 
-        {/* <BlogList uiLanguage={uiLanguage} entries={edges} /> */}
+        {/* <BlogList entries={featuredBlogPosts} /> */}
       </Main>
 
       <Footer links={allFooterLinks} />
@@ -93,6 +100,26 @@ export const query = graphql`
           title
           uri
           external
+        }
+      }
+    }
+
+    featuredBlogPosts: allContentfulPost(
+      filter: { featured: { eq: true } }
+      sort: { fields: [publishedDate], order: DESC }
+    ) {
+      edges {
+        node {
+          title
+          slug
+          category
+
+          cover {
+            title
+            fixed(width: 390, height: 300) {
+              ...GatsbyContentfulFixed_withWebp
+            }
+          }
         }
       }
     }

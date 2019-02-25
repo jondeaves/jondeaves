@@ -9,7 +9,10 @@ import HeaderNav from './HeaderNav';
 import HeaderStyles from './Header.styles';
 import { IOwnProps, IProps, IStyles } from './Header.types';
 
-export const Header: React.FunctionComponent<IProps> = ({ styles }: IProps) => {
+export const Header: React.FunctionComponent<IProps> = ({
+  links,
+  styles,
+}: IProps) => {
   return (
     <header role="header" className={styles.container}>
       <div className={styles.headings}>
@@ -17,7 +20,7 @@ export const Header: React.FunctionComponent<IProps> = ({ styles }: IProps) => {
         <HeaderLink isPrimary={false} level={2} uri="/" title="Web Developer" />
       </div>
 
-      <HeaderNav />
+      <HeaderNav links={links} />
     </header>
   );
 };

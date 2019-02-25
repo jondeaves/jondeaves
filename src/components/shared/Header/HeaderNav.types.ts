@@ -2,9 +2,11 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
+import INavLink from '../../../types/INavLink';
 
-// tslint:disable-next-line:no-empty-interface
-export interface IOwnProps {}
+export interface IOwnProps {
+  links: INavLink;
+}
 
 export interface IStyles {
   list: IStyle & {

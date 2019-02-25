@@ -1,3 +1,4 @@
+import IContentfulPost from '../IContentfulPost';
 import IFluidImage from '../IFluidImage';
 import IMarkdownBody from '../IMarkdownBody';
 import INavLink from '../INavLink';
@@ -5,9 +6,11 @@ import ISiteMetadata from '../ISiteMetadata';
 
 export default interface IHomeProps {
   data: {
-    site: {
-      siteMetadata: ISiteMetadata;
-    };
+    allFooterLinks: INavLink;
+
+    allHeaderLinks: INavLink;
+
+    featuredBlogPosts: { edges: IContentfulPost[] };
 
     pageContent: {
       metaTitle: string;
@@ -18,7 +21,8 @@ export default interface IHomeProps {
       featuredImage: IFluidImage;
     };
 
-    allHeaderLinks: INavLink;
-    allFooterLinks: INavLink;
+    site: {
+      siteMetadata: ISiteMetadata;
+    };
   };
 }
