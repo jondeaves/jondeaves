@@ -2,28 +2,14 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
-import INavLink from '../../../types/INavLink';
+import IContentfulPost from '../../../types/IContentfulPost';
 
 export interface IOwnProps {
-  links: INavLink;
+  posts: { edges: IContentfulPost[] };
 }
 
 export interface IStyles {
-  list: IStyle & {
-    atDesktop: IStyle;
-  };
-
-  listItem: IStyle & {
-    ':hover': IStyle;
-
-    atDesktop: IStyle & {
-      ':hover': IStyle;
-    };
-  };
-
-  link: IStyle & {
-    ':hover': IStyle;
-  };
+  container: IStyle;
 }
 
 export type IProps = IOwnProps &

@@ -1,7 +1,7 @@
 const React = require('react');
-const rehydrate = require('fela-dom');
-const RendererProvider = require('react-fela');
-const createRenderer = require('fela');
+const { rehydrate } = require('fela-dom');
+const { RendererProvider } = require('react-fela');
+const { createRenderer } = require('fela');
 
 const FelaConfig = require('./fela.config');
 

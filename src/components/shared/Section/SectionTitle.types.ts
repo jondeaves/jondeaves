@@ -2,28 +2,15 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
-import INavLink from '../../../types/INavLink';
 
 export interface IOwnProps {
-  links: INavLink;
+  title: string;
+  uri?: string;
+  level: number;
 }
 
 export interface IStyles {
-  list: IStyle & {
-    atDesktop: IStyle;
-  };
-
-  listItem: IStyle & {
-    ':hover': IStyle;
-
-    atDesktop: IStyle & {
-      ':hover': IStyle;
-    };
-  };
-
-  link: IStyle & {
-    ':hover': IStyle;
-  };
+  heading: IStyle;
 }
 
 export type IProps = IOwnProps &

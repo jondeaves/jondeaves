@@ -1,4 +1,4 @@
-const monolithic = require('fela-monolithic');
+const { default: monolithic } = require('fela-monolithic');
 const { default: namedKeys } = require('fela-plugin-named-keys');
 
 const plugins = [];
@@ -8,6 +8,7 @@ let devMode = false;
 // Pre-set style keys
 plugins.push(
   namedKeys({
+    atTablet: '@media (min-width: 420px) and (max-width: 659px)',
     atDesktop: '@media (min-width: 660px)',
     print: '@media print',
   }),

@@ -11,7 +11,7 @@ export default (): IStyles => ({
       lineHeight: '80px',
       position: 'absolute',
       right: '20px',
-      top: '-22px',
+      top: '-21px',
     },
   },
 
@@ -25,7 +25,7 @@ export default (): IStyles => ({
     fontWeight: 'bold',
     textAlign: 'center',
     textTransform: 'uppercase',
-    width: '90px',
+    width: '75px',
 
     ':hover': {
       borderBottomColor: '#ff0000',
@@ -36,6 +36,7 @@ export default (): IStyles => ({
       borderBottomWidth: '3px',
       fontSize: '14px',
       height: '80px',
+      width: '90px',
 
       ':hover': {
         borderBottomColor: '#ff0000',

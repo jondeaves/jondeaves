@@ -2,28 +2,27 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
-import INavLink from '../../../types/INavLink';
+import IFluidImage from '../../../types/IFluidImage';
 
 export interface IOwnProps {
-  links: INavLink;
+  html: string;
+  image: IFluidImage;
 }
 
 export interface IStyles {
-  list: IStyle & {
+  container: IStyle;
+
+  overlay: IStyle;
+
+  heading: IStyle & {
     atDesktop: IStyle;
+
+    atTablet: IStyle;
+
+    '>p': IStyle;
   };
 
-  listItem: IStyle & {
-    ':hover': IStyle;
-
-    atDesktop: IStyle & {
-      ':hover': IStyle;
-    };
-  };
-
-  link: IStyle & {
-    ':hover': IStyle;
-  };
+  image: IStyle;
 }
 
 export type IProps = IOwnProps &

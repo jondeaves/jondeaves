@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@types/url-join": "~4.0.0",
+    "classnames": "~2.2.6",
     "dotenv": "~6.2.0",
     "fela": "~10.2.0",
     "fela-dom": "~10.2.0",
@@ -69,6 +70,7 @@
     "url-join": "~4.0.0"
   },
   "devDependencies": {
+    "@types/classnames": "~2.2.7",
     "@types/dotenv": "~6.1.0",
     "@types/lodash": "~4.14.121",
     "@types/react-helmet": "~5.0.8",

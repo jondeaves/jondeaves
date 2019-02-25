@@ -9,21 +9,26 @@ export interface IOwnProps {
 }
 
 export interface IStyles {
-  list: IStyle & {
-    atDesktop: IStyle;
+  container: IStyle & {
+    print: IStyle;
   };
 
-  listItem: IStyle & {
-    ':hover': IStyle;
+  nav: IStyle;
 
-    atDesktop: IStyle & {
-      ':hover': IStyle;
-    };
+  navList: IStyle;
+
+  navListItem: IStyle & {
+    '&:not(:first-child)': IStyle;
+    '> a': IStyle;
   };
 
-  link: IStyle & {
-    ':hover': IStyle;
+  contentfulWrapper: IStyle;
+
+  contentfulLink: IStyle & {
+    '&:hover': IStyle;
   };
+
+  contentfulImage: IStyle;
 }
 
 export type IProps = IOwnProps &

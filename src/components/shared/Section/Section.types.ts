@@ -2,27 +2,25 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
-import INavLink from '../../../types/INavLink';
 
 export interface IOwnProps {
-  links: INavLink;
+  children?: React.ReactNode;
+  className?: string;
+  ident?: string;
+  isFull?: boolean;
+  isLarge?: boolean;
+  isPrimary?: boolean;
+  palette?: string;
+  uri?: string;
+  small?: boolean;
+  styles?: object;
+  textAlign?: string;
+  title?: string;
 }
 
 export interface IStyles {
-  list: IStyle & {
+  container: IStyle & {
     atDesktop: IStyle;
-  };
-
-  listItem: IStyle & {
-    ':hover': IStyle;
-
-    atDesktop: IStyle & {
-      ':hover': IStyle;
-    };
-  };
-
-  link: IStyle & {
-    ':hover': IStyle;
   };
 }
 
