@@ -18,18 +18,17 @@ export const Section: React.FunctionComponent<IProps> = ({
   styles,
   title,
 }: IProps) => (
-  <section className={classnames(styles.container, className)}>
-    <SectionTitle title={title || ''} uri={uri} level={isPrimary ? 1 : 2} />
-    {children}
+  <section className={styles.wrapper}>
+    <div className={classnames(styles.container, className)}>
+      <SectionTitle title={title || ''} uri={uri} level={isPrimary ? 1 : 2} />
+      {children}
+    </div>
   </section>
 );
 
 Section.defaultProps = {
-  isFull: false,
-  isLarge: false,
   isPrimary: false,
-  small: true,
-  textAlign: 'center',
+  padded: true,
   title: '',
 };
 

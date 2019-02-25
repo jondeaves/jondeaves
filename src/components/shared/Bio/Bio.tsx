@@ -14,7 +14,7 @@ export const Bio: React.FunctionComponent<IProps> = ({
   image,
   styles,
 }: IProps) => (
-  <Section className={styles.container}>
+  <Section className={styles.container} padded={false}>
     <Img alt={image.title} fluid={image.fluid} className={styles.image} />
     <div className={styles.overlay} />
     <div

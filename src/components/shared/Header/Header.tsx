@@ -10,19 +10,34 @@ import HeaderStyles from './Header.styles';
 import { IOwnProps, IProps, IStyles } from './Header.types';
 
 export const Header: React.FunctionComponent<IProps> = ({
+  isHomepage,
   links,
   styles,
 }: IProps) => {
   return (
     <header role="header" className={styles.container}>
       <div className={styles.headings}>
-        <HeaderLink isPrimary={true} level={1} uri="/" title="Jon Deaves" />
-        <HeaderLink isPrimary={false} level={2} uri="/" title="Web Developer" />
+        <HeaderLink
+          isPrimary={true}
+          level={isHomepage ? 1 : 2}
+          uri="/"
+          title="Jon Deaves"
+        />
+        <HeaderLink
+          isPrimary={false}
+          level={isHomepage ? 2 : 3}
+          uri="/"
+          title="Web Developer"
+        />
       </div>
 
       <HeaderNav links={links} />
     </header>
   );
+};
+
+Header.defaultProps = {
+  isHomepage: false,
 };
 
 export default connect<IOwnProps, IStyles, ITheme>(HeaderStyles as any)(Header);
