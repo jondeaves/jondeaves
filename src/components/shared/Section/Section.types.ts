@@ -6,21 +6,21 @@ import { ITheme } from '../../../Theme';
 export interface IOwnProps {
   children?: React.ReactNode;
   className?: string;
-  ident?: string;
-  isFull?: boolean;
-  isLarge?: boolean;
   isPrimary?: boolean;
+  maxWidth?: number;
+  padded?: boolean;
   palette?: string;
   uri?: string;
-  small?: boolean;
   styles?: object;
-  textAlign?: string;
   title?: string;
 }
 
 export interface IStyles {
+  wrapper: IStyle;
   container: IStyle & {
     atDesktop: IStyle;
+
+    '> * > p': IStyle;
   };
 }
 

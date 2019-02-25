@@ -5,6 +5,7 @@ import { ITheme } from '../../../Theme';
 import INavLink from '../../../types/INavLink';
 
 export interface IOwnProps {
+  isHomepage: boolean;
   links: INavLink;
 }
 

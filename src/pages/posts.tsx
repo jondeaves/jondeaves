@@ -2,39 +2,37 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import IHomeProps from '../types/pages/Home';
+import IPostsPageProps from '../types/pages/PostsPage';
 
-import Bio from '../components/shared/Bio';
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
 import Main from '../components/shared/Main';
 import Posts from '../components/shared/Posts';
+import Section from '../components/shared/Section';
 
-export const Home: React.FunctionComponent<IHomeProps> = ({
-  data: { allFooterLinks, allHeaderLinks, featuredPosts, pageContent, site },
+export const PostsPage: React.FunctionComponent<IPostsPageProps> = ({
+  data: { allFooterLinks, allHeaderLinks, posts, pageContent, site },
 }) => {
   const { title: pageTitle, description } = site.siteMetadata;
-  const {
-    metaTitle,
-    metaDescription,
-    featuredImage,
-    body: {
-      childMarkdownRemark: { html },
-    },
-  } = pageContent;
+
+  const { html } = pageContent.body.childMarkdownRemark;
+  const { title, metaTitle, metaDescription } = pageContent;
 
   return (
     <React.Fragment>
-      <Header links={allHeaderLinks} isHomepage={true} />
+      <Header links={allHeaderLinks} />
+
       <Main>
         <Helmet>
           <title>{metaTitle || pageTitle}</title>
           <meta name="description" content={metaDescription || description} />
         </Helmet>
 
-        <Bio html={html} image={featuredImage} />
+        <Section maxWidth={1170} palette="dark" title={title} isPrimary={true}>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </Section>
 
-        <Posts posts={featuredPosts} />
+        <Posts posts={posts} />
       </Main>
 
       <Footer links={allFooterLinks} />
@@ -42,7 +40,7 @@ export const Home: React.FunctionComponent<IHomeProps> = ({
   );
 };
 
-export default Home;
+export default PostsPage;
 
 export const query = graphql`
   query {
@@ -54,20 +52,14 @@ export const query = graphql`
       }
     }
 
-    pageContent: contentfulPage(slug: { eq: "home" }) {
+    pageContent: contentfulPage(slug: { eq: "posts" }) {
+      title
       metaTitle
       metaDescription
 
       body {
         childMarkdownRemark {
           html
-        }
-      }
-
-      featuredImage {
-        title
-        fluid {
-          ...GatsbyContentfulFluid_withWebp
         }
       }
     }
@@ -98,10 +90,7 @@ export const query = graphql`
       }
     }
 
-    featuredPosts: allContentfulPost(
-      filter: { featured: { eq: true } }
-      sort: { fields: [publishedDate], order: DESC }
-    ) {
+    posts: allContentfulPost(sort: { fields: [publishedDate], order: DESC }) {
       edges {
         node {
           title

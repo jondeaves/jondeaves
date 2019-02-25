@@ -45,7 +45,7 @@ export const Link: React.FunctionComponent<IProps> = (props: IProps) => {
 
   if (!isExternal) {
     return (
-      <GatsbyLink {...linkProps}>
+      <GatsbyLink activeClassName="active" {...linkProps}>
         {label}
         {isExternal && (
           <span className={styles.externalLabel}> (external link)</span>
