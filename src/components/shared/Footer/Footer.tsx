@@ -24,6 +24,7 @@ export const Footer: React.FunctionComponent<IProps> = ({
                 to={item.uri}
                 isExternal={item.external}
                 className={styles.navListItem}
+                openInNewWindow={item.external}
               />
             </li>
           ))}
