@@ -25,7 +25,7 @@ export const AboutPage: React.FunctionComponent<IAboutPageProps> = ({
 
   return (
     <React.Fragment>
-      <Header links={allHeaderLinks} isHomepage={true} />
+      <Header links={allHeaderLinks} isHomepage={false} />
       <Main>
         <Helmet>
           <title>{metaTitle || `Personal resume for ${pageTitle}`}</title>

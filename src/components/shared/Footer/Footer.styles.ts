@@ -2,6 +2,8 @@ import { IStyles } from './Footer.types';
 
 export default (): IStyles => ({
   container: {
+    marginTop: '60px',
+
     atPrint: {
       display: 'none',
     },

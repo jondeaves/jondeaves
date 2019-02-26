@@ -5,7 +5,7 @@ export default (): IStyles => ({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    margin: '60px auto',
+    margin: '60px auto 0 auto',
     maxWidth: '1170px',
     minHeight: '100%',
     textAlign: 'center',

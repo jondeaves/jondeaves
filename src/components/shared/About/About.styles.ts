@@ -6,7 +6,7 @@ export default (): IStyles => ({
     flexDirection: 'column',
     margin: '0 auto',
     maxWidth: '940px',
-    padding: '20px',
+    padding: '20px 20px 0 20px',
   },
 
   header: {
@@ -84,7 +84,7 @@ export default (): IStyles => ({
 
   skillsGridItemRight: {
     gridArea: 'skillsRight',
-    marginBottom: '1.7rem',
+    // marginBottom: '1.7rem',
 
     atDesktop: {
       paddingLeft: '40px',
