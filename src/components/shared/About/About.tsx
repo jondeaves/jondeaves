@@ -3,11 +3,13 @@ import React from 'react';
 import { connect } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
+import Experience from '../Experience';
 
 import AboutStyles from './About.styles';
 import { IOwnProps, IProps, IStyles } from './About.types';
 
 export const About: React.FunctionComponent<IProps> = ({
+  experienceList,
   featuredImage,
   microdata,
   styles,
@@ -116,25 +118,17 @@ export const About: React.FunctionComponent<IProps> = ({
           <h2 id="experience">Experience</h2>
         </div>
         <div className={styles.experienceGridItemRight}>
-          Right stuff
-          {/* <ol className="vcalendar" className={rightSectionCss}>
-            { experienceFragment.edges.map((experience, idx) => (
-              <Experience key={idx} payload={experience.node} />
+          <ol className={`vcalendar ${styles.experienceList}`}>
+            {experienceList.edges.map((experience, idx) => (
+              <Experience key={idx} experience={experience.node} />
             ))}
-          </ol> */}
+          </ol>
         </div>
 
         <div className={styles.skillsGridItemLeft}>
           <h2 id="experience">Skills</h2>
         </div>
-        <div className={styles.skillsGridItemRight}>
-          Right stuff
-          {/* <ol className="vcalendar" className={rightSectionCss}>
-            { experienceFragment.edges.map((experience, idx) => (
-              <Experience key={idx} payload={experience.node} />
-            ))}
-          </ol> */}
-        </div>
+        <div className={styles.skillsGridItemRight}>Right side bro</div>
       </div>
     </article>
   );

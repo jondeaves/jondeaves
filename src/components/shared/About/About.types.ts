@@ -3,9 +3,15 @@ import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
 import IAboutMicrodata from '../../../types/IAboutMicrodata';
+import IExperience from '../../../types/IExperience';
 import IFixedImage from '../../../types/IFixedImage';
 
 export interface IOwnProps {
+  experienceList: {
+    edges: Array<{
+      node: IExperience;
+    }>;
+  };
   featuredImage: IFixedImage;
   microdata: IAboutMicrodata;
   skills: string[];
@@ -16,38 +22,48 @@ export interface IStyles {
   container: IStyle;
 
   header: IStyle & {
-    print: IStyle;
+    atPrint: IStyle;
   };
 
   grid: IStyle & {
     atDesktop: IStyle;
+    atLargeDesktop: IStyle;
   };
 
-  summaryGridItem: IStyle;
+  summaryGridItem: IStyle & {
+    atLargeDesktop: IStyle;
+    atPrint: IStyle;
+  };
 
   photoGridItem: IStyle & {
-    atDesktop: IStyle;
-    print: IStyle;
+    atLargeDesktop: IStyle;
+    atPrint: IStyle;
   };
 
   experienceGridItemLeft: IStyle;
 
-  experienceGridItemRight: IStyle;
+  experienceGridItemRight: IStyle & {
+    atDesktop: IStyle;
+  };
 
   skillsGridItemLeft: IStyle;
 
-  skillsGridItemRight: IStyle;
+  skillsGridItemRight: IStyle & {
+    atDesktop: IStyle;
+  };
 
   photoWrapper: IStyle & {
     atDesktop: IStyle;
-    print: IStyle;
+    atPrint: IStyle;
   };
 
   summary: IStyle & {
-    atDesktop: IStyle;
+    atLargeDesktop: IStyle;
   };
 
   innerImage: IStyle;
+
+  experienceList: IStyle;
 
   address: IStyle & {
     '> span': IStyle;
@@ -57,7 +73,7 @@ export interface IStyles {
   hide: IStyle;
 
   show: IStyle & {
-    print: IStyle;
+    atPrint: IStyle;
   };
 }
 

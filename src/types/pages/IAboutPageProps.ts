@@ -1,4 +1,5 @@
 import IAboutMicrodata from '../IAboutMicrodata';
+import IExperience from '../IExperience';
 import IFixedImage from '../IFixedImage';
 import IMarkdownBody from '../IMarkdownBody';
 import INavLink from '../INavLink';
@@ -26,6 +27,12 @@ export default interface IAboutPageProps {
 
     site: {
       siteMetadata: ISiteMetadata;
+    };
+
+    experienceList: {
+      edges: Array<{
+        node: IExperience;
+      }>;
     };
   };
 }

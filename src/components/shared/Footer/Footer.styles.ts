@@ -2,7 +2,7 @@ import { IStyles } from './Footer.types';
 
 export default (): IStyles => ({
   container: {
-    print: {
+    atPrint: {
       display: 'none',
     },
   },

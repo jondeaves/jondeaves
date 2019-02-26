@@ -10,7 +10,8 @@ plugins.push(
   namedKeys({
     atTablet: '@media (min-width: 420px) and (max-width: 659px)',
     atDesktop: '@media (min-width: 660px)',
-    print: '@media print',
+    atLargeDesktop: '@media (min-width: 840px)',
+    atPrint: '@media print',
   }),
 );
 

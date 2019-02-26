@@ -10,7 +10,7 @@ export interface IOwnProps {
 
 export interface IStyles {
   container: IStyle & {
-    print: IStyle;
+    atPrint: IStyle;
   };
 
   nav: IStyle;

@@ -10,7 +10,7 @@ import Header from '../components/shared/Header';
 import Main from '../components/shared/Main';
 
 export const AboutPage: React.FunctionComponent<IAboutPageProps> = ({
-  data: { allFooterLinks, allHeaderLinks, pageContent, site },
+  data: { allFooterLinks, allHeaderLinks, experienceList, pageContent, site },
 }) => {
   const { title: pageTitle, description } = site.siteMetadata;
   const {
@@ -33,6 +33,7 @@ export const AboutPage: React.FunctionComponent<IAboutPageProps> = ({
         </Helmet>
 
         <About
+          experienceList={experienceList}
           skills={skills}
           featuredImage={featuredImage}
           microdata={microdata}
@@ -123,6 +124,26 @@ export const query = graphql`
           title
           uri
           external
+        }
+      }
+    }
+
+    experienceList: allContentfulExperience(
+      sort: { fields: [endDate], order: DESC }
+    ) {
+      edges {
+        node {
+          jobTitle
+          description {
+            childMarkdownRemark {
+              html
+            }
+          }
+          companyName
+          companyUri
+          startDate
+          endDate
+          isCurrent
         }
       }
     }

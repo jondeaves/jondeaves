@@ -10,7 +10,7 @@ export default (): IStyles => ({
   },
 
   header: {
-    print: {
+    atPrint: {
       display: 'none',
     },
   },
@@ -20,27 +20,46 @@ export default (): IStyles => ({
       display: 'grid',
       gridGap: '10px',
       gridTemplateAreas: `
-      "summary summary summary summary summary summary photo"
-      "experienceLeft experienceLeft experienceRight experienceRight experienceRight experienceRight experienceRight"
-      "skillLeft skillLeft skillsRight skillsRight skillsRight skillsRight skillsRight"
+      "summary summary summary"
+      "experienceLeft experienceRight experienceRight"
+      "skillLeft skillsRight skillsRight"
+      `,
+    },
+
+    atLargeDesktop: {
+      gridTemplateAreas: `
+      "summary summary photo"
+      "experienceLeft experienceRight experienceRight"
+      "skillLeft skillsRight skillsRight"
       `,
     },
   },
 
   summaryGridItem: {
     gridArea: 'summary',
+    textAlign: 'center',
+
+    atLargeDesktop: {
+      textAlign: 'left',
+    },
+
+    atPrint: {
+      textAlign: 'left',
+    },
   },
 
   photoGridItem: {
+    display: 'none',
     gridArea: 'photo',
     marginBottom: '1.7rem',
     textAlign: 'left',
 
-    atDesktop: {
+    atLargeDesktop: {
+      display: 'block',
       marginBottom: 0,
     },
 
-    print: {
+    atPrint: {
       display: 'none',
     },
   },
@@ -52,6 +71,11 @@ export default (): IStyles => ({
   experienceGridItemRight: {
     gridArea: 'experienceRight',
     marginBottom: '1.7rem',
+
+    atDesktop: {
+      paddingLeft: '40px',
+      paddingTop: '6px',
+    },
   },
 
   skillsGridItemLeft: {
@@ -61,6 +85,11 @@ export default (): IStyles => ({
   skillsGridItemRight: {
     gridArea: 'skillsRight',
     marginBottom: '1.7rem',
+
+    atDesktop: {
+      paddingLeft: '40px',
+      paddingTop: '6px',
+    },
   },
 
   address: {
@@ -77,7 +106,7 @@ export default (): IStyles => ({
   },
 
   summary: {
-    atDesktop: {
+    atLargeDesktop: {
       width: '500px',
     },
   },
@@ -90,7 +119,7 @@ export default (): IStyles => ({
       textAlign: 'right',
     },
 
-    print: {
+    atPrint: {
       display: 'none',
     },
   },
@@ -98,6 +127,11 @@ export default (): IStyles => ({
   innerImage: {
     boxShadow: '0 0 8px 0 rgba(0, 0, 0, 0.26)',
     transform: 'rotate(-3deg)',
+  },
+
+  experienceList: {
+    listStyle: 'none',
+    margin: 0,
   },
 
   hide: {
@@ -108,6 +142,6 @@ export default (): IStyles => ({
   show: {
     display: 'none!important',
 
-    print: { display: 'block!important' },
+    atPrint: { display: 'block!important' },
   },
 });
