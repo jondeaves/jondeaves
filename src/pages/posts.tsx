@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import IPostsPageProps from '../types/pages/PostsPage';
+import IPostsPageProps from '../types/pages/IPostsPageProps';
 
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';

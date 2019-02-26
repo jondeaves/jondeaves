@@ -8,15 +8,14 @@ export default (): IStyles => ({
     textAlign: 'center',
 
     atDesktop: {
-      lineHeight: '80px',
+      lineHeight: '68px',
       position: 'absolute',
       right: '20px',
-      top: '-21px',
+      top: '-12px',
     },
   },
 
   listItem: {
-    borderBottom: '1px solid transparent',
     boxSizing: 'border-box',
     color: '#333333',
     cursor: 'pointer',
@@ -25,36 +24,40 @@ export default (): IStyles => ({
     fontWeight: 'bold',
     textAlign: 'center',
     textTransform: 'uppercase',
-    width: '75px',
+    width: '90px',
 
     ':hover': {
-      borderBottomColor: '#ff0000',
       color: '#333333',
     },
 
     atDesktop: {
-      borderBottomWidth: '3px',
       fontSize: '14px',
       height: '80px',
       width: '90px',
-
-      ':hover': {
-        borderBottomColor: '#ff0000',
-      },
     },
   },
 
   link: {
-    border: 0,
+    borderBottom: '1px solid transparent',
     color: 'inherit',
     display: 'block',
     textDecoration: 'none',
 
     ':hover': {
-      border: 0,
-      color: 'inherit',
-      display: 'block',
-      textDecoration: 'none',
+      borderBottomColor: '#ff0000',
+    },
+
+    '&.active': {
+      borderBottomColor: '#ff0000',
+    },
+
+    atDesktop: {
+      borderBottomWidth: '3px',
+
+      ':hover': {
+        borderBottomColor: '#ff0000',
+        borderBottomWidth: '3px',
+      },
     },
   },
 });

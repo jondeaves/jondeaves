@@ -2,20 +2,24 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
-import INavLink from '../../../types/INavLink';
+import IAboutMicrodata from '../../../types/IAboutMicrodata';
 
 export interface IOwnProps {
-  isHomepage?: boolean;
-  links: INavLink;
+  microdata: IAboutMicrodata;
 }
 
 export interface IStyles {
   container: IStyle & {
-    atDesktop: IStyle;
-    atPrint: IStyle;
+    '> span': IStyle;
+
+    '> .adr span': IStyle;
   };
 
-  headings: IStyle;
+  hide: IStyle;
+
+  show: IStyle & {
+    atPrint: IStyle;
+  };
 }
 
 export type IProps = IOwnProps &

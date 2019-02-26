@@ -2,20 +2,13 @@ import { IStyle } from 'fela';
 import { FelaWithStylesProps } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
-import INavLink from '../../../types/INavLink';
 
 export interface IOwnProps {
-  isHomepage?: boolean;
-  links: INavLink;
+  title: string;
 }
 
 export interface IStyles {
-  container: IStyle & {
-    atDesktop: IStyle;
-    atPrint: IStyle;
-  };
-
-  headings: IStyle;
+  container: IStyle;
 }
 
 export type IProps = IOwnProps &

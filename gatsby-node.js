@@ -78,57 +78,57 @@ exports.createPages = ({ graphql, actions }) => {
 
     createRedirect({
       fromPath: '/blog',
-      toPath: '/blogs',
+      toPath: '/posts',
       isPermanent: true,
       redirectInBrowser: true,
     });
 
     createRedirect({
       fromPath: '/project',
-      toPath: '/blogs',
+      toPath: '/posts',
       isPermanent: true,
       redirectInBrowser: true,
     });
 
     createRedirect({
       fromPath: '/projects.html',
-      toPath: '/blogs',
+      toPath: '/posts',
       isPermanent: true,
       redirectInBrowser: true,
     });
     createRedirect({
       fromPath: '/project-rogues-with-benefits.html',
-      toPath: '/blogs/rogues-with-benefits',
+      toPath: '/posts/rogues-with-benefits',
       isPermanent: true,
       redirectInBrowser: true,
     });
     createRedirect({
       fromPath: '/project-save-the-bakon.html',
-      toPath: '/blogs/save-the-bakon',
+      toPath: '/posts/save-the-bakon',
       isPermanent: true,
       redirectInBrowser: true,
     });
     createRedirect({
       fromPath: '/project-for-the-impire.html',
-      toPath: '/blogs/for-the-impire',
+      toPath: '/posts/for-the-impire',
       isPermanent: true,
       redirectInBrowser: true,
     });
     createRedirect({
       fromPath: '/project/rogues-with-benefits',
-      toPath: '/blogs/rogues-with-benefits',
+      toPath: '/posts/rogues-with-benefits',
       isPermanent: true,
       redirectInBrowser: true,
     });
     createRedirect({
       fromPath: '/project/save-the-bakon',
-      toPath: '/blogs/save-the-bakon',
+      toPath: '/posts/save-the-bakon',
       isPermanent: true,
       redirectInBrowser: true,
     });
     createRedirect({
       fromPath: '/project/for-the-impire',
-      toPath: '/blogs/for-the-impire',
+      toPath: '/posts/for-the-impire',
       isPermanent: true,
       redirectInBrowser: true,
     });

@@ -4,7 +4,7 @@ import IMarkdownBody from '../IMarkdownBody';
 import INavLink from '../INavLink';
 import ISiteMetadata from '../ISiteMetadata';
 
-export default interface IHomeProps {
+export default interface IHomePageProps {
   data: {
     allFooterLinks: INavLink;
 

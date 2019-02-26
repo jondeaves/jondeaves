@@ -14,7 +14,7 @@ export default (): IStyles => ({
       position: 'fixed',
     },
 
-    print: {
+    atPrint: {
       display: 'none',
     },
   },

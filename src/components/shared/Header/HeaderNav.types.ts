@@ -15,14 +15,16 @@ export interface IStyles {
 
   listItem: IStyle & {
     ':hover': IStyle;
-
-    atDesktop: IStyle & {
-      ':hover': IStyle;
-    };
+    atDesktop: IStyle;
   };
 
   link: IStyle & {
     ':hover': IStyle;
+    '&.active': IStyle;
+
+    atDesktop: IStyle & {
+      ':hover': IStyle;
+    };
   };
 }
 
