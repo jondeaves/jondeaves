@@ -1,16 +1,14 @@
-import IContentfulPost from '../IContentfulPost';
-import IFluidImage from '../IFluidImage';
+import IAboutMicrodata from '../IAboutMicrodata';
+import IFixedImage from '../IFixedImage';
 import IMarkdownBody from '../IMarkdownBody';
 import INavLink from '../INavLink';
 import ISiteMetadata from '../ISiteMetadata';
 
-export default interface IHomeProps {
+export default interface IAboutPageProps {
   data: {
     allFooterLinks: INavLink;
 
     allHeaderLinks: INavLink;
-
-    featuredPosts: { edges: IContentfulPost[] };
 
     pageContent: {
       metaTitle: string;
@@ -18,7 +16,12 @@ export default interface IHomeProps {
 
       body: IMarkdownBody;
 
-      featuredImage: IFluidImage;
+      featuredImage: IFixedImage;
+
+      fragmentData: {
+        skills: string[];
+        microdata: IAboutMicrodata;
+      };
     };
 
     site: {

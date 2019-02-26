@@ -2,22 +2,22 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import Helmet from 'react-helmet';
 
-import IHomePageProps from '../types/pages/IHomePageProps';
+import IAboutPageProps from '../types/pages/IAboutPageProps';
 
-import Bio from '../components/shared/Bio';
+import About from '../components/shared/About';
 import Footer from '../components/shared/Footer';
 import Header from '../components/shared/Header';
 import Main from '../components/shared/Main';
-import Posts from '../components/shared/Posts';
 
-export const HomePage: React.FunctionComponent<IHomePageProps> = ({
-  data: { allFooterLinks, allHeaderLinks, featuredPosts, pageContent, site },
+export const AboutPage: React.FunctionComponent<IAboutPageProps> = ({
+  data: { allFooterLinks, allHeaderLinks, pageContent, site },
 }) => {
   const { title: pageTitle, description } = site.siteMetadata;
   const {
+    featuredImage,
+    fragmentData: { skills, microdata },
     metaTitle,
     metaDescription,
-    featuredImage,
     body: {
       childMarkdownRemark: { html },
     },
@@ -28,13 +28,16 @@ export const HomePage: React.FunctionComponent<IHomePageProps> = ({
       <Header links={allHeaderLinks} isHomepage={true} />
       <Main>
         <Helmet>
-          <title>{metaTitle || pageTitle}</title>
+          <title>{metaTitle || `Personal resume for ${pageTitle}`}</title>
           <meta name="description" content={metaDescription || description} />
         </Helmet>
 
-        <Bio html={html} image={featuredImage} />
-
-        <Posts posts={featuredPosts} />
+        <About
+          skills={skills}
+          featuredImage={featuredImage}
+          microdata={microdata}
+          summary={html}
+        />
       </Main>
 
       <Footer links={allFooterLinks} />
@@ -42,7 +45,7 @@ export const HomePage: React.FunctionComponent<IHomePageProps> = ({
   );
 };
 
-export default HomePage;
+export default AboutPage;
 
 export const query = graphql`
   query {
@@ -54,7 +57,7 @@ export const query = graphql`
       }
     }
 
-    pageContent: contentfulPage(slug: { eq: "home" }) {
+    pageContent: contentfulPage(slug: { eq: "about" }) {
       metaTitle
       metaDescription
 
@@ -66,8 +69,34 @@ export const query = graphql`
 
       featuredImage {
         title
-        fluid {
-          ...GatsbyContentfulFluid_withWebp
+        fixed(width: 210, height: 240) {
+          ...GatsbyContentfulFixed_withWebp
+        }
+      }
+
+      fragmentData {
+        skills
+        microdata {
+          title
+          givenName
+          familyName
+
+          address {
+            locality
+            region
+          }
+          contact {
+            email
+            site {
+              title
+              href
+            }
+            social {
+              github
+              linkedin
+              twitter
+            }
+          }
         }
       }
     }
@@ -94,27 +123,6 @@ export const query = graphql`
           title
           uri
           external
-        }
-      }
-    }
-
-    featuredPosts: allContentfulPost(
-      filter: { featured: { eq: true } }
-      sort: { fields: [publishedDate], order: DESC }
-    ) {
-      edges {
-        node {
-          title
-          slug
-          category
-          tags
-
-          cover {
-            title
-            fluid(maxWidth: 390, maxHeight: 300) {
-              ...GatsbyContentfulFluid_withWebp
-            }
-          }
         }
       }
     }

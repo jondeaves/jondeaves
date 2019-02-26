@@ -25,7 +25,7 @@ export default (): IStyles => ({
     fontWeight: 'bold',
     textAlign: 'center',
     textTransform: 'uppercase',
-    width: '75px',
+    width: '90px',
 
     ':hover': {
       borderBottomColor: '#ff0000',
