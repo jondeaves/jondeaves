@@ -4,6 +4,7 @@ import { connect } from 'react-fela';
 
 import { ITheme } from '../../../Theme';
 import Experience from '../Experience';
+import Skill from '../Skills';
 
 import AboutStyles from './About.styles';
 import { IOwnProps, IProps, IStyles } from './About.types';
@@ -12,6 +13,7 @@ export const About: React.FunctionComponent<IProps> = ({
   experienceList,
   featuredImage,
   microdata,
+  skills,
   styles,
   summary,
 }: IProps) => {
@@ -118,7 +120,7 @@ export const About: React.FunctionComponent<IProps> = ({
           <h2 id="experience">Experience</h2>
         </div>
         <div className={styles.experienceGridItemRight}>
-          <ol className={`vcalendar ${styles.experienceList}`}>
+          <ol className={`vcalendar ${styles.aboutList}`}>
             {experienceList.edges.map((experience, idx) => (
               <Experience key={idx} experience={experience.node} />
             ))}
@@ -128,7 +130,13 @@ export const About: React.FunctionComponent<IProps> = ({
         <div className={styles.skillsGridItemLeft}>
           <h2 id="experience">Skills</h2>
         </div>
-        <div className={styles.skillsGridItemRight}>Right side bro</div>
+        <div className={styles.skillsGridItemRight}>
+          <ul className={styles.aboutList}>
+            {skills.sort().map((skill, idx) => (
+              <Skill key={idx} title={skill} />
+            ))}
+          </ul>
+        </div>
       </div>
     </article>
   );

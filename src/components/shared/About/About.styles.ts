@@ -129,7 +129,7 @@ export default (): IStyles => ({
     transform: 'rotate(-3deg)',
   },
 
-  experienceList: {
+  aboutList: {
     listStyle: 'none',
     margin: 0,
   },

@@ -63,7 +63,7 @@ export interface IStyles {
 
   innerImage: IStyle;
 
-  experienceList: IStyle;
+  aboutList: IStyle;
 
   address: IStyle & {
     '> span': IStyle;
