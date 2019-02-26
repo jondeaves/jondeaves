@@ -64,17 +64,6 @@ export interface IStyles {
   innerImage: IStyle;
 
   aboutList: IStyle;
-
-  address: IStyle & {
-    '> span': IStyle;
-    '> .adr span': IStyle;
-  };
-
-  hide: IStyle;
-
-  show: IStyle & {
-    atPrint: IStyle;
-  };
 }
 
 export type IProps = IOwnProps &

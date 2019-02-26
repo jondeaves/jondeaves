@@ -92,19 +92,6 @@ export default (): IStyles => ({
     },
   },
 
-  address: {
-    display: 'block',
-    fontSize: '14px',
-
-    '> span': {
-      display: 'block',
-    },
-
-    '> .adr span': {
-      display: 'inline-block',
-    },
-  },
-
   summary: {
     atLargeDesktop: {
       width: '500px',
@@ -132,16 +119,5 @@ export default (): IStyles => ({
   aboutList: {
     listStyle: 'none',
     margin: 0,
-  },
-
-  hide: {
-    left: '-9999em',
-    position: 'absolute',
-  },
-
-  show: {
-    display: 'none!important',
-
-    atPrint: { display: 'block!important' },
   },
 });
