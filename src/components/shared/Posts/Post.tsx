@@ -18,9 +18,7 @@ export const Post: React.FunctionComponent<IProps> = ({
   return (
     <article className={styles.container}>
       {post.node.cover && (
-        <div className={styles.image}>
-          <Img fluid={post.node.cover.fluid} title={post.node.cover.title} />
-        </div>
+        <Img fluid={post.node.cover.fluid} title={post.node.cover.title} />
       )}
 
       <div className={styles.sectionWrapper}>
