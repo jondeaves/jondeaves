@@ -2,12 +2,11 @@ import { IStyles } from './Posts.types';
 
 export default (): IStyles => ({
   container: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    margin: '60px auto 0 auto',
+    display: 'grid',
+    gridGap: '5px',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+    margin: '0 auto',
     maxWidth: '1170px',
-    minHeight: '100%',
-    textAlign: 'center',
+    padding: '60px 17px 0 17px',
   },
 });

@@ -11,8 +11,6 @@ export interface IOwnProps {
 export interface IStyles {
   container: IStyle;
 
-  image: IStyle;
-
   sectionWrapper: IStyle & {
     ':hover': IStyle;
   };
