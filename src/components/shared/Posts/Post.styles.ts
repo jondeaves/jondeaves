@@ -6,21 +6,7 @@ export default ({
   },
 }: IProps): IStyles => ({
   container: {
-    display: 'inline-block',
-    height: '300px',
-    maxHeight: '300px',
-    maxWidth: '390px',
-    padding: '40px 12px',
     position: 'relative',
-    width: '390px',
-  },
-
-  image: {
-    height: '100%',
-    left: '0',
-    position: 'absolute',
-    top: '0',
-    width: '100%',
   },
 
   sectionWrapper: {
