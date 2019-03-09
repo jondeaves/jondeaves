@@ -5,7 +5,7 @@ const config = require('./src/config');
 
 function generatePages(graphql, createPage) {
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.jsx');
+    const blogPost = path.resolve('./src/templates/post.tsx');
 
     const graphqlQuery = `{
       allContentfulPost(

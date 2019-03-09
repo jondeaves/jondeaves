@@ -4,8 +4,10 @@ import { FelaWithStylesProps } from 'react-fela';
 import { ITheme } from '../../../Theme';
 
 export interface IOwnProps {
+  align?: 'left' | 'right' | 'center';
   children?: React.ReactNode;
   className?: string;
+  compact?: boolean;
   isPrimary?: boolean;
   maxWidth?: number;
   padded?: boolean;

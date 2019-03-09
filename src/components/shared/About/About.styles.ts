@@ -10,6 +10,8 @@ export default (): IStyles => ({
   },
 
   header: {
+    marginTop: 0,
+
     atPrint: {
       display: 'none',
     },
@@ -90,6 +92,10 @@ export default (): IStyles => ({
       paddingLeft: '40px',
       paddingTop: '6px',
     },
+  },
+
+  aboutHeading: {
+    marginTop: 0,
   },
 
   summary: {
