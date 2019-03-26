@@ -27,6 +27,8 @@ export const Section: React.FunctionComponent<IProps> = ({
 );
 
 Section.defaultProps = {
+  align: 'center',
+  compact: false,
   isPrimary: false,
   padded: true,
   title: '',

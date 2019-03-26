@@ -11,10 +11,7 @@ import { IOwnProps, IProps, IStyles } from './Post.types';
 // tslint:disable-next-line:no-var-requires
 const config = require('../../../config');
 
-export const Post: React.FunctionComponent<IProps> = ({
-  post,
-  styles,
-}: IProps) => {
+export const Post: React.FunctionComponent<IProps> = ({ post, styles }) => {
   return (
     <article className={styles.container}>
       {post.node.cover && (
@@ -42,4 +39,4 @@ export const Post: React.FunctionComponent<IProps> = ({
   );
 };
 
-export default connect<IOwnProps, IStyles, ITheme>(PostStyles as any)(Post);
+export default connect<IOwnProps, IStyles, ITheme>(PostStyles)(Post);

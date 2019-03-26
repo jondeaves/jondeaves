@@ -19,7 +19,7 @@ export const SectionTitle: React.FunctionComponent<IProps> | null = ({
 
   return React.createElement(
     `h${level}`,
-    { className: uri ? styles.heading : null },
+    { className: styles.heading },
     uri ? <Link to={uri} label={title} /> : title,
   );
 };

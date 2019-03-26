@@ -57,6 +57,8 @@ export interface IStyles {
     atPrint: IStyle;
   };
 
+  aboutHeading: IStyle;
+
   summary: IStyle & {
     atLargeDesktop: IStyle;
   };

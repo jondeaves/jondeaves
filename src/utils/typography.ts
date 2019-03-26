@@ -7,6 +7,7 @@ Wordpress2016.overrideThemeStyles = () => ({
     fontFamily: 'Helvetica, Arial, sans-serif',
     fontSize: '17px',
     fontSizeAdjust: '0.5',
+    letterSpacing: '0.1rem',
     lineHeight: '26px',
   },
 
@@ -19,8 +20,6 @@ Wordpress2016.overrideThemeStyles = () => ({
     fontFamily: 'Helvetica, Arial, sans-serif',
     fontWeight: 700,
     lineHeight: 1,
-    marginTop: 0,
-    padding: 0,
   },
 
   blockquote: { fontSize: '20px' },

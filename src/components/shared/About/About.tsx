@@ -49,7 +49,9 @@ export const About: React.FunctionComponent<IProps> = ({
         </div>
 
         <div className={styles.experienceGridItemLeft}>
-          <h2 id="experience">Experience</h2>
+          <h2 className={styles.aboutHeading} id="experience">
+            Experience
+          </h2>
         </div>
         <div className={styles.experienceGridItemRight}>
           <ol className={`vcalendar ${styles.aboutList}`}>
@@ -60,7 +62,9 @@ export const About: React.FunctionComponent<IProps> = ({
         </div>
 
         <div className={styles.skillsGridItemLeft}>
-          <h2 id="experience">Skills</h2>
+          <h2 className={styles.aboutHeading} id="experience">
+            Skills
+          </h2>
         </div>
         <div className={styles.skillsGridItemRight}>
           <ul className={styles.aboutList}>
