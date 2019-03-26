@@ -20,7 +20,7 @@ export const Gallery: React.FunctionComponent<IProps> = ({
   return (
     <Section padded={false} maxWidth={720} className={styles.wrapper}>
       {images.map((image: any, idx: number) => (
-        <Img key={idx} alt={image.title} fixed={image.fixed} />
+        <Img key={idx} alt={image.title} fluid={image.fluid} />
       ))}
     </Section>
   );

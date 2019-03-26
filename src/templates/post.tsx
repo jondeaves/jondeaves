@@ -119,8 +119,9 @@ export const query = graphql`
 
       gallery {
         title
-        fixed {
-          ...GatsbyContentfulFixed_withWebp
+
+        fluid(maxWidth: 680) {
+          ...GatsbyContentfulFluid_withWebp
         }
       }
 

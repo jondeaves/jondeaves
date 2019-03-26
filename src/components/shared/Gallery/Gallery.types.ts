@@ -8,7 +8,9 @@ export interface IOwnProps {
 }
 
 export interface IStyles {
-  wrapper: IStyle;
+  wrapper: IStyle & {
+    atDesktop: IStyle;
+  };
 }
 
 export type IProps = IOwnProps &
