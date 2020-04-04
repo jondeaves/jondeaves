@@ -1,0 +1,69 @@
+{
+  "name": "jondeaves",
+  "private": true,
+  "description": "Jon Deaves | A personal portfolio",
+  "version": "3.0.0",
+  "license": "MIT",
+  "author": "Jon Deaves <jon.deaves@fanduel.com> https://jondeaves.me",
+  "contributors": [
+    "Jon Deaves <jon.deaves@fanduel.com> https://jondeaves.me"
+  ],
+  "homepage": "https://jondeaves.me",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jondeaves/jondeaves"
+  },
+  "bugs": {
+    "url": "https://github.com/jondeaves/jondeaves/issues"
+  },
+  "dependencies": {
+    "@types/dotenv": "~8.2.0",
+    "@types/node": "^13.9.2",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-helmet": "~5.0.15",
+    "dotenv": "~8.2.0",
+    "fela": "~11.2.0",
+    "fela-dom": "~11.2.0",
+    "fela-plugin-fallback-value": "~11.2.0",
+    "fela-plugin-friendly-pseudo-class": "~11.2.0",
+    "fela-plugin-named-keys": "~11.2.0",
+    "fela-plugin-prefixer": "~11.2.0",
+    "fela-plugin-unit": "~11.2.0",
+    "fela-utils": "~11.2.0",
+    "gatsby": "^2.19.45",
+    "gatsby-image": "^2.2.44",
+    "gatsby-plugin-favicon": "~3.1.6",
+    "gatsby-plugin-feed": "~2.4.1",
+    "gatsby-plugin-manifest": "^2.2.48",
+    "gatsby-plugin-netlify": "~2.2.1",
+    "gatsby-plugin-offline": "^3.0.41",
+    "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-sharp": "^2.4.13",
+    "gatsby-plugin-sitemap": "~2.3.1",
+    "gatsby-plugin-typescript": "~2.3.1",
+    "gatsby-source-filesystem": "^2.1.56",
+    "gatsby-transformer-sharp": "^2.3.19",
+    "polished": "~3.5.0",
+    "prettier": "^2.0.2",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-fela": "~11.2.0",
+    "react-helmet": "~5.2.1",
+    "reset-css": "~5.0.1",
+    "tslint": "~6.1.0",
+    "tslint-config-prettier": "~1.18.0",
+    "tslint-react": "~4.2.0",
+    "typescript": "~3.8.3"
+  }
+}
