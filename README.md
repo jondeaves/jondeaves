@@ -1,6 +1,11 @@
 # Jon Deaves
 
-Personal portfolio for myself
+I make things. Usually with code.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/22efa177-c384-45b7-91ec-12bb9734e2d9/deploy-status)](https://app.netlify.com/sites/pedantic-goldberg-0cd814/deploys)
-[![CircleCI](https://circleci.com/gh/jondeaves/jondeaves.svg?style=svg)](https://circleci.com/gh/jondeaves/jondeaves)
+**Work**:  Software Developer at FanDuel<br />
+**npm**:  [https://npmjs.com/~jondeaves](https://npmjs.com/~jondeaves)<br />
+**GitHub**:  [https://github.com/jondeaves](https://github.com/jondeaves)<br />
+**LinkedIn**:  [https://linkedin.com/in/jondeaves](https://linkedin.com/in/jondeaves)<br />
+**Web**:  [https://jondeaves.me/](https://jondeaves.me/)<br />
+
+**Card**:  `npx jondeaves`
