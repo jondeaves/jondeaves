@@ -1,0 +1,13 @@
+## Created with gatsby-plugin-netlify
+
+/about.html  /about  301
+/skills.html  /about#skills  301
+/blog  /posts  301
+/project  /posts  301
+/projects.html  /posts  301
+/project-rogues-with-benefits.html  /posts/rogues-with-benefits  301
+/project-save-the-bakon.html  /posts/save-the-bakon  301
+/project-for-the-impire.html  /posts/for-the-impire  301
+/project/rogues-with-benefits  /posts/rogues-with-benefits  301
+/project/save-the-bakon  /posts/save-the-bakon  301
+/project/for-the-impire  /posts/for-the-impire  301
