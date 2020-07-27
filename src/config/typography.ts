@@ -39,7 +39,7 @@ usWebDesignStandardsTheme.overrideThemeStyles = () => ({
   },
   'a': {
     borderBottom: `1px solid ${theme.color.secondary}`,
-    paddingBottom: 1,
+    paddingBottom: '1px',
     textDecoration: 'none',
   },
   'main, header, section, footer': {
