@@ -1,11 +1,11 @@
 import { graphql, useStaticQuery } from 'gatsby';
 
-import { IMeta, IMetaQuery } from '../types/IMeta';
+import { Meta, MetaQuery } from '../types/Meta';
 
-export default (): IMeta => {
+export default (): Meta => {
   const {
     site: { siteMetadata },
-  }: IMetaQuery = useStaticQuery(
+  }: MetaQuery = useStaticQuery(
     graphql`
       query {
         site {

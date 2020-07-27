@@ -1,14 +1,23 @@
+import { Link } from 'gatsby';
 import React from 'react';
 
 import Seo from '../components/Seo';
 import Wrapper from '../components/Wrapper';
+import PageHeader from '../components/Layout/PageHeader';
 
-const NotFoundPage = () => (
-  <Wrapper>
-    <Seo title="Page not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Wrapper>
-);
+const NotFoundPage = () => {
+  const blurbs = [
+    'You just tried to get a page that doesn\'t actually exist...awkward...',
+  ];
+
+  return (
+    <Wrapper>
+      <Seo title="Page not found | Jon Deaves" />
+      <PageHeader title="Not Found" blurbs={blurbs} />
+
+      <p>Head back to the <Link to="/">Homepage</Link> and see if you can't find what you were trying to get.</p>
+    </Wrapper>
+  )
+};
 
 export default NotFoundPage;

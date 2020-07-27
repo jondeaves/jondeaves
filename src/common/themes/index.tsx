@@ -1,8 +1,8 @@
 import React from 'react';
-import { ThemeProvider } from 'react-fela';
+import { TreatProvider } from 'react-treat';
 
-import baseTheme from './base';
+import theme from './theme.treat';
 
 export const BaseTheme: React.FunctionComponent = ({ children }) => (
-  <ThemeProvider theme={baseTheme}>{children}</ThemeProvider>
+  <TreatProvider theme={theme}>{children}</TreatProvider>
 );

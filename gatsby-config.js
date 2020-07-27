@@ -55,74 +55,37 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'jondeaves',
+        short_name: 'jondeaves',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
-        display: 'minimal-ui',
+        background_color: '#EDF2F4', // Tertiary
+        theme_color: '#8D99AE',
+        display: 'standalone',
         icon: 'src/favicon.png', // This path is relative to the root of the site.
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-feed',
-    //   options: {
-    //     query: `
-    //       {
-    //         site {
-    //           siteMetadata {
-    //             author
-    //             title
-    //             description
-    //             siteUrl
-    //             site_url: siteUrl
-    //           }
-    //         }
-    //       }
-    //     `,
-    //     feeds: [
-    //       {
-    //         serialize: ({ query: { site, allContentfulPost } }) => {
-    //           return allContentfulPost.edges.map(edge => {
-    //             return Object.assign({}, edge.node, {
-    //               description: edge.node.tagLine,
-    //               url: `${site.siteMetadata.siteUrl}/${edge.node.category}/${
-    //                 edge.node.slug
-    //               }`,
-    //               guid: `${site.siteMetadata.siteUrl}/${edge.node.category}/${
-    //                 edge.node.slug
-    //               }`,
-
-    //               custom_elements: [
-    //                 { language: 'en-GB' },
-    //                 { author: 'hello@jondeaves.me' },
-    //                 { pubDate: edge.node.publishedDate },
-    //               ],
-    //             });
-    //           });
-    //         },
-    //         query: `
-    //           {
-    //             allContentfulPost(
-    //               limit: 1000,
-    //               sort: { order: DESC, fields: [publishedDate] }
-    //             ) {
-    //               edges {
-    //                 node {
-    //                   title
-    //                   slug
-    //                   category
-    //                   publishedDate
-    //                   tags
-    //                 }
-    //               }
-    //             }
-    //           }
-    //         `,
-    //         output: '/rss.xml',
-    //       },
-    //     ],
-    //   },
-    // },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-treat',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://jondeaves.me',
+        sitemap: 'https://jondeaves.me',
+        policy: [{ userAgent: '*', allow: '/' }],
+        resolveEnv: () => process.env.GATSBY_ENV,
+        env: {
+          development: {
+            host: 'https://dev.jondeaves.me',
+            sitemap: 'https://dev.jondeaves.me',
+          },
+        }
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/config/typography',
+      },
+    }
   ],
 };

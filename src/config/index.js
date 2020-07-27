@@ -1,7 +1,7 @@
 module.exports = {
   meta: {
     author: 'Jon Deaves',
-    description: 'Software Engineer in Glasgow, Scotland',
+    description: 'I make things. Usually with code.',
     title: 'Jon Deaves',
     keywords: ['developer', 'web developer', 'software engineer', 'portfolio'],
   },

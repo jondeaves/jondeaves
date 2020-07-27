@@ -1,4 +1,4 @@
-export interface ISeoProps {
+export interface SeoProps {
   author?: string;
   description?: string;
   keywords?: string[];

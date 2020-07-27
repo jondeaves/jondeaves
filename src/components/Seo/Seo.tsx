@@ -1,32 +1,32 @@
 import React from 'react';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 
 import useMeta from '../../common/hooks/useMeta';
 import SiteConfig from '../../config';
 
-import { ISeoProps } from './Seo.types';
+import { SeoProps } from './Seo.types';
 
-export const Seo: React.FunctionComponent<ISeoProps> = (props) => {
+export const Seo: React.FunctionComponent<SeoProps> = (props) => {
   const { author, description, keywords = [], lang, meta = [] } = props;
-  let { template, title } = props;
+  let { title } = props;
 
   const siteMetadata = useMeta();
 
   const metaDescription = description || siteMetadata.description;
 
-  title = title ? title : `${siteMetadata.title} ${siteMetadata.description}`;
-  template = template
-    ? template
-    : `%s | ${siteMetadata.title} ${siteMetadata.description}`;
+  title = title ? title : `${siteMetadata.title} - ${siteMetadata.description}`;
 
   return (
     <Helmet
+      defer={false}
       htmlAttributes={{
         lang,
       }}
       title={title}
-      titleTemplate={template}
       meta={[
+        {
+          charSet: 'utf-8',
+        },
         {
           content: author,
           name: 'author',
@@ -67,9 +67,9 @@ export const Seo: React.FunctionComponent<ISeoProps> = (props) => {
         .concat(
           keywords.length > 0
             ? {
-                content: keywords.join(', '),
-                name: 'keywords',
-              }
+              content: keywords.join(', '),
+              name: 'keywords',
+            }
             : [],
         )
         .concat(meta)}
