@@ -39,7 +39,7 @@ const IndexPage = () => {
   }];
 
   const oldArticlesDescription = `Anything you find below is purely here for historic reasons. That
-  means it could either be out of date, irrevelant or similar.`;
+  means it could either be out of date, irrelevant or similar.`;
 
   return (
     <Wrapper>
