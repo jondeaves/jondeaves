@@ -7,12 +7,12 @@ import PageHeader from '../components/Layout/PageHeader';
 
 const NewStuffPage: React.FC<PageProps<{}>> = () => {
   const title = 'Side projects, technologies and other new things';
-  const blurbs = ['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus justo sed nulla vehicula, ut iaculis libero bibendum. Vestibulum diam neque, facilisis nec tellus ac, semper sodales augue.'];
 
   return (
-    <Wrapper>
+    <Wrapper header={<PageHeader title={title} />}>
       <Seo title={title} />
-      <PageHeader title={title} blurbs={blurbs} />
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut luctus justo sed nulla vehicula, ut iaculis libero bibendum. Vestibulum diam neque, facilisis nec tellus ac, semper sodales augue.</p>
     </Wrapper>
   )
 };

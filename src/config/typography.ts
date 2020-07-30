@@ -37,16 +37,19 @@ usWebDesignStandardsTheme.overrideThemeStyles = () => ({
     marginBottom: '4px',
   },
   'a': {
-    borderBottom: `1px solid ${theme.color.secondary}`,
-    paddingBottom: '1px',
-    textDecoration: 'none',
+    textDecoration: `underline ${theme.color.secondary}`,
+    textUnderlinePosition: 'under',
   },
   'main, header, section, footer': {
     margin: '1.53rem 0'
   },
 
-  'header': {
-    marginTop: 'calc(1.53rem * 2)',
+  'main, header': {
+    maxWidth: theme.container.width,
+    position: 'relative',
+
+    ...margin(null, 'auto'),
+    ...padding(null, theme.spacing.medium),
   },
 
   'main': {
@@ -54,11 +57,10 @@ usWebDesignStandardsTheme.overrideThemeStyles = () => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'start',
-    maxWidth: theme.container.width,
-    position: 'relative',
+  },
 
-    ...margin(0, 'auto'),
-    ...padding(null, theme.spacing.medium),
+  'header': {
+    marginTop: 'calc(1.53rem * 2)',
   },
 
   'footer': {

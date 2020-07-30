@@ -1,5 +1,5 @@
 import { style } from 'treat';
-import { padding, rgba } from 'polished';
+import { padding, rgba, margin } from 'polished';
 
 import { atWidth } from '../../common/helpers/styles';
 
@@ -9,7 +9,6 @@ export const ArticleSummaryTitle = style(theme => ({
 }));
 
 export const ArticleSummaryLink = style(theme => ({
-  border: 'none',
   borderRadius: 4,
   display: 'block',
   position: 'relative',
@@ -25,5 +24,5 @@ export const ArticleSummaryLink = style(theme => ({
   ':hover': {
     backgroundColor: rgba(theme.color.primary, 0.05),
     transition: 'background-color 0.4s ease',
-  }
+  },
 }));

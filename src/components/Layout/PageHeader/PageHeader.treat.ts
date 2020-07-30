@@ -28,3 +28,14 @@ export const PageHeaderPostTitle = style(theme => ({
     ...margin(null, null, null, theme.spacing.small),
   }),
 }));
+
+export const PageHeaderFloaters = style(theme => ({
+  display: 'flex',
+  flexDirection: 'row',
+  left: 20,
+  listStyle: 'none',
+  margin: 0,
+  padding: 0,
+  position: 'absolute',
+  top: -45,
+}));

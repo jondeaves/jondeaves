@@ -3,5 +3,4 @@ export interface PageHeaderProps {
   title: string;
   preTitle?: string;
   postTitle?: string;
-  blurbs?: string[];
 }

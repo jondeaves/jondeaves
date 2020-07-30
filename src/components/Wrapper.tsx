@@ -4,9 +4,13 @@ import { BaseTheme } from '../common/themes';
 
 import Container from './Container';
 
-export const Wrapper: React.FunctionComponent = ({ children }) => (
+interface WrapperProps {
+  header?: React.ReactNode
+}
+
+export const Wrapper: React.FunctionComponent<WrapperProps> = ({ children, header }) => (
   <BaseTheme>
-    <Container>{children}</Container>
+    <Container header={header}>{children}</Container>
   </BaseTheme>
 );
 

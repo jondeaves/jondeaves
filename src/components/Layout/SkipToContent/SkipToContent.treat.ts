@@ -1,6 +1,7 @@
 import { style } from 'treat';
 
-export const HomeLink = style(theme => ({
+export const SkipToContent = style(theme => ({
   fontWeight: 'bold',
+  textIndent: -9999,
   textTransform: 'uppercase',
 }));

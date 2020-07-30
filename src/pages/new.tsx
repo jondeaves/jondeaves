@@ -11,10 +11,6 @@ import PageHeader from '../components/Layout/PageHeader';
 const NewPage: React.FC<PageProps<{}>> = () => {
   const title = 'Jon Deaves';
   const preTitle = 'Hello from';
-  const blurbs = [
-    config.meta.description,
-    'This space on the internet exists primarily for two reasons; it allows me to experiment without any real fear of ruining anyone\'s day and it can serve as an archive of things I have done.'
-  ];
 
   const activeArticles: any = [{
     title: 'Now as in nownownow. This is me within a point in time',
@@ -41,11 +37,18 @@ const NewPage: React.FC<PageProps<{}>> = () => {
   const oldArticlesDescription = `Anything you find below is purely here for historic reasons. That
   means it could either be out of date, irrelevant or similar.`;
 
+  const header = <PageHeader home={true} title={title} preTitle={preTitle} />
+
   return (
-    <Wrapper>
+    <Wrapper header={header}>
       <Seo title={config.meta.author} description={config.meta.description} />
 
-      <PageHeader home={true} title={title} preTitle={preTitle} blurbs={blurbs} />
+      <p>{config.meta.description}</p>
+      <p>
+        This space on the internet exists primarily for two reasons; it allows me to experiment without any real fear of
+        ruining anyone's day and it can serve as an archive of things I have done.
+      </p>
+
       <ArticleList title="Active reading" description={activeArticlesDescription} articles={activeArticles} />
       <ArticleList title="Old reading" description={oldArticlesDescription} articles={oldArticles} />
     </Wrapper>

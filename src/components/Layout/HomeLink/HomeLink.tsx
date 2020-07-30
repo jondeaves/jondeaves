@@ -5,12 +5,15 @@ import { Link } from 'gatsby';
 import * as styleRefs from './HomeLink.treat';
 
 export const HomeLink: React.FunctionComponent = ({ children }) => {
-  const { HomeLinkMain, HomeLinkLink, HomeLinkLabel } = useStyles(styleRefs);
+  const { HomeLink } = useStyles(styleRefs);
 
-  return <div className={HomeLinkMain}><Link to="/" className={HomeLinkLink}>
-    &lt;&nbsp;
-    <span className={HomeLinkLabel}><small>Home</small></span>
-  </Link></div>;
+  return (
+    <li className={HomeLink}>
+      <Link to="/" aria-label="Back link">
+        <small>&lt;&nbsp;Home</small>
+      </Link>
+    </li>
+  );
 };
 
 export default HomeLink;

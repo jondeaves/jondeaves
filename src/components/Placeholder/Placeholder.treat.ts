@@ -1,10 +1,10 @@
 import { style } from 'treat';
 
 export const PlaceholderMain = style((theme) => ({
-  left: '50%',
   position: 'absolute',
   top: '50%',
-  transform: 'translate(-50%, -50%)',
+  transform: 'translateY(-50%)',
+  width: '100%',
 }));
 
 export const PlaceholderTitle = style((theme) => ({

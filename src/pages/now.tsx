@@ -8,18 +8,19 @@ import PageHeader from '../components/Layout/PageHeader';
 const NowPage: React.FC<PageProps<{}>> = () => {
   const title = 'Now';
   const postTitle = ' as in <a href="https://nownownow.com/about" rel="external">nownownow</a>';
+  const header = <PageHeader title={title} postTitle={postTitle} />;
 
   return (
-    <Wrapper>
+    <Wrapper header={header}>
       <Seo title={`${title} | Jon Deaves as a point in time`} />
-      <PageHeader title={title} postTitle={postTitle} />
+
       <p>This is me within a point in time, as best I can summarise myself.</p>
 
       <article>
         <h2>Me time</h2>
         <ul>
           <li>
-            I live in Glasgow, Scotland with my <small>[very]</small> <abbr title="very">significant</abbr> other, our dog{' '}
+            I live in Glasgow, Scotland with my <small>[very]</small> significant other, our dog{' '}
             <small>(a Pomeranian)</small>, rabbit, 3 fish and hamster.
           </li>
           <li>

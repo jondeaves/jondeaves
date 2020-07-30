@@ -2,9 +2,14 @@ import React from 'react';
 
 import Footer from '../Footer';
 
-export const Container: React.FunctionComponent = ({ children }) => {
+interface ContainerProps {
+  header?: React.ReactNode
+}
+
+export const Container: React.FunctionComponent<ContainerProps> = ({ children, header }) => {
   return <React.Fragment>
-    <main>{children}</main>
+    {header}
+    <main id="main">{children}</main>
     <Footer />
   </React.Fragment>;
 };

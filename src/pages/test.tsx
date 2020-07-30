@@ -5,11 +5,9 @@ import Wrapper from '../components/Wrapper';
 import PageHeader from '../components/Layout/PageHeader';
 
 const TestPage: React.FC<PageProps<{}>> = () => {
-  const blurbs = ['Blurb 1', 'Blurb 2'];
-
   return (
     <Wrapper>
-      <PageHeader title="Testing display of HTML elements" preTitle="Pre title" postTitle="Post title" blurbs={blurbs} />
+      <PageHeader title="Testing display of HTML elements" preTitle="Pre title" postTitle="Post title" />
       <h2>This is 2nd level heading</h2>
       <h3>This is 3rd level heading</h3>
       <h4>This is 4th level heading</h4>
