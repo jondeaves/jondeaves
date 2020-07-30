@@ -1,4 +1,5 @@
 import React from 'react';
+import { PageProps } from 'gatsby';
 
 import config from '../config';
 
@@ -7,7 +8,7 @@ import Wrapper from '../components/Wrapper';
 import ArticleList from '../components/ArticleList';
 import PageHeader from '../components/Layout/PageHeader';
 
-const NewPage = () => {
+const NewPage: React.FC<PageProps<{}>> = () => {
   const title = 'Jon Deaves';
   const preTitle = 'Hello from';
   const blurbs = [

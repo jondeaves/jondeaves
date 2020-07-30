@@ -1,10 +1,11 @@
 import React from 'react';
+import { PageProps } from 'gatsby';
 
 import Seo from '../components/Seo';
 import Wrapper from '../components/Wrapper';
 import PageHeader from '../components/Layout/PageHeader';
 
-const NowPage = () => {
+const NowPage: React.FC<PageProps<{}>> = () => {
   const title = 'Now';
   const postTitle = ' as in <a href="https://nownownow.com/about" rel="external">nownownow</a>';
 

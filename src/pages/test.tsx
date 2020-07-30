@@ -1,9 +1,10 @@
 import React from 'react';
+import { PageProps } from 'gatsby';
 
 import Wrapper from '../components/Wrapper';
 import PageHeader from '../components/Layout/PageHeader';
 
-const TestPage = () => {
+const TestPage: React.FC<PageProps<{}>> = () => {
   const blurbs = ['Blurb 1', 'Blurb 2'];
 
   return (

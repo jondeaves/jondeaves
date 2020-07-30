@@ -1,11 +1,11 @@
-import { Link } from 'gatsby';
+import { Link, PageProps } from 'gatsby';
 import React from 'react';
 
 import Seo from '../components/Seo';
 import Wrapper from '../components/Wrapper';
 import PageHeader from '../components/Layout/PageHeader';
 
-const NotFoundPage = () => {
+const NotFoundPage: React.FC<PageProps<{}>> = () => {
   const blurbs = [
     'You just tried to get a page that doesn\'t actually exist...awkward...',
   ];
