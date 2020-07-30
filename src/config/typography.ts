@@ -3,7 +3,6 @@ import usWebDesignStandardsTheme from 'typography-theme-us-web-design-standards'
 import { padding, margin } from "polished";
 
 import { themeSettings as theme } from '../common/themes/theme.settings';
-import { callbackify } from "util";
 
 usWebDesignStandardsTheme.baseFontSize = '19px';
 usWebDesignStandardsTheme.headerFontFamily = ["-apple-system",
@@ -73,6 +72,8 @@ usWebDesignStandardsTheme.overrideThemeStyles = () => ({
     fontSize: '70%'
   }
 })
+
+delete usWebDesignStandardsTheme.googleFonts;
 
 const typography = new Typography(usWebDesignStandardsTheme)
 
