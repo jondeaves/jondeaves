@@ -3,6 +3,7 @@ export const themeSettings = {
     primary: '#02010A',
     secondary: '#CE4257',
     tertiary: '#FCFCFC',
+    warning: '#F99F4A',
   },
   container: {
     width: '920px',
