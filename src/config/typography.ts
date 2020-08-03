@@ -1,6 +1,6 @@
 import Typography from "typography"
 import usWebDesignStandardsTheme from 'typography-theme-us-web-design-standards'
-import { padding, margin } from "polished";
+import { padding, margin, darken } from "polished";
 
 import { themeSettings as theme } from '../common/themes/theme.settings';
 
@@ -39,6 +39,9 @@ usWebDesignStandardsTheme.overrideThemeStyles = () => ({
   'a': {
     textDecoration: `underline ${theme.color.secondary}`,
     textUnderlinePosition: 'under',
+  },
+  'a:hover': {
+    textDecoration: `underline ${darken(0.2, theme.color.secondary)}`,
   },
   'main, header, section, footer': {
     margin: '1.53rem 0'
