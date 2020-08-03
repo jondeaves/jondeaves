@@ -1,6 +1,6 @@
 import { style } from 'treat';
 
-export const HomeLink = style(theme => ({
+export const BackLink = style(theme => ({
   fontWeight: 'bold',
   textTransform: 'uppercase',
 }));

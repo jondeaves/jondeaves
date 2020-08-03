@@ -3,4 +3,6 @@ export interface PageHeaderProps {
   title: string;
   preTitle?: string;
   postTitle?: string;
+  backLinkLabel?: string;
+  backLinkRoute?: string;
 }

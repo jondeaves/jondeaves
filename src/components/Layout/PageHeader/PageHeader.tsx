@@ -1,13 +1,13 @@
 import React from 'react';
 import { useStyles } from 'react-treat';
 
-import HomeLink from '../HomeLink';
+import BackLink from '../BackLink';
 import SkipToContent from '../SkipToContent';
 
 import * as styleRefs from './PageHeader.treat';
 import { PageHeaderProps } from './PageHeader.types';
 
-export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({ title, preTitle, postTitle, home = false }) => {
+export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({ title, preTitle, postTitle, home = false, backLinkLabel, backLinkRoute }) => {
   const { PageHeaderPreTitle, PageHeaderPostTitle, PageHeaderTitle, PageHeaderFloaters } = useStyles(styleRefs);
 
   return (
@@ -15,7 +15,7 @@ export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({ title, pr
       <header>
         <ul className={PageHeaderFloaters}>
           <SkipToContent />
-          {!home && <HomeLink />}
+          {!home && <BackLink label={backLinkLabel} route={backLinkRoute} />}
         </ul>
 
         {preTitle && <p className={PageHeaderPreTitle}>{preTitle}</p>}
