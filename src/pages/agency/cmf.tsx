@@ -19,12 +19,14 @@ const AgencyCMF: React.FC<PageProps<{}>> = () => {
       </Disclaimer>
 
       <article>
-        <p>
-          <strong><em>The Celtic Media Festival</em></strong> is an annual 3-day event that promotes the languages and
-          cultures of the Celtic Nations and Regions in media. It combines a major conference of seminars and
-          masterclasses with the presentation of coveted prizes in an international competition across all the main
-          content genres in TV, radio, film and digital media.
-        </p>
+        <blockquote>
+          <p>
+            <strong><em>The Celtic Media Festival</em></strong> is an annual 3-day event that promotes the languages and
+            cultures of the Celtic Nations and Regions in media. It combines a major conference of seminars and
+            masterclasses with the presentation of coveted prizes in an international competition across all the main
+            content genres in TV, radio, film and digital media.
+          </p>
+        </blockquote>
 
         <h2>The brief</h2>
         <p>

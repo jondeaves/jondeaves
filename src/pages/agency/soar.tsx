@@ -19,10 +19,12 @@ const AgencySoar: React.FC<PageProps<{}>> = () => {
       </Disclaimer>
 
       <article>
-        <p>
-          <strong><em>Soar performance running wear</em></strong> is designed to be better. Every cut and every seam is
-          carefully considered, every fabric chosen for its exceptional technical qualities.
-        </p>
+        <blockquote>
+          <p>
+            <strong><em>Soar performance running wear</em></strong> is designed to be better. Every cut and every seam is
+            carefully considered, every fabric chosen for its exceptional technical qualities.
+          </p>
+        </blockquote>
 
         <h2>The brief</h2>
         <p>

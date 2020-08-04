@@ -19,7 +19,11 @@ const AgencyVAS: React.FC<PageProps<{}>> = () => {
       </Disclaimer>
 
       <article>
-        <p><strong><em>Visual Arts Scotland</em></strong> allows artists, applied artists and makers to show together.</p>
+        <blockquote>
+          <p>
+            <strong><em>Visual Arts Scotland</em></strong> allows artists, applied artists and makers to show together.
+          </p>
+        </blockquote>
 
         <h2>The brief</h2>
         <p>

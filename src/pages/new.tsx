@@ -19,8 +19,8 @@ const NewPage: React.FC<PageProps<{}>> = () => {
     title: 'Side projects, technologies and other new things',
     href: '/new-stuff',
   }, {
-    title: 'Portfolio tech write-up for 2020',
-    href: '/portfolio-2020',
+    title: 'Website tech write-up for 2020',
+    href: '/website-2020',
   }, {
     title: 'Global Game Jamming, a decade later',
     href: '/ggj-10',
