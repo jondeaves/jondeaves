@@ -14,4 +14,4 @@ export const themeSettings = {
     medium: '1.1rem',
     large: '2.4rem',
   },
-}
+};

@@ -6,7 +6,7 @@ import Wrapper from '../components/Wrapper';
 import PageHeader from '../components/Layout/PageHeader';
 import Disclaimer from '../components/Disclaimer';
 
-const Website2020: React.FC<PageProps<{}>> = () => {
+const Website2020: React.FC<PageProps> = () => {
   const title = 'Website tech write-up for 2020';
 
   return (
@@ -15,12 +15,18 @@ const Website2020: React.FC<PageProps<{}>> = () => {
 
       <Disclaimer>
         If you want to see the previous iteration of this article on v2 of my website then head over to{' '}
-        <a href="https://v2.jondeaves.me/posts/portfolio" rel="external">the archived version</a>.
+        <a href="https://v2.jondeaves.me/posts/portfolio" rel="external">
+          the archived version
+        </a>
+        .
       </Disclaimer>
 
       <article>
         <p>
-          <strong><em>The web is fat</em></strong> so I'm doing my part and putting my website on a weightloss plan.
+          <strong>
+            <em>The web is fat</em>
+          </strong>{' '}
+          so I'm doing my part and putting my website on a weightloss plan.
         </p>
 
         <h2>Why another rewrite?</h2>
@@ -35,9 +41,7 @@ const Website2020: React.FC<PageProps<{}>> = () => {
           content and pretty much destroys the experience. Not to mention the performance of the sites.
         </p>
 
-        <p>
-          There are still good sites out there, here is my attempt.
-        </p>
+        <p>There are still good sites out there, here is my attempt.</p>
 
         <h3>The execution</h3>
 
@@ -47,12 +51,19 @@ const Website2020: React.FC<PageProps<{}>> = () => {
           <p>Fast, easy to maintain and easy to create.</p>
         </blockquote>
 
-        <p>Carrying on from that I wanted to ensure my site was simple, almost basic, in its design and implementation.</p>
+        <p>
+          Carrying on from that I wanted to ensure my site was simple, almost basic, in its design and implementation.
+        </p>
 
         <ul>
           <li>Instead of a Content management system, I make use of React Typescript components.</li>
-          <li>Instead of images, fancy stylings and interactive content I have text only with very limited basic CSS.</li>
-          <li>Instead of having one large CV/Portfolio trying to sell myself, the site is now more of a place to dump my thoughts.</li>
+          <li>
+            Instead of images, fancy stylings and interactive content I have text only with very limited basic CSS.
+          </li>
+          <li>
+            Instead of having one large CV/Portfolio trying to sell myself, the site is now more of a place to dump my
+            thoughts.
+          </li>
         </ul>
 
         <h3>The tech</h3>
@@ -92,11 +103,10 @@ const Website2020: React.FC<PageProps<{}>> = () => {
         </p>
 
         <p>
-          What's important to note here is that Typography really does the heavy lifting. I really wanted to make sure
-          I wasn't creating custom styles for pretty much every paragraph, div, etc. So the vast majority of content on
+          What's important to note here is that Typography really does the heavy lifting. I really wanted to make sure I
+          wasn't creating custom styles for pretty much every paragraph, div, etc. So the vast majority of content on
           the site should use standard HTML elements with basic styling.
         </p>
-
 
         <h4>Netlify</h4>
         <p>
@@ -107,14 +117,25 @@ const Website2020: React.FC<PageProps<{}>> = () => {
 
         <h3>Resources</h3>
         <ul>
-          <li><a href="https://www.gatsbyjs.org/" rel="external">GatsbyJS</a></li>
-          <li><a href="https://www.netlify.com/" rel="external">Netlify</a></li>
-          <li><a href="https://seek-oss.github.io/treat/" rel="external">Treat</a></li>
+          <li>
+            <a href="https://www.gatsbyjs.org/" rel="external">
+              GatsbyJS
+            </a>
+          </li>
+          <li>
+            <a href="https://www.netlify.com/" rel="external">
+              Netlify
+            </a>
+          </li>
+          <li>
+            <a href="https://seek-oss.github.io/treat/" rel="external">
+              Treat
+            </a>
+          </li>
         </ul>
       </article>
-
     </Wrapper>
-  )
+  );
 };
 
 export default Website2020;

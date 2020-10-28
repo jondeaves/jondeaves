@@ -3,12 +3,12 @@ import { padding, rgba, margin } from 'polished';
 
 import { atWidth } from '../../common/helpers/styles';
 
-export const ArticleSummaryTitle = style(theme => ({
+export const ArticleSummaryTitle = style((theme) => ({
   margin: 0,
   padding: 0,
 }));
 
-export const ArticleSummaryLink = style(theme => ({
+export const ArticleSummaryLink = style((theme) => ({
   display: 'block',
   width: '100%',
 

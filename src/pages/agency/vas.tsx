@@ -6,7 +6,7 @@ import Wrapper from '../../components/Wrapper';
 import PageHeader from '../../components/Layout/PageHeader';
 import Disclaimer from '../../components/Disclaimer';
 
-const AgencyVAS: React.FC<PageProps<{}>> = () => {
+const AgencyVAS: React.FC<PageProps> = () => {
   const title = 'Visual Arts Scotland';
 
   return (
@@ -14,14 +14,17 @@ const AgencyVAS: React.FC<PageProps<{}>> = () => {
       <Seo title={title} />
 
       <Disclaimer>
-        This page is categorised as <strong>Old reading</strong> as the work was done by me a few years ago and
-        likely look different now from when I implemented it.
+        This page is categorised as <strong>Old reading</strong> as the work was done by me a few years ago and likely
+        look different now from when I implemented it.
       </Disclaimer>
 
       <article>
         <blockquote>
           <p>
-            <strong><em>Visual Arts Scotland</em></strong> allows artists, applied artists and makers to show together.
+            <strong>
+              <em>Visual Arts Scotland</em>
+            </strong>{' '}
+            allows artists, applied artists and makers to show together.
           </p>
         </blockquote>
 
@@ -34,8 +37,8 @@ const AgencyVAS: React.FC<PageProps<{}>> = () => {
         <h4>Exhibitions</h4>
         <p>
           The exhibitions section of the website provides information and links to exhibitions being run and allows
-          visitors of the website to get a taste for what each involves. This section includes list and detail views
-          and is of course fully responsive.
+          visitors of the website to get a taste for what each involves. This section includes list and detail views and
+          is of course fully responsive.
         </p>
 
         <h4>Artists</h4>
@@ -63,8 +66,9 @@ const AgencyVAS: React.FC<PageProps<{}>> = () => {
           right option for them.
         </p>
         <p>
-          From there they are then taken to a registration page which provides details about the chosen membership level,
-          captures all the required information from the user and then sends this information to the CMS for processing.
+          From there they are then taken to a registration page which provides details about the chosen membership
+          level, captures all the required information from the user and then sends this information to the CMS for
+          processing.
         </p>
         <p>
           Once registration is complete, the member can then link their PayPal account for recurring billing, this was
@@ -73,18 +77,23 @@ const AgencyVAS: React.FC<PageProps<{}>> = () => {
           time from the renewal date.
         </p>
         <p>
-          For example, if a person registers 6 months before renewal they would pay immediately for the current year.
-          If a person registers 1 week before renewal, then they would not need to pay and the automatic renewal would
+          For example, if a person registers 6 months before renewal they would pay immediately for the current year. If
+          a person registers 1 week before renewal, then they would not need to pay and the automatic renewal would
           handle the payments.
         </p>
 
         <h3>Resources</h3>
         <ul>
-          <li>The website can be found <a href="http://www.visualartsscotland.org" title="Visual Arts Scotland's website" rel="external">here</a></li>
+          <li>
+            The website can be found{' '}
+            <a href="http://www.visualartsscotland.org" title="Visual Arts Scotland's website" rel="external">
+              here
+            </a>
+          </li>
         </ul>
       </article>
     </Wrapper>
-  )
+  );
 };
 
 export default AgencyVAS;

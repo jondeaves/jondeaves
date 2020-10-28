@@ -3,7 +3,7 @@ export interface SeoProps {
   description?: string;
   keywords?: string[];
   lang?: string;
-  meta?: any[];
+  meta?: never[];
   template?: string;
   title?: string;
 }

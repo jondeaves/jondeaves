@@ -7,37 +7,45 @@ import Seo from '../components/Seo';
 import Wrapper from '../components/Wrapper';
 import ArticleList from '../components/ArticleList';
 import PageHeader from '../components/Layout/PageHeader';
+import { ArticleSummaryProps } from '../components/ArticleSummary/ArticleSummary';
 
-const NewPage: React.FC<PageProps<{}>> = () => {
+const NewPage: React.FC<PageProps> = () => {
   const title = 'Jon Deaves';
   const preTitle = 'Hello from';
 
-  const activeArticles: any = [{
-    title: 'Now as in nownownow. This is me within a point in time',
-    href: '/now',
-  }, {
-    title: 'Side projects, technologies and other new things',
-    href: '/new-stuff',
-  }, {
-    title: 'Website tech write-up for 2020',
-    href: '/website-2020',
-  }, {
-    title: 'Global Game Jamming, a decade later',
-    href: '/ggj-10',
-  }];
+  const activeArticles: ArticleSummaryProps[] = [
+    {
+      title: 'Now as in nownownow. This is me within a point in time',
+      href: '/now',
+    },
+    {
+      title: 'Side projects, technologies and other new things',
+      href: '/new-stuff',
+    },
+    {
+      title: 'Website tech write-up for 2020',
+      href: '/website-2020',
+    },
+    {
+      title: 'Global Game Jamming, a decade later',
+      href: '/ggj-10',
+    },
+  ];
 
   const activeArticlesDescription = `I'm not much of a writer but if there is something noteworthy that
   I've done then you can find it here.`;
 
-  const oldArticles: any = [{
-    title: 'A collection of sites I built while working for an agency',
-    href: '/agency-work',
-  }];
+  const oldArticles: ArticleSummaryProps[] = [
+    {
+      title: 'A collection of sites I built while working for an agency',
+      href: '/agency-work',
+    },
+  ];
 
   const oldArticlesDescription = `Anything you find below is purely here for historic reasons. That
   means it could either be out of date, irrelevant or similar.`;
 
-  const header = <PageHeader home={true} title={title} preTitle={preTitle} />
+  const header = <PageHeader home={true} title={title} preTitle={preTitle} />;
 
   return (
     <Wrapper header={header}>
@@ -52,7 +60,7 @@ const NewPage: React.FC<PageProps<{}>> = () => {
       <ArticleList title="Active reading" description={activeArticlesDescription} articles={activeArticles} />
       <ArticleList title="Old reading" description={oldArticlesDescription} articles={oldArticles} />
     </Wrapper>
-  )
+  );
 };
 
 export default NewPage;

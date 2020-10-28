@@ -78,14 +78,14 @@ module.exports = {
             host: 'https://dev.jondeaves.me',
             sitemap: 'https://dev.jondeaves.me',
           },
-        }
-      }
+        },
+      },
     },
     {
       resolve: 'gatsby-plugin-typography',
       options: {
         pathToConfigModule: 'src/config/typography',
       },
-    }
+    },
   ],
 };

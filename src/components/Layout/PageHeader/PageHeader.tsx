@@ -1,3 +1,4 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
 import { useStyles } from 'react-treat';
 
@@ -7,7 +8,14 @@ import SkipToContent from '../SkipToContent';
 import * as styleRefs from './PageHeader.treat';
 import { PageHeaderProps } from './PageHeader.types';
 
-export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({ title, preTitle, postTitle, home = false, backLinkLabel, backLinkRoute }) => {
+export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({
+  title,
+  preTitle,
+  postTitle,
+  home = false,
+  backLinkLabel,
+  backLinkRoute,
+}) => {
   const { PageHeaderPreTitle, PageHeaderPostTitle, PageHeaderTitle, PageHeaderFloaters } = useStyles(styleRefs);
 
   return (
@@ -27,3 +35,4 @@ export const PageHeader: React.FunctionComponent<PageHeaderProps> = ({ title, pr
 };
 
 export default PageHeader;
+/* eslint-enable react/no-danger */

@@ -17,10 +17,14 @@ export const ArticleList: React.FunctionComponent<ArticleListProps> = ({ title, 
 
   return (
     <section>
-      <h2 id={title.split(' ')[0].toLowerCase()} className={ArticleListSectionTitle}>{title}</h2>
+      <h2 id={title.split(' ')[0].toLowerCase()} className={ArticleListSectionTitle}>
+        {title}
+      </h2>
       <p>{description}</p>
 
-      {articles.map((article, idx) => (<ArticleSummary key={idx} title={article.title} href={article.href} />))}
+      {articles.map((article, idx) => (
+        <ArticleSummary key={article.title} title={article.title} href={article.href} />
+      ))}
     </section>
   );
 };

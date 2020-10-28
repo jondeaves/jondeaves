@@ -5,6 +5,6 @@ export function atWidth(query: number, style: ThemedStyle<Style, ThemeOrAny>): T
   return {
     '@media': {
       [`(min-width: ${query}px)`]: style,
-    }
-  } as ThemedStyle<Style, ThemeOrAny>
+    },
+  } as ThemedStyle<Style, ThemeOrAny>;
 }

@@ -3,7 +3,7 @@ import { margin, padding } from 'polished';
 
 import { atWidth } from '../../../common/helpers/styles';
 
-export const PageHeaderPreTitle = style(theme => ({
+export const PageHeaderPreTitle = style((theme) => ({
   ...margin(null, null, theme.spacing.small, null),
 
   ...atWidth(theme.container.breakpoint, {
@@ -12,7 +12,7 @@ export const PageHeaderPreTitle = style(theme => ({
   }),
 }));
 
-export const PageHeaderTitle = style(theme => ({
+export const PageHeaderTitle = style((theme) => ({
   ...margin(null, null, 0, null),
 
   ...atWidth(theme.container.breakpoint, {
@@ -20,7 +20,7 @@ export const PageHeaderTitle = style(theme => ({
   }),
 }));
 
-export const PageHeaderPostTitle = style(theme => ({
+export const PageHeaderPostTitle = style((theme) => ({
   ...margin(theme.spacing.small, null, 0, null),
 
   ...atWidth(theme.container.breakpoint, {
@@ -29,7 +29,7 @@ export const PageHeaderPostTitle = style(theme => ({
   }),
 }));
 
-export const PageHeaderFloaters = style(theme => ({
+export const PageHeaderFloaters = style((theme) => ({
   display: 'flex',
   flexDirection: 'row',
   left: 20,

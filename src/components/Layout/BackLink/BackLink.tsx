@@ -6,10 +6,10 @@ import * as styleRefs from './BackLink.treat';
 import { BackLinkProps } from './BackLink.types';
 
 export const BackLink: React.FunctionComponent<BackLinkProps> = ({ children, label = 'Home', route = '/' }) => {
-  const { BackLink } = useStyles(styleRefs);
+  const { BackLinkWrapper } = useStyles(styleRefs);
 
   return (
-    <li className={BackLink}>
+    <li className={BackLinkWrapper}>
       <Link to={route} aria-label="Back link">
         <small>&lt;&nbsp;{label}</small>
       </Link>

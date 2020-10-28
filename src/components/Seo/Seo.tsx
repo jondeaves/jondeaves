@@ -14,7 +14,7 @@ export const Seo: React.FunctionComponent<SeoProps> = (props) => {
 
   const metaDescription = description || siteMetadata.description;
 
-  title = title ? title : `${siteMetadata.title} - ${siteMetadata.description}`;
+  title = title || `${siteMetadata.title} - ${siteMetadata.description}`;
 
   return (
     <Helmet
@@ -67,9 +67,9 @@ export const Seo: React.FunctionComponent<SeoProps> = (props) => {
         .concat(
           keywords.length > 0
             ? {
-              content: keywords.join(', '),
-              name: 'keywords',
-            }
+                content: keywords.join(', '),
+                name: 'keywords',
+              }
             : [],
         )
         .concat(meta)}
