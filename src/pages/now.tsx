@@ -21,17 +21,31 @@ const NowPage: React.FC<PageProps> = () => {
         <ul>
           <li>
             I live in Glasgow, Scotland with my <small>[very]</small> significant other, our dog{' '}
-            <small>(a Pomeranian)</small>, rabbit, 3 fish and hamster.
+            <small>(a Pomeranian)</small>, rabbit, 2 fish and hamster.{' '}
+            <small>(I've re-written this point far too often because pets pass away too quickly)</small>
           </li>
           <li>
-            I bought my first ever comic book,{' '}
+            I bought my first ever comic book recently,{' '}
             <a href="https://www.dccomics.com/comics/batman-2016/batman-95" rel="external">
               Batman #95
             </a>
             . I chose this one because I've been playing the Arkham games lately and always wanted to see if I would
             enjoy comics as much as I do the TV/Movies inspired by them.
           </li>
-          <li>Skating in the form of Roller disco, Roller derby and Aggressive inline park skating.</li>
+          <li>Watching TV, walking the dog and generally keeping isolated.</li>
+        </ul>
+
+        <h3>Things to do post-Covid</h3>
+        <ul>
+          <li>
+            <a href="https://www.centralstrengthgym.com/" rel="external">
+              The gym
+            </a>
+          </li>
+          <li>
+            Skating in the form of Roller disco, Roller derby (maybe... see below) and Aggressive inline park skating.
+          </li>
+          <li>Cinema trips at the weekend</li>
         </ul>
 
         <h3>Goals</h3>
@@ -58,18 +72,24 @@ const NowPage: React.FC<PageProps> = () => {
 
         <ul>
           <li>
-            Studying the{' '}
-            <a href="https://cs50.harvard.edu/" rel="external">
-              Harvard online Computer Science course
-            </a>{' '}
-            <small>(CS50)</small>
+            Studying at{' '}
+            <a href="https://www.open.ac.uk/" rel="external">
+              The Open University
+            </a>
+            , working towards having a piece of paper that says I can computer.
+            <ul>
+              <li>Notice the point below this one is struck out...because I started before this page even went live</li>
+              <li>
+                I am studying four modules; Algorithms, data structures and computability, Managing IT: the why, the
+                what and the how, Web technologies, Object-oriented Java programming
+              </li>
+            </ul>
           </li>
           <li>
-            Preparing to enrol in{' '}
-            <a href="http://www.open.ac.uk/" rel="external">
-              The Open University
-            </a>{' '}
-            with credit transfer from an unfinished degree I undertook over a decade ago.
+            <s>
+              Preparing to enrol in The Open University with credit transfer from an unfinished degree I undertook over
+              a decade ago.
+            </s>
           </li>
         </ul>
       </article>
@@ -82,7 +102,7 @@ const NowPage: React.FC<PageProps> = () => {
             <a href="https://www.fanduel.com/" rel="external">
               FanDuel
             </a>{' '}
-            for just over 2 years. I was promoted to Senior at the beginning of this year.
+            for 2+ years. I was promoted to Senior at the beginning of 2020.
           </li>
           <li>
             I mostly work in React and I build a lot of random sites using{' '}
@@ -95,22 +115,20 @@ const NowPage: React.FC<PageProps> = () => {
             I build small experimental apps in{' '}
             <a href="https://flutter.dev/" rel="external">
               Flutter
-            </a>{' '}
-            <small>(coincidentally FanDuel's parent company is also called Flutter)</small>.
+            </a>
+            . <small>(coincidentally FanDuel's parent company is also called Flutter)</small>
           </li>
           <li>I build and manage a lightweight storage system for my friend's Games that I've codenamed Morpus.</li>
           <li>
-            My main side project is called Pongstars, it's a native app for managing Table Tennis leagues{' '}
-            <small>(we play a lot at work)</small>.
+            My main side project is called Pongstars, it's a mobile app written in Flutter for managing Table Tennis{' '}
+            leagues. <small>(we play a lot at work)</small>
           </li>
         </ul>
 
         <h3>Goals</h3>
 
         <ul>
-          <li>Become more focused and organised.</li>
           <li>Get back to full-stack development.</li>
-          <li>Contribute to some open-source software.</li>
           <li>Build my partner a portfolio website.</li>
         </ul>
       </article>
@@ -138,23 +156,16 @@ const NowPage: React.FC<PageProps> = () => {
         </ul>
 
         <h3>Goals</h3>
+        <p>I've significantly toned down my goals because... lockdown.</p>
         <ul>
-          <li>
-            As of August 3rd, 2020 I will be attempting to go full{' '}
-            <a href="https://huel.com" rel="external">
-              Huel
-            </a>{' '}
-            for a whole month.
-          </li>
-          <li>Start cycling again, I've had a punctured tyre since the week we went into lockdown.</li>
-          <li>Start lifting again</li>
-          <li>Start HIIT again</li>
+          <li>Walk more.</li>
+          <li>Try to get into the habit of doing some stretch work to counter all the sitting.</li>
         </ul>
       </article>
 
       <p>
         <i>
-          <small>This page was last updated on 27th July 2020.</small>
+          <small>This page was last updated on 29th October 2020.</small>
         </i>
       </p>
     </Wrapper>

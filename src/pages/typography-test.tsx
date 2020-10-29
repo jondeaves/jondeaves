@@ -7,7 +7,7 @@ import PageHeader from '../components/Layout/PageHeader';
 const TestPage: React.FC<PageProps> = () => {
   return (
     <Wrapper>
-      <PageHeader title="Testing display of HTML elements" preTitle="Pre title" postTitle="Post title" />
+      <h1>This is 1st level heading</h1>
       <h2>This is 2nd level heading</h2>
       <h3>This is 3rd level heading</h3>
       <h4>This is 4th level heading</h4>

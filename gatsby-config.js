@@ -58,8 +58,8 @@ module.exports = {
         name: 'jondeaves',
         short_name: 'jondeaves',
         start_url: '/',
-        background_color: '#EDF2F4', // Tertiary
-        theme_color: '#8D99AE',
+        background_color: '#FCFCFC', // Tertiary
+        theme_color: '#02010A',
         display: 'standalone',
         icon: 'src/favicon.png', // This path is relative to the root of the site.
       },
@@ -72,13 +72,6 @@ module.exports = {
         host: 'https://jondeaves.me',
         sitemap: 'https://jondeaves.me',
         policy: [{ userAgent: '*', allow: '/' }],
-        resolveEnv: () => process.env.GATSBY_ENV,
-        env: {
-          development: {
-            host: 'https://dev.jondeaves.me',
-            sitemap: 'https://dev.jondeaves.me',
-          },
-        },
       },
     },
     {

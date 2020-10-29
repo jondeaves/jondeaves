@@ -41,11 +41,7 @@ usWebDesignStandardsTheme.overrideThemeStyles = () => ({
     marginBottom: '4px',
   },
   a: {
-    textDecoration: `underline ${theme.color.secondary}`,
-    textUnderlinePosition: 'under',
-  },
-  'a:hover': {
-    textDecoration: `underline ${darken(0.2, theme.color.secondary)}`,
+    textDecorationColor: theme.color.secondary,
   },
   'main, header, section, footer': {
     margin: '1.53rem 0',
