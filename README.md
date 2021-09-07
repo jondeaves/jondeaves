@@ -2,7 +2,7 @@
 
 I make things. Usually with code.
 
-**Work**:  Senior Software Developer at FanDuel<br />
+**Work**:  Software Engineer at [Webflow](https://webflow.com/)<br />
 **npm**:  [https://npmjs.com/~jondeaves](https://npmjs.com/~jondeaves)<br />
 **GitHub**:  [https://github.com/jondeaves](https://github.com/jondeaves)<br />
 **LinkedIn**:  [https://linkedin.com/in/jondeaves](https://linkedin.com/in/jondeaves)<br />
