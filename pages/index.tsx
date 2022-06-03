@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+
+import "modern-css-reset";
+// import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
   return (
@@ -14,14 +16,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>Jon Deaves</h1>
+      <main>
+        <h1>Jon Deaves</h1>
         <h2>Software Developer and hobby enthusiast</h2>
 
-        <p className={styles.description}>
-          An experienced developer specialising in interactive web applications.
-          I take pride in creating modern, responsive and progressive user
-          experiences.
+        <p>
+          I&apos;m an experienced developer specialising in interactive web
+          applications and I take pride in creating modern, responsive and
+          progressive user experiences. But when I&apos;m not writing code I
+          like to dabble in a little bit of anything and everything.
         </p>
       </main>
     </>
