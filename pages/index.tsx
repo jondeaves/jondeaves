@@ -9,7 +9,7 @@ const Home: NextPage = () => {
         <title>Jon Deaves | Software Developer</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Engineer who makes things, usually with code."
+          content="Jon Deaves is a Software Engineer who makes things, usually with code"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
