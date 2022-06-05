@@ -1,11 +1,90 @@
+@import url("./reset.css");
+
 html,
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  margin: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI", Roboto,
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 17px;
+}
+
+body {
+  align-items: center;
+  background-color: #f0f3f8;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
 }
 
 * {
   box-sizing: border-box;
+  color: #333;
+}
+
+main {
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(45, 54, 59, 0.25);
+  padding: 48px 0;
+  text-align: center;
+  width: 420px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  padding: 0 32px;
+  position: relative;
+}
+
+h1 {
+  font-size: 21px;
+  letter-spacing: 0.08rem;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 17px;
+  letter-spacing: 0.04rem;
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-size: 14px;
+  letter-spacing: 0.04rem;
+  margin-bottom: 16px;
+}
+
+p {
+  margin: 16px 0;
+}
+
+small {
+  font-size: 80%;
+}
+
+li {
+  display: inline;
+  position: relative;
+}
+
+li:not(:last-child)::after {
+  content: "| ";
+  margin-left: 8px;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
 }
