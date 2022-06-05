@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-
-// import "modern-css-reset";
+import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="card">
+      <Layout>
         <h1>Jon Deaves</h1>
         <h2>Software Engineer</h2>
         <h3>
@@ -41,7 +40,7 @@ const Home: NextPage = () => {
             </a>
           </li>
         </ul>
-      </main>
+      </Layout>
     </>
   );
 };
