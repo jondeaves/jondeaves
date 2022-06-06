@@ -1,13 +1,18 @@
+import Footer from "./Footer";
+import Header from "./Header";
+
 type LayoutProps = {
   children: React.ReactNode;
 };
 
-export default function Layout({ children }: LayoutProps): JSX.Element {
+const Layout = ({ children }: LayoutProps) => {
   return (
-    <>
-      {/* <header></header> */}
-      <main>{children}</main>
-      {/* <footer></footer> */}
-    </>
+    <div className="wrapper">
+      <Header />
+      <main id="main">{children}</main>
+      <Footer />
+    </div>
   );
-}
+};
+
+export default Layout;
