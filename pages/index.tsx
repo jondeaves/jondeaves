@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout>
+      <Layout isHomepage={true}>
         <p>
           I&apos;m an experienced developer specialising in interactive web
           applications and I take pride in creating modern, responsive and
@@ -23,31 +23,14 @@ const Home: NextPage = () => {
           everything.
         </p>
 
-        {/* <h1>Jon Deaves</h1>
-        <h2>Software Engineer</h2>
-        <h3>
-          <a href="https://webflow.com/" rel="external">
-            @Webflow
-          </a>
-        </h3>
-
-        <ul>
-          <li>
-            <a href="https://linkedin.com/in/jondeaves" rel="external">
-              LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/jondeaves" rel="external">
-              GitHub
-            </a>
-          </li>
-          <li>
-            <a href="https://npmjs.com/~jondeaves" rel="external">
-              npm
-            </a>
-          </li>
-        </ul> */}
+        <p>
+          I try to keep things light and easy by not relying too much on fancy
+          graphics, animations or interactivity in my own corner of the web.
+          This speaks a lot to what I find frustrating with a lot of modern
+          sites that have to be constantly sharing content, showing adverts and
+          otherwise bombarding your senses in the pursuit of clicks, impressions
+          and money.
+        </p>
       </Layout>
     </>
   );

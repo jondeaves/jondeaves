@@ -41,6 +41,9 @@ footer {
   background-color: red;
   padding: 32px;
 }
+footer p {
+  margin-bottom: 0;
+}
 
 main {
   background-color: green;
@@ -49,20 +52,27 @@ main {
 }
 
 h1 {
-  font-size: 1.2rem;
-  letter-spacing: 0.08rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  margin: 8px 0 8px 0;
 }
 
 h2 {
+  display: inline-block;
   font-size: 1rem;
+  letter-spacing: 0.08rem;
+  margin-right: 4px;
 }
 
 h3 {
+  display: inline-block;
   font-size: 0.8rem;
+  letter-spacing: 0.08rem;
 }
 
 p {
   font-size: 1rem;
+  margin-bottom: 16px;
 }
 
 small {
@@ -70,16 +80,32 @@ small {
 }
 
 li {
-  display: inline;
+  margin-bottom: 8px;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid #333;
   position: relative;
 }
 
-a,
-a:active,
-a:hover,
-a:visited {
-  text-decoration: none;
-  border-bottom: 1px solid #000;
+a::after {
+  border-bottom: 1px solid #333;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 0;
+  transition: width 0.15s ease-out;
+  position: absolute;
+  width: 0;
+}
+
+a:focus::after,
+a:active::after,
+a:hover::after,
+a:visited::after {
+  transition: width 0.3s ease-out;
+  width: 100%;
 }
 
 .skip-to-content {
