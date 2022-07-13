@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Jon Deaves | Software Developer</title>
+        <title>Jon Deaves, Software Developer</title>
         <meta
           name="description"
           content="Jon Deaves is a Software Engineer who makes things, usually with code"
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout isHomepage={true}>
-        {/* <p>
+        <p>
           I&apos;m an experienced developer specialising in interactive web
           applications and I take pride in creating modern, responsive and
           progressive user experiences. I would consider myself a perpetual
@@ -30,7 +30,7 @@ const Home: NextPage = () => {
           sites that have to be constantly sharing content, showing adverts and
           otherwise bombarding your senses in the pursuit of clicks, impressions
           and money.
-        </p> */}
+        </p>
       </Layout>
     </>
   );

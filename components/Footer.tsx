@@ -24,8 +24,6 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-
-      <p>This site was Designed &amp; built by Jon Deaves</p>
     </footer>
   );
 };

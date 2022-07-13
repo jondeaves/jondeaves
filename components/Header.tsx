@@ -14,17 +14,19 @@ const Header = ({ isHomepage }: HeaderProps) => {
       >
         Welcome, I&apos;m
       </p>
-      <h1>Jon Deaves</h1>
+      <h1 className="inline">Jon Deaves</h1>
       <div>
         <p className={isHomepage ? "inline" : "hidden"} aria-hidden="true">
           a&nbsp;
         </p>
-        <h2>Software Engineer</h2>
-        <h3>
-          <a href="https://webflow.com/" rel="external">
-            @Webflow
-          </a>
-        </h3>
+        <h2 className="inline">Software Engineer</h2>
+        {isHomepage && (
+          <h3 className="inline">
+            <a href="https://webflow.com/" rel="external">
+              @Webflow
+            </a>
+          </h3>
+        )}
       </div>
     </header>
   );
