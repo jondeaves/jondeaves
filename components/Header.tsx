@@ -8,19 +8,24 @@ const Header = ({ isHomepage }: HeaderProps) => {
       <a className="skip-to-content" href="#main">
         Skip to content
       </a>
-      <small className={isHomepage ? "" : "hidden"} aria-hidden="true">
+      <p
+        className={isHomepage ? "inline spaced-right" : "hidden"}
+        aria-hidden="true"
+      >
         Welcome, I&apos;m
-      </small>
+      </p>
       <h1>Jon Deaves</h1>
-      <small className={isHomepage ? "" : "hidden"} aria-hidden="true">
-        a&nbsp;
-      </small>
-      <h2>Software Engineer</h2>
-      <h3>
-        <a href="https://webflow.com/" rel="external">
-          @Webflow
-        </a>
-      </h3>
+      <div>
+        <p className={isHomepage ? "inline" : "hidden"} aria-hidden="true">
+          a&nbsp;
+        </p>
+        <h2>Software Engineer</h2>
+        <h3>
+          <a href="https://webflow.com/" rel="external">
+            @Webflow
+          </a>
+        </h3>
+      </div>
     </header>
   );
 };

@@ -68,21 +68,22 @@ h6 {
 
 h1 {
   color: var(--color-secondary-font-color);
-  font-size: 1.6rem;
+  display: inline-block;
+  font-size: 2.4rem;
   font-weight: 600;
-  margin: 8px 0 8px 0;
+  margin: 0 0 24px 0;
 }
 
 h2 {
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-right: 4px;
 }
 
 h3 {
   display: inline-block;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 p {
@@ -92,10 +93,6 @@ p {
 
 small {
   font-size: 0.8rem;
-}
-
-li {
-  margin-bottom: 8px;
 }
 
 a {
@@ -142,4 +139,12 @@ a:visited::after {
 .hidden {
   left: -999px;
   position: absolute;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.spaced-right {
+  margin-right: 8px;
 }

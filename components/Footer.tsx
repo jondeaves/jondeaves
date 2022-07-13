@@ -1,7 +1,13 @@
+import FooterStyles from "./Footer.module.css";
+
 const Footer = () => {
   return (
-    <footer>
-      <ul>
+    <footer className={FooterStyles.footer}>
+      <p id="social-intro" className="hidden">
+        Though I&apos;m not very social on the internet you can find me at;
+      </p>
+
+      <ul aria-describedby="social-intro">
         <li>
           <a href="https://linkedin.com/in/jondeaves" rel="external">
             LinkedIn
@@ -19,10 +25,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <p>
-        <span className="hidden">This site was </span>Designed &amp; built by
-        Jon Deaves
-      </p>
+      <p>This site was Designed &amp; built by Jon Deaves</p>
     </footer>
   );
 };
