@@ -1,10 +1,12 @@
 @import url("./reset.css");
 
 :root {
-  --color-primary-background-color: #eff1f3;
+  --color-primary-background-color: #ffffff;
+  --color-secondary-background-color: #272727;
 
   --color-primary-font-color: #272727;
-  --color-secondary-font-color: #ff9000;
+  --color-secondary-font-color: #ffffff;
+  --color-tertiary-font-color: #ff9000;
 
   --color-primary-border-color: #ff9000;
 }
@@ -35,17 +37,13 @@ body {
   color: var(--color-primary-font-color);
 }
 
-header,
 main,
 footer {
   width: 100%;
 }
 
-header {
-  padding: 32px 32px 0 32px;
-}
-
 footer {
+  max-width: 960px;
   padding: 32px;
 }
 footer p {
@@ -54,6 +52,7 @@ footer p {
 
 main {
   flex-grow: 2;
+  max-width: 960px;
   padding: 32px;
 }
 
@@ -67,20 +66,24 @@ h6 {
 }
 
 h1 {
-  color: var(--color-secondary-font-color);
+  color: var(--color-tertiary-font-color);
   font-size: 2.4rem;
   font-weight: 600;
   margin: 0 0 24px 0;
 }
 
 h2 {
+  color: var(--color-secondary-font-color);
   font-size: 1.8rem;
   font-weight: 600;
+  line-height: 1.8rem;
   margin-right: 4px;
 }
 
 h3 {
+  color: var(--color-secondary-font-color);
   font-size: 1rem;
+  line-height: 1rem;
 }
 
 p {
