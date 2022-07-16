@@ -8,7 +8,7 @@ const Header = ({ isHomepage }: HeaderProps) => {
   return (
     <header className={HeaderStyles.header}>
       <div className={HeaderStyles.inner}>
-        <div>
+        <div className={HeaderStyles.titles}>
           <a className="skip-to-content" href="#main">
             Skip to content
           </a>
