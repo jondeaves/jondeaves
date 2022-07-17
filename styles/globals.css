@@ -44,7 +44,7 @@ footer {
 
 footer {
   max-width: 960px;
-  padding: 32px;
+  padding: 0 32px 32px 32px;
 }
 footer p {
   margin-bottom: 0;
@@ -139,6 +139,10 @@ a:visited::after {
 
 .skip-to-content:focus {
   transform: translate(-50%, 0);
+}
+
+.skip-to-content::after {
+  border-bottom-width: 0;
 }
 
 .hidden {
