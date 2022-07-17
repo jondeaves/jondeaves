@@ -16,6 +16,12 @@ const Home: NextPage = () => {
 
       <Layout isHomepage={true}>
         <p>
+          I&apos;m an experienced developer specialising in interactive web
+          applications and I take pride in creating modern, responsive and
+          progressive user experiences.
+        </p>
+
+        <p>
           I try to keep things light and easy by not relying too much on fancy
           graphics, animations or interactivity in my own corner of the web.
           This speaks a lot to what I find frustrating with a lot of modern

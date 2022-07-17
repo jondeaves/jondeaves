@@ -2,6 +2,7 @@
   background-color: var(--color-secondary-background-color);
   display: flex;
   justify-content: center;
+  padding-bottom: 16px;
   width: 100%;
 }
 
@@ -11,30 +12,7 @@
 }
 
 .inner {
+  max-width: 960px;
   padding: 32px 32px 16px 32px;
   width: 100%;
-}
-
-.bio {
-  letter-spacing: 0.08rem;
-  max-width: 480px;
-  margin-top: 16px;
-}
-
-@media screen and (min-width: 960px) {
-  .inner {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    max-width: 960px;
-  }
-
-  .titles {
-    margin-right: 8px;
-  }
-
-  .bio {
-    margin-top: 0;
-    padding-left: 8px;
-  }
 }

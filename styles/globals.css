@@ -67,22 +67,23 @@ h6 {
 
 h1 {
   color: var(--color-tertiary-font-color);
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 600;
-  margin: 0 0 24px 0;
+  line-height: 2.4rem;
+  margin: 0;
 }
 
 h2 {
   color: var(--color-secondary-font-color);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  line-height: 1.8rem;
+  line-height: 2rem;
   margin-right: 4px;
 }
 
 h3 {
   color: var(--color-secondary-font-color);
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1rem;
 }
 
@@ -119,6 +120,10 @@ a:visited::after {
   width: 100%;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .skip-to-content {
   background-color: var(--color-primary-background-color);
   border-bottom-left-radius: 2px;
@@ -147,4 +152,19 @@ a:visited::after {
 
 .spaced-right {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 475px) {
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 8px;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
 }

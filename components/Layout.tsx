@@ -9,6 +9,9 @@ type LayoutProps = {
 const Layout = ({ children, isHomepage }: LayoutProps) => {
   return (
     <div className="wrapper">
+      <a className="skip-to-content" href="#main">
+        Skip to content
+      </a>
       <Header isHomepage={isHomepage} />
       <main id="main">{children}</main>
       <Footer />
