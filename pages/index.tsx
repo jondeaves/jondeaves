@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
@@ -15,21 +16,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout isHomepage={true}>
-        <p>
-          Id dolorem natus ad placeat galisum eum velit tempora eos quasi omnis
-          laborum voluptate. Et voluptatem dolores et Quis harum ut quidem
-          voluptas consequatur harum.
-        </p>
-
-        <p>
-          Qui aperiam omnis ut commodi delectus sed consequatur maiores ea enim
-          corporis! Eum voluptatem obcaecati ea asperiores labore voluptatem
-          exercitationem est reiciendis quod sit voluptas minima. Non molestiae
-          dicta et aliquid fuga non nulla beatae id labore dolore et sint
-          recusandae non voluptas debitis ad accusamus suscipit!
-        </p>
-
-        {/* <p>
+        <p className="lead">
           I&apos;m an experienced developer specialising in interactive web
           applications and I take pride in creating modern, responsive and
           progressive user experiences.
@@ -42,7 +29,12 @@ const Home: NextPage = () => {
           sites that have to be constantly sharing content, showing adverts and
           otherwise bombarding your senses in the pursuit of clicks, impressions
           and money.
-        </p> */}
+        </p>
+
+        <p>
+          Why not check out some of the &apos;Magic&apos; of how the site is
+          made by going to the <Link href="/typography">Typography page</Link>.
+        </p>
       </Layout>
     </>
   );

@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import Header from "./Header";
+import SkipToContent from "./SkipToContent";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -9,9 +10,7 @@ type LayoutProps = {
 const Layout = ({ children, isHomepage }: LayoutProps) => {
   return (
     <div className="wrapper">
-      <a className="skip-to-content" href="#main">
-        Skip to content
-      </a>
+      <SkipToContent />
       <Header isHomepage={isHomepage} />
       <main id="main">{children}</main>
       <Footer />

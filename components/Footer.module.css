@@ -4,9 +4,9 @@
 
 .footer li {
   display: inline-block;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
 }
 
 .footer li:not(:last-child) {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
