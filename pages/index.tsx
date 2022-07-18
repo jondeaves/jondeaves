@@ -16,6 +16,20 @@ const Home: NextPage = () => {
 
       <Layout isHomepage={true}>
         <p>
+          Id dolorem natus ad placeat galisum eum velit tempora eos quasi omnis
+          laborum voluptate. Et voluptatem dolores et Quis harum ut quidem
+          voluptas consequatur harum.
+        </p>
+
+        <p>
+          Qui aperiam omnis ut commodi delectus sed consequatur maiores ea enim
+          corporis! Eum voluptatem obcaecati ea asperiores labore voluptatem
+          exercitationem est reiciendis quod sit voluptas minima. Non molestiae
+          dicta et aliquid fuga non nulla beatae id labore dolore et sint
+          recusandae non voluptas debitis ad accusamus suscipit!
+        </p>
+
+        {/* <p>
           I&apos;m an experienced developer specialising in interactive web
           applications and I take pride in creating modern, responsive and
           progressive user experiences.
@@ -28,7 +42,7 @@ const Home: NextPage = () => {
           sites that have to be constantly sharing content, showing adverts and
           otherwise bombarding your senses in the pursuit of clicks, impressions
           and money.
-        </p>
+        </p> */}
       </Layout>
     </>
   );
