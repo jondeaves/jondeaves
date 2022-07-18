@@ -7,7 +7,7 @@ const Footer = () => {
         Though I&apos;m not very social on the internet you can find me at;
       </p>
 
-      <ul aria-describedby="social-intro">
+      <ul className="inline" aria-describedby="social-intro">
         <li>
           <a href="https://linkedin.com/in/jondeaves" rel="external">
             LinkedIn

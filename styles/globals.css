@@ -43,23 +43,26 @@ body {
   color: var(--color-primary-font-color);
 }
 
+header,
 main,
 footer {
   width: 100%;
-}
-
-footer {
-  max-width: 960px;
-  padding: 0 2rem 2rem 2rem;
-}
-footer p {
-  margin-bottom: 0;
 }
 
 main {
   flex-grow: 2;
   max-width: 960px;
   padding: 2rem;
+}
+
+hr {
+  border: 0 solid var(--color-primary-border-color);
+  border-bottom-width: 1px;
+  left: 50%;
+  margin: 1rem 0;
+  position: relative;
+  transform: translateX(-50%);
+  width: 90%;
 }
 
 h1,
@@ -75,48 +78,50 @@ h6 {
 h1 {
   font-size: 2.4rem;
   line-height: 2.4rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 h2 {
   font-size: 1.8rem;
   line-height: 2rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 h3 {
   font-size: 1.4rem;
   line-height: 1rem;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 h4 {
   font-size: 1.2rem;
   line-height: 1rem;
-  margin-bottom: 0.8rem;
+  margin: 0.8rem 0;
 }
 
 h5 {
   font-size: 1rem;
   line-height: 1rem;
-  margin-bottom: 0.6rem;
+  margin: 0.6rem 0;
 }
 
 h6 {
   font-size: 0.8rem;
   line-height: 1rem;
-  margin-bottom: 0.6rem;
+  margin: 0.6rem 0;
 }
 
 p {
   font-size: 1rem;
   letter-spacing: 0.05rem;
+  line-height: 1.4rem;
   margin-bottom: 1rem;
 }
 
 p.lead {
   font-size: 1.2rem;
   letter-spacing: 0.08rem;
+  line-height: 1.4rem;
   margin-bottom: 1.4rem;
 }
 
@@ -171,16 +176,53 @@ cite {
 }
 figcaption {
   padding-left: 2.75rem;
-  position: relative;
 }
-figcaption::after {
-  /* background-color: var(--color-muted); */
+figcaption::before {
   content: "— ";
-  height: 3px;
-  left: 1.25rem;
-  position: absolute;
-  top: 0;
-  width: 30px;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+ul.inline {
+  margin: 0;
+  padding: 0;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+ul.inline li:not(:last-child) {
+  margin-right: 1rem;
+}
+
+dl dd {
+  margin-bottom: 1rem;
+}
+
+dl dd p {
+  line-height: 1.2rem;
+  margin-bottom: 0;
 }
 
 a:focus::after,

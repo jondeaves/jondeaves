@@ -1,12 +1,15 @@
 .footer {
+  max-width: 960px;
+  padding: 0 2rem 2rem 2rem;
   text-align: center;
+  width: 100%;
 }
 
-.footer li {
+/* .footer li {
   display: inline-block;
   margin-bottom: 0.5rem;
 }
 
 .footer li:not(:last-child) {
   margin-right: 1rem;
-}
+} */

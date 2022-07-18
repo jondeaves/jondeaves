@@ -33,6 +33,10 @@ const Typography: NextPage = () => {
         <h5>Heading level 5</h5>
         <h6>Heading level 6</h6>
 
+        <hr />
+
+        <h3>Text Styles</h3>
+
         <p className="lead">
           This is a leading paragraph, it stands out a bit more than normal.Id
           dolorem natus ad placeat galisum eum velit tempora eos quasi omnis
@@ -92,14 +96,60 @@ const Typography: NextPage = () => {
           <em>This line rendered as italicized text.</em>
         </p>
 
-        <blockquote aria-describedby="quotedesc">
-          <p>
-            &#8220;A well-known quote, contained in a blockquote element.&#8221;
-          </p>
-        </blockquote>
-        <figcaption id="quotedesc">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </figcaption>
+        <figure>
+          <blockquote aria-describedby="quotedesc">
+            <p>
+              &#8220;A well-known quote, contained in a blockquote
+              element.&#8221;
+            </p>
+          </blockquote>
+          <figcaption id="quotedesc">
+            Someone famous in <cite title="Source Title">Source Title</cite>
+          </figcaption>
+        </figure>
+
+        <h3>Lists</h3>
+        <h4>Standard</h4>
+        <ul>
+          <li>
+            Standard list using <code>&lt;ul&gt;</code> and{" "}
+            <code>&lt;li&gt;</code>
+          </li>
+          <li>
+            Even has a nested list
+            <ul>
+              <li>
+                Using{" "}
+                <code>
+                  &lt;ul&gt; &lt;li&gt;Item &lt;ul&gt; &lt;li&gt;sub
+                  item&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt;
+                </code>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <h4>Inline</h4>
+        <ul className="inline">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+
+        <h4>Description List</h4>
+        <dl>
+          <dt>First term</dt>
+          <dd>A description list is perfect for defining terms.</dd>
+
+          <dt>Another term</dt>
+          <dd>This definition is short, so no extra paragraphs or anything.</dd>
+
+          <dt>Longer Term</dt>
+          <dd>
+            <p>It contains two paragraphs</p>
+            <p>And some more placeholder definition text.</p>
+          </dd>
+        </dl>
       </Layout>
     </>
   );
