@@ -231,8 +231,20 @@ ul.inline li:not(:last-child) {
   margin-right: 1rem;
 }
 
-dl dd {
+dl {
   margin-bottom: 1rem;
+}
+
+dl dt {
+  font-weight: 600;
+}
+
+dl dt:not(:first-child) {
+  margin-top: 1rem;
+}
+
+dl dd {
+  margin-left: 1.5rem;
 }
 
 dl dd p {

@@ -28,7 +28,7 @@ const Typography: NextPage = () => {
         <h3>Text Styles</h3>
 
         <p className="lead">
-          This is a leading paragraph, it stands out a bit more than normal.Id
+          This is a leading paragraph, it stands out a bit more than normal. Id
           dolorem natus ad placeat galisum eum velit tempora eos quasi omnis
           laborum voluptate.
         </p>
@@ -42,7 +42,7 @@ const Typography: NextPage = () => {
         </p>
 
         <p>
-          This text contains abbreviations such as{" "}
+          <code>&lt;abbr&gt;</code> This text contains abbreviations such as{" "}
           <abbr title="attribute">attr</abbr> and{" "}
           <abbr title="HyperText Markup Language">HTML</abbr>.
         </p>
@@ -132,8 +132,15 @@ const Typography: NextPage = () => {
 
         <h4>Description List</h4>
         <dl>
-          <dt>First term</dt>
-          <dd>A description list is perfect for defining terms.</dd>
+          <dt>A description list</dt>
+          <dd>
+            Uses the mark-up{" "}
+            <code>
+              &lt;dl&gt; &lt;dt&gt;Term&lt;/dt&gt; &lt;dd&gt;Definition of
+              term&lt;/dd&gt; &lt;/dl&gt;
+            </code>{" "}
+          </dd>
+          <dd>Is used to description groups of terms</dd>
 
           <dt>Another term</dt>
           <dd>This definition is short, so no extra paragraphs or anything.</dd>
