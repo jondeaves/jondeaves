@@ -160,7 +160,7 @@ const Typography: NextPage = () => {
               term&lt;/dd&gt; &lt;/dl&gt;
             </code>{" "}
           </dd>
-          <dd>Is used to description groups of terms</dd>
+          <dd>Is used to describe groups of terms</dd>
 
           <dt>Another term</dt>
           <dd>This definition is short, so no extra paragraphs or anything.</dd>
