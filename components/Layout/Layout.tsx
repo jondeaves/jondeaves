@@ -1,10 +1,10 @@
-import Footer from "./Footer";
-import Header from "./Header";
-import SkipToContent from "./SkipToContent";
+import Footer from "../Footer";
+import Header from "../Header";
+import SkipToContent from "../SkipToContent";
 
 type LayoutProps = {
   children: React.ReactNode;
-  isHomepage?: boolean;
+  isHomepage: boolean;
 };
 
 const Layout = ({ children, isHomepage }: LayoutProps) => {
@@ -16,6 +16,10 @@ const Layout = ({ children, isHomepage }: LayoutProps) => {
       <Footer />
     </div>
   );
+};
+
+Layout.defaultProps = {
+  isHomepage: false,
 };
 
 export default Layout;

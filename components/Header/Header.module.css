@@ -53,6 +53,10 @@
 }
 
 @media screen and (min-width: 475px) {
+  .titleWrapper {
+    align-items: flex-end;
+    display: flex;
+  }
   .heading1 {
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
@@ -64,5 +68,10 @@
 
   .heading3 {
     font-size: 1rem;
+  }
+
+  .textDoubleSpaced {
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
   }
 }

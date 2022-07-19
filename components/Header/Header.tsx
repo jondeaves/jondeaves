@@ -1,27 +1,29 @@
 import Link from "next/link";
 import HeaderStyles from "./Header.module.css";
 
-type HeaderProps = {
-  isHomepage?: boolean;
+export type HeaderProps = {
+  isHomepage: boolean;
 };
 
 const Header = ({ isHomepage }: HeaderProps) => {
   return (
     <header className={HeaderStyles.header}>
       <div className={HeaderStyles.inner}>
-        <p
-          className={
-            isHomepage
-              ? [HeaderStyles.text, HeaderStyles.textDoubleSpaced].join(" ")
-              : "hidden"
-          }
-          aria-hidden="true"
-        >
-          Welcome, I&apos;m
-        </p>
-        <h1 className={HeaderStyles.heading1}>
-          {isHomepage ? <>Jon Deaves</> : <Link href="/">Jon Deaves</Link>}
-        </h1>
+        <div className={HeaderStyles.titleWrapper}>
+          <p
+            className={
+              isHomepage
+                ? [HeaderStyles.text, HeaderStyles.textDoubleSpaced].join(" ")
+                : "hidden"
+            }
+            aria-hidden="true"
+          >
+            Welcome, I&apos;m
+          </p>
+          <h1 className={HeaderStyles.heading1}>
+            {isHomepage ? <>Jon Deaves</> : <Link href="/">Jon Deaves</Link>}
+          </h1>
+        </div>
         <div>
           <p
             className={isHomepage ? HeaderStyles.text : "hidden"}
@@ -41,6 +43,10 @@ const Header = ({ isHomepage }: HeaderProps) => {
       </div>
     </header>
   );
+};
+
+Header.defaultProps = {
+  isHomepage: false,
 };
 
 export default Header;
