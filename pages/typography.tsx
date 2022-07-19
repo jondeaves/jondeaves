@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import Layout from "../components/Layout";
 
 const Typography: NextPage = () => {
@@ -15,17 +16,6 @@ const Typography: NextPage = () => {
       </Head>
 
       <Layout>
-        <p>
-          <small>
-            Yes I have shamelessly stolen the markup and example text from{" "}
-            <a
-              href="https://getbootstrap.com/docs/5.2/content/typography/"
-              rel="external"
-            >
-              Bootstrap
-            </a>
-          </small>
-        </p>
         <h1>Heading level 1</h1>
         <h2>Heading level 2</h2>
         <h3>Heading level 3</h3>
@@ -57,6 +47,10 @@ const Typography: NextPage = () => {
           <abbr title="HyperText Markup Language">HTML</abbr>.
         </p>
 
+        <p id="links">
+          <code>&lt;a&gt;</code> <a href="#link">Links like this</a> will have
+          an underline that is emphasised upon focus.
+        </p>
         <p>
           <code>&lt;mark&gt;</code> You can use the mark tag to{" "}
           <mark>highlight</mark> text.
@@ -150,6 +144,21 @@ const Typography: NextPage = () => {
             <p>And some more placeholder definition text.</p>
           </dd>
         </dl>
+
+        <h3>Disclaimer</h3>
+
+        <p>
+          <small>
+            Yes I have shamelessly stolen the markup and example text from{" "}
+            <a
+              href="https://getbootstrap.com/docs/5.2/content/typography/"
+              rel="external"
+            >
+              Bootstrap
+            </a>
+            .
+          </small>
+        </p>
       </Layout>
     </>
   );

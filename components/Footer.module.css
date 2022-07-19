@@ -5,11 +5,6 @@
   width: 100%;
 }
 
-/* .footer li {
-  display: inline-block;
-  margin-bottom: 0.5rem;
+.footer ul {
+  margin: 0;
 }
-
-.footer li:not(:last-child) {
-  margin-right: 1rem;
-} */

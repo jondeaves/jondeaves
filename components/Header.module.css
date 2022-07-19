@@ -20,6 +20,11 @@
   margin: 0;
 }
 
+.heading1 a {
+  border-bottom-color: transparent;
+  color: var(--color-tertiary-font-color);
+}
+
 .heading2 {
   color: var(--color-secondary-font-color);
   display: inline-block;

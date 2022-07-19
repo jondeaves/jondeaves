@@ -1,3 +1,4 @@
+import Link from "next/link";
 import HeaderStyles from "./Header.module.css";
 
 type HeaderProps = {
@@ -18,7 +19,9 @@ const Header = ({ isHomepage }: HeaderProps) => {
         >
           Welcome, I&apos;m
         </p>
-        <h1 className={HeaderStyles.heading1}>Jon Deaves</h1>
+        <h1 className={HeaderStyles.heading1}>
+          {isHomepage ? <>Jon Deaves</> : <Link href="/">Jon Deaves</Link>}
+        </h1>
         <div>
           <p
             className={isHomepage ? HeaderStyles.text : "hidden"}
