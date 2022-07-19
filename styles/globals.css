@@ -217,8 +217,16 @@ ul ul {
   margin-block-end: 0px;
 }
 
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+ul.large li {
+  margin-bottom: 0.75rem;
+}
+
 ul.inline {
-  /* margin: 0; */
   padding: 0;
 }
 

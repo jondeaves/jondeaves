@@ -41,66 +41,72 @@ const Typography: NextPage = () => {
           recusandae non voluptas debitis ad accusamus suscipit!
         </p>
 
-        <p>
-          <code>&lt;abbr&gt;</code> This text contains abbreviations such as{" "}
-          <abbr title="attribute">attr</abbr> and{" "}
-          <abbr title="HyperText Markup Language">HTML</abbr>.
-        </p>
+        <ul className="unstyled large">
+          <li>
+            <code>&lt;abbr&gt;</code> This text contains abbreviations such as{" "}
+            <abbr title="attribute">attr</abbr> and{" "}
+            <abbr title="HyperText Markup Language">HTML</abbr>.
+          </li>
+          <li>
+            <code>&lt;a&gt;</code> <a href="#link">Links like this</a> will have
+            an underline that is emphasised upon focus.
+          </li>
 
-        <p id="links">
-          <code>&lt;a&gt;</code> <a href="#link">Links like this</a> will have
-          an underline that is emphasised upon focus.
-        </p>
-        <p>
-          <code>&lt;mark&gt;</code> You can use the mark tag to{" "}
-          <mark>highlight</mark> text.
-        </p>
-        <p>
-          <code>&lt;del&gt;</code>{" "}
-          <del>This line of text is meant to be treated as deleted text.</del>
-        </p>
-        <p>
-          <code>&lt;s&gt;</code>{" "}
-          <s>This line of text is meant to be treated as no longer accurate.</s>
-        </p>
-        <p>
-          <code>&lt;ins&gt;</code>{" "}
-          <ins>
-            This line of text is meant to be treated as an addition to the
-            document.
-          </ins>
-        </p>
-        <p>
-          <code>&lt;u&gt;</code>{" "}
-          <u>This line of text will render as underlined.</u>
-        </p>
-        <p>
-          <code>&lt;small&gt;</code>{" "}
-          <small>
-            represents side-comments and small print, like copyright and legal
-            text.
-          </small>
-        </p>
-        <p>
-          <code>&lt;strong&gt;</code>{" "}
-          <strong>This line rendered as bold text.</strong>
-        </p>
-        <p>
-          <code>&lt;em&gt;</code>{" "}
-          <em>This line rendered as italicized text.</em>
-        </p>
+          <li>
+            <code>&lt;mark&gt;</code> You can use the mark tag to{" "}
+            <mark>highlight</mark> text.
+          </li>
+          <li>
+            <code>&lt;del&gt;</code>{" "}
+            <del>This line of text is meant to be treated as deleted text.</del>
+          </li>
+          <li>
+            <code>&lt;s&gt;</code>{" "}
+            <s>
+              This line of text is meant to be treated as no longer accurate.
+            </s>
+          </li>
+          <li>
+            <code>&lt;ins&gt;</code>{" "}
+            <ins>
+              This line of text is meant to be treated as an addition to the
+              document.
+            </ins>
+          </li>
+          <li>
+            <code>&lt;u&gt;</code>{" "}
+            <u>This line of text will render as underlined.</u>
+          </li>
+          <li>
+            <code>&lt;small&gt;</code>{" "}
+            <small>
+              represents side-comments and small print, like copyright and legal
+              text.
+            </small>
+          </li>
+          <li>
+            <code>&lt;strong&gt;</code>{" "}
+            <strong>This line rendered as bold text.</strong>
+          </li>
+          <li>
+            <code>&lt;em&gt;</code>{" "}
+            <em>This line rendered as italicized text.</em>
+          </li>
 
-        <figure>
-          <blockquote aria-describedby="quotedesc">
-            <p>
-              &#8220;A well-known quote, contained in a blockquote
-              element.&#8221;
-            </p>
-          </blockquote>
-          <figcaption id="quotedesc">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-        </figure>
+          <li>
+            <figure>
+              <blockquote aria-describedby="quotedesc">
+                <p>
+                  &#8220;A well-known quote, contained in a blockquote
+                  element.&#8221;
+                </p>
+              </blockquote>
+              <figcaption id="quotedesc">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
 
         <h3>Lists</h3>
         <h4>Standard</h4>
@@ -121,6 +127,20 @@ const Typography: NextPage = () => {
               </li>
             </ul>
           </li>
+        </ul>
+
+        <h4>Unstyled</h4>
+        <ul className="unstyled">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+
+        <h4>Large spacing</h4>
+        <ul className="large">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
         </ul>
 
         <h4>Inline</h4>
