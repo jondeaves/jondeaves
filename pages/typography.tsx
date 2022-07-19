@@ -174,17 +174,15 @@ const Typography: NextPage = () => {
 
         <h3>Disclaimer</h3>
 
-        <p>
-          <small>
-            Yes I have shamelessly stolen the markup and example text from{" "}
-            <a
-              href="https://getbootstrap.com/docs/5.2/content/typography/"
-              rel="external"
-            >
-              Bootstrap
-            </a>
-            .
-          </small>
+        <p className="small">
+          Yes I have shamelessly stolen the markup and example text from{" "}
+          <a
+            href="https://getbootstrap.com/docs/5.2/content/typography/"
+            rel="external"
+          >
+            Bootstrap
+          </a>
+          .
         </p>
       </Layout>
     </>

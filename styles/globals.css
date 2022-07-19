@@ -125,8 +125,10 @@ p.lead {
   margin-bottom: 1.4rem;
 }
 
+p.small,
 small {
   font-size: 0.8rem;
+  line-height: 1rem;
 }
 
 a {
@@ -163,9 +165,10 @@ em {
 
 code {
   background-color: rgba(var(--color-secondary-background-rgb), 0.8);
-  color: var(--color-secondary-font-color);
-  padding: 0.2rem 0.25rem 0.25rem 0.25rem;
   border-radius: 0.25rem;
+  color: var(--color-secondary-font-color);
+  line-height: 1.6rem;
+  padding: 0.2rem 0.25rem 0.25rem 0.25rem;
 }
 
 blockquote {
@@ -190,7 +193,7 @@ cite {
   color: var(--color-muted);
 }
 figcaption {
-  padding-left: 2.75rem;
+  padding-left: 1.5rem;
 }
 figcaption::before {
   content: "— ";
@@ -223,6 +226,7 @@ ul.unstyled {
 }
 
 ul.large li {
+  line-height: 1.4rem;
   margin-bottom: 0.75rem;
 }
 
