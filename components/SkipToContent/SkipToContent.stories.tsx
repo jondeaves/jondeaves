@@ -8,7 +8,7 @@ export default {
   title: "Components/SkipToContent",
   component: SkipToContent,
   parameters: {
-    SkipToContent: "fullscreen",
+    layout: "fullscreen",
     actions: {
       handles: ["click a"],
     },

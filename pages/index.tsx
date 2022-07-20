@@ -33,7 +33,7 @@ const Home: NextPage = () => {
 
         <p>
           Why not check out some of the &apos;Magic&apos; of how the site is
-          made by going to the <Link href="/typography">Typography page</Link>.
+          made by going to the [storybook link coming soon].
         </p>
       </Layout>
     </>
