@@ -101,12 +101,16 @@ h4 {
 
 h5 {
   font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
   line-height: 1rem;
   margin-bottom: 0.6rem;
 }
 
 h6 {
   font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
   line-height: 1rem;
   margin-bottom: 0.6rem;
 }
