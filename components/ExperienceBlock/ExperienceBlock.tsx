@@ -10,7 +10,7 @@ type ExperienceBlockProps = {
 
 const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
   return (
-    <div className={ExperienceBlockStyles.wrapper}>
+    <article>
       <Heading level={4} className={ExperienceBlockStyles.title}>
         {experience.title}
       </Heading>
@@ -44,7 +44,7 @@ const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
           ))}
         </ul>
       )}
-    </div>
+    </article>
   );
 };
 

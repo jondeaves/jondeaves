@@ -130,6 +130,7 @@ p.lead {
 }
 
 p.small,
+p small,
 small {
   font-size: 0.8rem;
   line-height: 1rem;
@@ -235,16 +236,27 @@ ul.large li {
 }
 
 ul.inline {
+  margin-bottom: 0;
   padding: 0;
 }
 
 ul.inline li {
   display: inline-block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 ul.inline li:not(:last-child) {
-  margin-right: 1rem;
+  padding-right: 1rem;
+}
+
+ul.inline.slashed li {
+  position: relative;
+}
+
+ul.inline.slashed li:not(:last-child)::after {
+  content: " / ";
+  right: 0.4rem;
+  position: absolute;
 }
 
 dl {
@@ -271,4 +283,8 @@ dl dd p {
 .hidden {
   left: -999px;
   position: absolute;
+}
+
+.spaced {
+  margin-top: 2rem;
 }

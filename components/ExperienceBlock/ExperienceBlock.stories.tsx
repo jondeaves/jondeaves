@@ -24,20 +24,14 @@ const experienceWithEndDateMock = {
   endDate: "2021-12-31",
   highlights: [
     "Working with technology such as React, Storybook, Cypress and BuildKite",
-    "Making pages of the web app look aand function amazingly",
+    "Making pages of the web app look and function amazingly",
     "Putting particular focus within the area of accessibility",
   ],
 };
 
 const experienceWithoutEndDateMock = {
-  title: "Senior Software Engineer",
-  company: "Company Inc",
-  startDate: "2011-01-01",
-  highlights: [
-    "Working with technology such as React, Storybook, Cypress and BuildKite",
-    "Making pages of the web app look aand function amazingly",
-    "Putting particular focus within the area of accessibility",
-  ],
+  ...experienceWithEndDateMock,
+  endDate: undefined,
 };
 
 const Template: ComponentStory<typeof ExperienceBlock> = (args) => (

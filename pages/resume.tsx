@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import ExperienceBlock from "../components/ExperienceBlock";
+import Grid from "../components/Grid";
+import GridItem from "../components/Grid/GridItem";
 import Layout from "../components/Layout";
 import { Experience } from "../shared/types/Experience";
 
@@ -110,6 +112,40 @@ const Home: NextPage = () => {
         {mock.map((experience, idx) => (
           <ExperienceBlock key={idx} experience={experience} />
         ))}
+
+        <h3 className="spaced">Core skills</h3>
+        <ul className="inline slashed">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JS</li>
+          <li>TS</li>
+          <li>NodeJS</li>
+          <li>React</li>
+        </ul>
+
+        <h3 className="spaced">Learning</h3>
+        <p>
+          These are technologies or skills that I work with in my own personal
+          time and therefore likely don&apos;t have commercial experience with.
+        </p>
+        <Grid>
+          <GridItem>
+            <h4>NextJS</h4>
+            <p>
+              I&apos;m currently learning the NextJS framework through several
+              personal projects; including a re-write of my personal page.
+            </p>
+          </GridItem>
+
+          <GridItem>
+            <h4>Flutter</h4>
+            <p>
+              I have built several Flutter apps as learning experiences;
+              including an app to track Table Tennis leagues which is deployed
+              through a testing strack on the Google Play Store.
+            </p>
+          </GridItem>
+        </Grid>
       </Layout>
     </>
   );

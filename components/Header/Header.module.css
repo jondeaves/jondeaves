@@ -75,3 +75,12 @@
     margin-right: 0.5rem;
   }
 }
+
+/* @media print {
+.header,
+.inner {
+  background-color: transparent;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+} */
