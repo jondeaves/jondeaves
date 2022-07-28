@@ -89,6 +89,7 @@ const Home: NextPage = () => {
     },
   ];
 
+  console.log(mock.length);
   return (
     <>
       <Head>
@@ -109,9 +110,13 @@ const Home: NextPage = () => {
 
         <h3>Experience</h3>
 
-        {mock.map((experience, idx) => (
+        {mock.slice(0, 2).map((experience, idx) => (
           <ExperienceBlock key={idx} experience={experience} />
         ))}
+
+        {mock.length > 2 && (
+          <p className="small">** Further experience is continued below.</p>
+        )}
 
         <h3 className="spaced">Core skills</h3>
         <ul className="inline slashed">
@@ -145,6 +150,16 @@ const Home: NextPage = () => {
             </p>
           </GridItem>
         </Grid>
+
+        {mock.length > 2 && (
+          <>
+            <hr className="hidden-print" />
+            <div className="spaced-sm hidden-screen" />
+            {mock.slice(2, mock.length).map((experience, idx) => (
+              <ExperienceBlock key={idx} experience={experience} />
+            ))}
+          </>
+        )}
       </Layout>
     </>
   );

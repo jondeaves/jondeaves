@@ -288,3 +288,27 @@ dl dd p {
 .spaced {
   margin-top: 2rem;
 }
+
+.spaced-sm {
+  margin-top: 1rem;
+}
+
+@media screen {
+  .hidden-screen {
+    display: none;
+  }
+}
+
+@media print {
+  .hidden-print {
+    display: none;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  abbr {
+    text-decoration: none;
+  }
+}

@@ -76,11 +76,18 @@
   }
 }
 
-/* @media print {
-.header,
-.inner {
-  background-color: transparent;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
+@media print {
+  .header {
+    background-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .inner {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .heading2 {
+    color: var(--color-primary-font-color);
+  }
 }
-} */
