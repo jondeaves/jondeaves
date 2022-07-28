@@ -140,9 +140,8 @@ const Home: NextPage = () => {
           <GridItem>
             <h4>Flutter</h4>
             <p>
-              I have built several Flutter apps as learning experiences;
-              including an app to track Table Tennis leagues which is deployed
-              through a testing strack on the Google Play Store.
+              I have built several Flutter apps as learning experiences,
+              including an app to organize Table Tennis.
             </p>
           </GridItem>
         </Grid>

@@ -21,6 +21,14 @@ const Template: ComponentStory<typeof Grid> = (args) => (
       <h3>Item 2</h3>
       <p>This is the second item in the grid</p>
     </div>
+    <div>
+      <h3>Item 3</h3>
+      <p>This is the third item in the grid</p>
+    </div>
+    <div>
+      <h3>Item 4</h3>
+      <p>This is the fourth item in the grid</p>
+    </div>
   </Grid>
 );
 
