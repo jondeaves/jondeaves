@@ -2,6 +2,7 @@ import { format } from "date-fns";
 
 import { Experience } from "../../shared/types/Experience";
 import Heading from "../Elements/Heading";
+import ExternalLink from "../ExternalLink";
 import ExperienceBlockStyles from "./ExperienceBlock.module.css";
 
 type ExperienceBlockProps = {
@@ -17,7 +18,21 @@ const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
       <Heading level={5}>
         <small>
           <em>
-            {experience.company}&nbsp;&nbsp;/&nbsp;&nbsp;
+            {experience.url ? (
+              <ExternalLink
+                href={experience.url}
+                label={
+                  <>
+                    <span className="hidden">at&nbsp;</span>
+                    {experience.company}
+                  </>
+                }
+              />
+            ) : (
+              <>{experience.company}</>
+            )}
+            &nbsp;&nbsp;/&nbsp;&nbsp;
+            <span className="hidden">from&nbsp;</span>
             <abbr
               title={format(new Date(experience.startDate), "do MMMM yyyy")}
             >
@@ -36,6 +51,8 @@ const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
           </em>
         </small>
       </Heading>
+
+      {experience.note && <p className="small nospace">** {experience.note}</p>}
 
       {experience.highlights.length > 0 && (
         <ul className={ExperienceBlockStyles.list}>

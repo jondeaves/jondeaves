@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Accordion from "../components/Accordion";
 import ExperienceBlock from "../components/ExperienceBlock";
 import Grid from "../components/Grid";
 import GridItem from "../components/Grid/GridItem";
@@ -11,6 +12,7 @@ const Home: NextPage = () => {
   const mock: Experience[] = [
     {
       title: "Software Engineer",
+      url: "https://webflow.com/",
       company: "Webflow",
       startDate: "2021-09-01",
       highlights: [
@@ -21,6 +23,7 @@ const Home: NextPage = () => {
     },
     {
       title: "Senior Software Engineer",
+      url: "https://www.fanduel.com/",
       company: "FanDuel",
       startDate: "2018-05-22",
       endDate: "2021-08-24",
@@ -33,6 +36,7 @@ const Home: NextPage = () => {
 
     {
       title: "UI Developer",
+      url: "https://deepmatter.io/",
       company: "DeepMatter",
       startDate: "2018-01-08",
       endDate: "2018-05-18",
@@ -45,6 +49,7 @@ const Home: NextPage = () => {
 
     {
       title: "UI Developer",
+      url: "https://www.cgi.com/",
       company: "CGI UK",
       startDate: "2016-01-25",
       endDate: "2018-01-05",
@@ -57,6 +62,7 @@ const Home: NextPage = () => {
 
     {
       title: "Web Developer",
+      url: "https://www.weareeveryone.com/",
       company: "Everyone",
       startDate: "2015-02-16",
       endDate: "2016-01-22",
@@ -69,7 +75,9 @@ const Home: NextPage = () => {
 
     {
       title: "Web Developer",
+      url: "https://www.binarytechnologies.co.uk/",
       company: "Arquila",
+      note: "Company was renamed to Binary Technologies sometime after my departure",
       startDate: "2013-05-13",
       endDate: "2015-02-05",
       highlights: [
@@ -80,6 +88,7 @@ const Home: NextPage = () => {
 
     {
       title: "Web Developer",
+      url: "https://supercontrol.co.uk/",
       company: "SuperControl",
       startDate: "2011-12-10",
       endDate: "2013-05-10",
@@ -89,7 +98,6 @@ const Home: NextPage = () => {
     },
   ];
 
-  console.log(mock.length);
   return (
     <>
       <Head>
@@ -108,14 +116,18 @@ const Home: NextPage = () => {
           progressive user experiences.
         </p>
 
-        <h3>Experience</h3>
+        <h3>Recent experience</h3>
 
         {mock.slice(0, 2).map((experience, idx) => (
           <ExperienceBlock key={idx} experience={experience} />
         ))}
 
         {mock.length > 2 && (
-          <p className="small">** Further experience is continued below.</p>
+          <p className="small">
+            <a href="#further-experience">
+              ** Further experience is continued below.
+            </a>
+          </p>
         )}
 
         <h3 className="spaced">Core skills</h3>
@@ -153,11 +165,12 @@ const Home: NextPage = () => {
 
         {mock.length > 2 && (
           <>
-            <hr className="hidden-print" />
-            <div className="spaced-sm hidden-screen" />
-            {mock.slice(2, mock.length).map((experience, idx) => (
-              <ExperienceBlock key={idx} experience={experience} />
-            ))}
+            <div className="pagebreak" />
+            <Accordion summary="Further experience" tag="further-experience">
+              {mock.slice(2, mock.length).map((experience, idx) => (
+                <ExperienceBlock key={idx} experience={experience} />
+              ))}
+            </Accordion>
           </>
         )}
       </Layout>

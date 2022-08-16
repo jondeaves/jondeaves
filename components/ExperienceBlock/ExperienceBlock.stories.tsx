@@ -34,6 +34,16 @@ const experienceWithoutEndDateMock = {
   endDate: undefined,
 };
 
+const experienceWithUrlMock = {
+  ...experienceWithEndDateMock,
+  url: "https://google.co.uk",
+};
+
+const experienceWithNoteMock = {
+  ...experienceWithEndDateMock,
+  note: "This is a note about the experience item",
+};
+
 const Template: ComponentStory<typeof ExperienceBlock> = (args) => (
   <ExperienceBlock {...args} />
 );
@@ -46,4 +56,14 @@ Default.args = {
 export const WithoutEndDate = Template.bind({});
 WithoutEndDate.args = {
   experience: experienceWithoutEndDateMock,
+};
+
+export const WithUrl = Template.bind({});
+WithUrl.args = {
+  experience: experienceWithUrlMock,
+};
+
+export const WithNote = Template.bind({});
+WithNote.args = {
+  experience: experienceWithNoteMock,
 };

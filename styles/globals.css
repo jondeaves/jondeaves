@@ -136,6 +136,10 @@ small {
   line-height: 1rem;
 }
 
+p.nospace {
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
   border-bottom: 1px solid var(--color-primary-border-color);
@@ -280,9 +284,22 @@ dl dd p {
   margin-bottom: 0;
 }
 
+button.plain {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
 .hidden {
+  clip: rect(0 0 0 0);
   left: -999px;
+  overflow: hidden;
   position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .spaced {
@@ -293,6 +310,10 @@ dl dd p {
   margin-top: 1rem;
 }
 
+.inline {
+  display: inline-block;
+}
+
 @media screen {
   .hidden-screen {
     display: none;
@@ -300,15 +321,27 @@ dl dd p {
 }
 
 @media print {
-  .hidden-print {
-    display: none;
-  }
-
   main {
     padding-top: 0;
   }
 
   abbr {
     text-decoration: none;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  a::after {
+    border-bottom: none;
+  }
+
+  .hidden-print {
+    display: none;
+  }
+
+  .pagebreak {
+    page-break-before: always;
   }
 }
