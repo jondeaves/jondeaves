@@ -1,0 +1,41 @@
+.summary {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.summary::before {
+  content: "▾";
+  left: 0;
+  position: absolute;
+}
+
+.content {
+  height: auto;
+  overflow: hidden;
+}
+
+.closed .summary::before {
+  content: "▸";
+}
+
+.closed .content {
+  height: 0;
+}
+
+@media print {
+  .summary {
+    cursor: default;
+    padding-left: 0;
+  }
+
+  .summary::before,
+  .closed .summary::before {
+    content: "";
+    pointer-events: none;
+  }
+
+  .closed .content {
+    height: auto;
+  }
+}
