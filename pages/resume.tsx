@@ -9,7 +9,7 @@ import { Experience } from "../shared/types/Experience";
 
 const Home: NextPage = () => {
   // TODO: Replace with an API call, with sorting and filtering?
-  const mock: Experience[] = [
+  const experienceData: Experience[] = [
     {
       title: "Software Engineer",
       url: "https://webflow.com/",
@@ -118,11 +118,11 @@ const Home: NextPage = () => {
 
         <h3>Recent experience</h3>
 
-        {mock.slice(0, 2).map((experience, idx) => (
+        {experienceData.slice(0, 2).map((experience, idx) => (
           <ExperienceBlock key={idx} experience={experience} />
         ))}
 
-        {mock.length > 2 && (
+        {experienceData.length > 2 && (
           <p className="small">
             <a href="#further-experience">
               ** Further experience is continued below.
@@ -142,15 +142,15 @@ const Home: NextPage = () => {
 
         <h3 className="spaced">Learning</h3>
         <p>
-          These are technologies or skills that I work with in my own personal
-          time and therefore likely don&apos;t have commercial experience with.
+          These are technologies or skills that I work with in my own time and
+          therefore likely don&apos;t have commercial experience with.
         </p>
         <Grid>
           <GridItem>
             <h4>NextJS</h4>
             <p>
               I&apos;m currently learning the NextJS framework through several
-              personal projects; including a re-write of my personal page.
+              projects; including a re-write of my personal page.
             </p>
           </GridItem>
 
@@ -158,18 +158,20 @@ const Home: NextPage = () => {
             <h4>Flutter</h4>
             <p>
               I have built several Flutter apps as learning experiences,
-              including an app to organize Table Tennis.
+              including an app to organize Table Tennis leagues.
             </p>
           </GridItem>
         </Grid>
 
-        {mock.length > 2 && (
+        {experienceData.length > 2 && (
           <>
             <div className="pagebreak" />
             <Accordion summary="Further experience" tag="further-experience">
-              {mock.slice(2, mock.length).map((experience, idx) => (
-                <ExperienceBlock key={idx} experience={experience} />
-              ))}
+              {experienceData
+                .slice(2, experienceData.length)
+                .map((experience, idx) => (
+                  <ExperienceBlock key={idx} experience={experience} />
+                ))}
             </Accordion>
           </>
         )}

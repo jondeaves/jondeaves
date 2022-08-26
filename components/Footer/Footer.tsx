@@ -1,6 +1,22 @@
+import ExternalLink from "../ExternalLink";
 import FooterStyles from "./Footer.module.css";
 
 const Footer = () => {
+  const socialLinks = [
+    {
+      label: "LinkedIn",
+      href: "https://linkedin.com/in/jondeaves",
+    },
+    {
+      label: "GitHub",
+      href: "https://github.com/jondeaves",
+    },
+    {
+      label: "npm",
+      href: "https://npmjs.com/~jondeave",
+    },
+  ];
+
   return (
     <footer className={FooterStyles.footer}>
       <p id="social-intro" className="hidden">
@@ -8,22 +24,17 @@ const Footer = () => {
       </p>
 
       <ul className="inline" aria-describedby="social-intro">
-        <li>
-          <a href="https://linkedin.com/in/jondeaves" rel="external">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/jondeaves" rel="external">
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://npmjs.com/~jondeaves" rel="external">
-            npm
-          </a>
-        </li>
+        {socialLinks.map((link) => (
+          <li key={link.label}>
+            <ExternalLink href={link.href} label={link.label} />
+          </li>
+        ))}
       </ul>
+
+      <p className="spaced-sm">
+        Site built by Jon Deaves using{" "}
+        <ExternalLink href="https://nextjs.org/" label="NextJS" />
+      </p>
     </footer>
   );
 };

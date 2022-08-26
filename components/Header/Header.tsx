@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ExternalLink from "../ExternalLink";
 import HeaderStyles from "./Header.module.css";
 
 export type HeaderProps = {
@@ -34,9 +35,7 @@ const Header = ({ isHomepage }: HeaderProps) => {
           <h2 className={HeaderStyles.heading2}>Software Engineer</h2>
           {isHomepage && (
             <h3 className={HeaderStyles.heading3}>
-              <a href="https://webflow.com/" rel="external">
-                @Webflow
-              </a>
+              <ExternalLink href="https://webflow.com" label="@Webflow" />
             </h3>
           )}
         </div>

@@ -215,11 +215,13 @@ ul {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  padding-inline-start: 40px;
+  padding-inline-start: 1.5rem;
 }
 
 li {
   display: list-item;
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
   text-align: -webkit-match-parent;
 }
 
@@ -314,6 +316,16 @@ button.plain {
   display: inline-block;
 }
 
+@media screen and (min-width: 480px) {
+  ul {
+    padding-inline-start: 2.5rem;
+  }
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
 @media screen {
   .hidden-screen {
     display: none;
@@ -335,6 +347,10 @@ button.plain {
 
   a::after {
     border-bottom: none;
+  }
+
+  li {
+    line-height: 1rem;
   }
 
   .hidden-print {

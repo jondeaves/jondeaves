@@ -25,10 +25,10 @@ const Home: NextPage = () => {
         <p>
           I try to keep things light and easy by not relying too much on fancy
           graphics, animations or interactivity in my own corner of the web.
-          This speaks a lot to what I find frustrating with a lot of modern
-          sites that have to be constantly sharing content, showing adverts and
-          otherwise bombarding your senses in the pursuit of clicks, impressions
-          and money.
+          This speaks to what I find frustrating with a lot of modern sites that
+          have to be constantly sharing content, showing adverts and otherwise
+          bombarding your senses in the pursuit of clicks, impressions and
+          money.
         </p>
 
         <p>

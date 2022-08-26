@@ -11,7 +11,7 @@ type ExperienceBlockProps = {
 
 const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
   return (
-    <article>
+    <div>
       <Heading level={4} className={ExperienceBlockStyles.title}>
         {experience.title}
       </Heading>
@@ -19,26 +19,18 @@ const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
         <small>
           <em>
             {experience.url ? (
-              <ExternalLink
-                href={experience.url}
-                label={
-                  <>
-                    <span className="hidden">at&nbsp;</span>
-                    {experience.company}
-                  </>
-                }
-              />
+              <ExternalLink href={experience.url} label={experience.company} />
             ) : (
               <>{experience.company}</>
             )}
-            &nbsp;&nbsp;/&nbsp;&nbsp;
+            <span aria-hidden={true}>&nbsp;&nbsp;/&nbsp;&nbsp;</span>
             <span className="hidden">from&nbsp;</span>
             <abbr
               title={format(new Date(experience.startDate), "do MMMM yyyy")}
             >
               {format(new Date(experience.startDate), "MMMM yyyy")}
             </abbr>{" "}
-            –{" "}
+            <span aria-label="to">–</span>{" "}
             {experience.endDate ? (
               <abbr
                 title={format(new Date(experience.endDate), "do MMMM yyyy")}
@@ -61,7 +53,7 @@ const ExperienceBlock = ({ experience }: ExperienceBlockProps) => {
           ))}
         </ul>
       )}
-    </article>
+    </div>
   );
 };
 

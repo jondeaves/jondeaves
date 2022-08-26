@@ -16,7 +16,7 @@ const Accordion = ({ children, summary, tag }: AccordionProps) => {
 
   return (
     <div className={isOpen ? "" : AccordionStyles.closed}>
-      <button className="plain" onClick={onToggle} id={tag}>
+      <button type="button" className="plain" onClick={onToggle} id={tag}>
         <h3 className={AccordionStyles.summary}>
           {summary}{" "}
           <small className="hidden">
