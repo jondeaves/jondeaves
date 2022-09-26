@@ -19,7 +19,7 @@ export default {
 } as ComponentMeta<typeof Heading>;
 
 const Template: ComponentStory<typeof Heading> = (args) => (
-  <Heading {...args} />
+  <Heading {...args}>This is a heading with level {args.level}</Heading>
 );
 
 export const Default = Template.bind({});
