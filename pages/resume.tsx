@@ -8,7 +8,6 @@ import Layout from "../components/Layout";
 import { Experience } from "../shared/types/Experience";
 
 const Home: NextPage = () => {
-  // TODO: Replace with an API call, with sorting and filtering?
   const experienceData: Experience[] = [
     {
       title: "Software Engineer",

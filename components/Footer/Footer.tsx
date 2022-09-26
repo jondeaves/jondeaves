@@ -30,11 +30,6 @@ const Footer = () => {
           </li>
         ))}
       </ul>
-
-      <p className="spaced-sm">
-        Site built by Jon Deaves using{" "}
-        <ExternalLink href="https://nextjs.org/" label="NextJS" />
-      </p>
     </footer>
   );
 };

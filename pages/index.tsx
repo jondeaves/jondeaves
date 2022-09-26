@@ -1,13 +1,14 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
+import ExternalLink from "../components/ExternalLink";
 import Layout from "../components/Layout";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Jon Deaves, Software Developer</title>
+        <title>Jon Deaves, Software Engineer</title>
         <meta
           name="description"
           content="Jon Deaves is a Software Engineer who makes things, usually with code"
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
 
       <Layout isHomepage={true}>
         <p className="lead">
-          I&apos;m an experienced developer specialising in interactive web
+          I&apos;m an experienced engineer specialising in interactive web
           applications and I take pride in creating modern, responsive and
           progressive user experiences.
         </p>
@@ -33,7 +34,12 @@ const Home: NextPage = () => {
 
         <p>
           Why not check out some of the &apos;Magic&apos; of how the site is
-          made by going to the [storybook link coming soon].
+          made by going to the{" "}
+          <ExternalLink
+            href="https://storybook.jondeaves.me/"
+            label="Storybook"
+          />{" "}
+          site, which is where I document most of the re-usable components.
         </p>
       </Layout>
     </>
