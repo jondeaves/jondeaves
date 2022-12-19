@@ -295,6 +295,11 @@ button.plain {
   margin: 0;
 }
 
+picture img,
+figure img {
+  max-width: 100%;
+}
+
 .hidden {
   clip: rect(0 0 0 0);
   left: -999px;
@@ -322,6 +327,10 @@ button.plain {
 
 .inline {
   display: inline-block;
+}
+
+.filled-image {
+  position: relative;
 }
 
 @media screen and (min-width: 480px) {

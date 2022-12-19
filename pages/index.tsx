@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -41,10 +42,19 @@ const Home: NextPage = () => {
           />{" "}
           site, which is where I document most of the re-usable components.
         </p>
+
         <p>
           Or maybe you are more interested in knowing{" "}
           <Link href="/now">what I am up-to right now</Link>.
         </p>
+
+        <figure>
+          <img
+            src="/dog.png"
+            alt="My dog staring longingly at the camera from his small, dog-sized, couch"
+          />
+          <figcaption>Here is some dog-tax for good measure</figcaption>
+        </figure>
       </Layout>
     </>
   );
