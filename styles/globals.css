@@ -308,8 +308,16 @@ button.plain {
   margin-top: 2rem;
 }
 
+.spaced-below {
+  margin-bottom: 2rem;
+}
+
 .spaced-sm {
   margin-top: 1rem;
+}
+
+.spaced-below-sm {
+  margin-bottom: 1.5rem;
 }
 
 .inline {

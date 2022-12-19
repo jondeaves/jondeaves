@@ -41,6 +41,10 @@ const Home: NextPage = () => {
           />{" "}
           site, which is where I document most of the re-usable components.
         </p>
+        <p>
+          Or maybe you are more interested in knowing{" "}
+          <Link href="/now">what I am up-to right now</Link>.
+        </p>
       </Layout>
     </>
   );

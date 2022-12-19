@@ -7,7 +7,7 @@ import GridItem from "../components/Grid/GridItem";
 import Layout from "../components/Layout";
 import { Experience } from "../shared/types/Experience";
 
-const Home: NextPage = () => {
+const Resume: NextPage = () => {
   const experienceData: Experience[] = [
     {
       title: "Software Engineer",
@@ -179,4 +179,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default Resume;
