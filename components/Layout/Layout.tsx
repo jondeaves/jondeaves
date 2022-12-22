@@ -5,13 +5,18 @@ import SkipToContent from "../SkipToContent";
 type LayoutProps = {
   children: React.ReactNode;
   isHomepage: boolean;
+  shouldHeaderH1?: boolean;
 };
 
-const Layout = ({ children, isHomepage }: LayoutProps) => {
+const Layout = ({
+  children,
+  isHomepage,
+  shouldHeaderH1 = false,
+}: LayoutProps) => {
   return (
     <div className="wrapper">
       <SkipToContent />
-      <Header isHomepage={isHomepage} />
+      <Header shouldHeaderH1={shouldHeaderH1} isHomepage={isHomepage} />
       <main id="main">{children}</main>
       <Footer />
     </div>

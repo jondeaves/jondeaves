@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Grid from "../components/Grid";
-import GridItem from "../components/Grid/GridItem";
 import Layout from "../components/Layout";
 
 const Now: NextPage = () => {
@@ -17,6 +15,18 @@ const Now: NextPage = () => {
       </Head>
 
       <Layout>
+        <h1 className="inline">Now</h1>
+        <p className="small spaced-left-sm inline">
+          as in{" "}
+          <a
+            href="https://nownownow.com/about"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            nownownow
+          </a>
+        </p>
+
         <p className="lead">
           This is me within a point in time, as best I can summarise myself.
         </p>
@@ -170,15 +180,7 @@ const Now: NextPage = () => {
         </ul>
 
         <p className="small spaced">
-          Based on, and inspired by,{" "}
-          <a
-            href="https://nownownow.com/about"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            nownownow
-          </a>
-          . This page was last updated on 19th December 2022.
+          This page was last updated on 19th December 2022.
         </p>
       </Layout>
     </>

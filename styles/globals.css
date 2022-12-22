@@ -313,8 +313,16 @@ figure img {
   margin-top: 2rem;
 }
 
+.spaced-left {
+  margin-left: 2rem;
+}
+
 .spaced-below {
   margin-bottom: 2rem;
+}
+
+.spaced-left-sm {
+  margin-left: 1rem;
 }
 
 .spaced-sm {

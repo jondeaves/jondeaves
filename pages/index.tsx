@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout isHomepage={true}>
+      <Layout isHomepage={true} shouldHeaderH1={true}>
         <p className="lead">
           I&apos;m an experienced engineer specialising in interactive web
           applications and I take pride in creating modern, responsive and
