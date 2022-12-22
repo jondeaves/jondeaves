@@ -3,10 +3,10 @@ import ExternalLink from "../ExternalLink";
 import FooterStyles from "./Footer.module.css";
 
 export type FooterProps = {
-  isHomepage: boolean;
+  isHomepage?: boolean;
 };
 
-const Footer = ({ isHomepage }: FooterProps) => {
+const Footer = ({ isHomepage = false }: FooterProps) => {
   const socialLinks = [
     {
       label: "LinkedIn",
