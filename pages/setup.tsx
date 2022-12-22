@@ -38,6 +38,14 @@ const Setup: NextPage = () => {
         <h3>Technologies</h3>
 
         <p>TBD</p>
+
+        <p className="small spaced">
+          This was also inspired by the person who made{" "}
+          <ExternalLink href="https://nownownow.com/about" label="nownownow" />,
+          see{" "}
+          <ExternalLink href="https://sive.rs/uses" label="Derek Sivers page" />
+          .
+        </p>
       </Layout>
     </>
   );
