@@ -127,6 +127,7 @@ const Now: NextPage = () => {
               <li>Could go back to Rollerderby</li>
               <li>Could stick to regular roller-skating at rinks</li>
               <li>Join an Archery club</li>
+              <li>More regular bouldering sessions</li>
             </ul>
           </li>
         </ul>
