@@ -105,8 +105,8 @@ const Now: NextPage = () => {
         <h4>Achievements</h4>
         <ul>
           <li>
-            Lost my home gym that I was a member of for years, but gained a gym
-            in my apartment building
+            Lost the gym that I was a member of for years due to the move, but
+            gained a gym in my apartment building
           </li>
           <li>
             Instead of 1:1 training, I get 3 days worth of workouts to do in the
