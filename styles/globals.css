@@ -202,7 +202,7 @@ cite {
   color: var(--color-muted);
 }
 figcaption {
-  padding-left: 1.5rem;
+  padding-left: 0.75rem;
 }
 figcaption::before {
   content: "— ";
@@ -333,6 +333,10 @@ figure img {
   margin-bottom: 1.5rem;
 }
 
+.spaced-below-xs {
+  margin-bottom: 0.75rem;
+}
+
 .inline {
   display: inline-block;
 }
@@ -348,6 +352,10 @@ figure img {
 
   li {
     margin-bottom: 0.5rem;
+  }
+
+  figcaption {
+    padding-left: 1.5rem;
   }
 }
 

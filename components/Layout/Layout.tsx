@@ -18,7 +18,7 @@ const Layout = ({
       <SkipToContent />
       <Header shouldHeaderH1={shouldHeaderH1} isHomepage={isHomepage} />
       <main id="main">{children}</main>
-      <Footer />
+      <Footer isHomepage={isHomepage} />
     </div>
   );
 };

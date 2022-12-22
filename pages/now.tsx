@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import ExternalLink from "../components/ExternalLink";
 import Layout from "../components/Layout";
 
 const Now: NextPage = () => {
@@ -18,13 +19,7 @@ const Now: NextPage = () => {
         <h1 className="inline">Now</h1>
         <p className="small spaced-left-sm inline">
           as in{" "}
-          <a
-            href="https://nownownow.com/about"
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            nownownow
-          </a>
+          <ExternalLink href="https://nownownow.com/about" label="nownownow" />
         </p>
 
         <p className="lead">
@@ -35,24 +30,19 @@ const Now: NextPage = () => {
         <h4>Achievements</h4>
         <ul>
           <li>
-            In November 2022 my family <small>(Myself, Wife and Dog)</small> and
-            I moved to Ontario, Canada
+            In November 2022 my family and I moved to Ontario, Canada
             <ul>
               <li>
                 Moving was very stressful and not quite finished as we await our
                 shipment of belongings
               </li>
               <li>
-                We are near Toronto but have only gone to the city one time so
-                far
-              </li>
-              <li>
-                Trying to spend most of our weekends exploring the area and
-                small towns nearby
+                We are near Toronto and really enjoying the chance to explore
+                new areas, visiting small towns most weekends
               </li>
             </ul>
           </li>
-          <li>Got married in October of 2022</li>
+          <li>We also got married in October of 2022</li>
         </ul>
 
         <h4>Goals</h4>
@@ -83,69 +73,31 @@ const Now: NextPage = () => {
         <ul>
           <li>
             Passed my one-year mark with{" "}
-            <a
-              href="https://webflow.com"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Webflow
-            </a>
+            <ExternalLink href="https://webflow.com" label="Webflow" />
           </li>
           <li>Continuing to focus on React for my day-to-day</li>
           <li>
             Preparing for{" "}
-            <a
+            <ExternalLink
               href="https://globalgamejam.org/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Global Game Jam
-            </a>{" "}
+              label="Global Game Jam"
+            />{" "}
             by refreshing my knowledge on{" "}
-            <a
-              href="https://unity.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Unity
-            </a>
+            <ExternalLink href="https://unity.com/" label="Unity" />
           </li>
+          <li>Launched my new website, built with NextJS</li>
         </ul>
 
         <h4>Goals</h4>
         <ul>
           <li>
             Get back to working with{" "}
-            <a
-              href="https://flutter.dev/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Flutter
-            </a>{" "}
-            for hobby projects
+            <ExternalLink href="https://flutter.dev/" label="Flutter" /> for
+            hobby projects and learning{" "}
+            <ExternalLink href="https://www.rust-lang.org/" label="Rust" />
           </li>
           <li>
-            Get back to learning{" "}
-            <a
-              href="https://www.rust-lang.org/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Rust
-            </a>
-          </li>
-          <li>
-            Launch my new website
-            <ul>
-              <li>
-                I wrote this Now page while it was still under-development
-              </li>
-              <li>
-                I&apos;m struggling to decide what content I want on the
-                front-page/what the sites purpose is
-              </li>
-            </ul>
+            Work on small game prototypes to keep my knowledge of Unity fresh
           </li>
         </ul>
 
@@ -180,7 +132,7 @@ const Now: NextPage = () => {
         </ul>
 
         <p className="small spaced">
-          This page was last updated on 19th December 2022.
+          This page was last updated on 21st December 2022.
         </p>
       </Layout>
     </>

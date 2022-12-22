@@ -33,22 +33,41 @@ const Home: NextPage = () => {
           money.
         </p>
 
-        <p>
-          Why not check out some of the &apos;Magic&apos; of how the site is
-          made by going to the{" "}
-          <ExternalLink
-            href="https://storybook.jondeaves.me/"
-            label="Storybook"
-          />{" "}
-          site, which is where I document most of the re-usable components.
-        </p>
+        <p>Here are some of the things you can read about on this site;</p>
+        <ul className="unstyled">
+          <li>
+            <strong>
+              <Link href="/now">Now</Link>
+            </strong>{" "}
+            &mdash; my now page is a summary of what I am up-to right now.
+          </li>
+          <li>
+            <strong>
+              <Link href="/resume">Resume</Link>
+            </strong>{" "}
+            &mdash; my resume page is a non-exhaustive history of my
+            professional career.
+          </li>
+          <li>
+            <strong>
+              <Link href="/setup">Setup</Link>
+            </strong>{" "}
+            &mdash; my setup page is a summary of what I use in my day-to-day
+            life.
+          </li>
+          <li>
+            <strong>
+              <ExternalLink
+                href="https://storybook.jondeaves.me/"
+                label="Storybook"
+              />
+            </strong>{" "}
+            &mdash; my storybook site is where I document most of the re-usable
+            components.
+          </li>
+        </ul>
 
-        <p>
-          Or maybe you are more interested in knowing{" "}
-          <Link href="/now">what I am up-to right now</Link>.
-        </p>
-
-        <figure>
+        <figure className="spaced">
           <img
             src="/dog.png"
             alt="My dog staring longingly at the camera from his small, dog-sized, couch"

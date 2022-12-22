@@ -1,7 +1,12 @@
+import BackToHomeLink from "../BackToHomeLink";
 import ExternalLink from "../ExternalLink";
 import FooterStyles from "./Footer.module.css";
 
-const Footer = () => {
+export type FooterProps = {
+  isHomepage: boolean;
+};
+
+const Footer = ({ isHomepage }: FooterProps) => {
   const socialLinks = [
     {
       label: "LinkedIn",
@@ -19,6 +24,7 @@ const Footer = () => {
 
   return (
     <footer className={FooterStyles.footer}>
+      {!isHomepage && <BackToHomeLink />}
       <p id="social-intro" className="hidden">
         Though I&apos;m not very social on the internet you can find me at;
       </p>
