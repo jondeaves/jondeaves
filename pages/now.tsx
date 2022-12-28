@@ -29,6 +29,7 @@ const Now: NextPage = () => {
         <h3 className="spaced-below-sm">Me time</h3>
         <h4>Achievements</h4>
         <ul>
+          <li>In October 2022 I married my now wife</li>
           <li>
             In November 2022 my family and I moved to Ontario, Canada
             <ul>
@@ -37,12 +38,11 @@ const Now: NextPage = () => {
                 shipment of belongings
               </li>
               <li>
-                We are near Toronto and really enjoying the chance to explore
-                new areas, visiting small towns most weekends
+                We are near Toronto and enjoying the chance to explore new
+                areas, visiting small towns most weekends
               </li>
             </ul>
           </li>
-          <li>We also got married in October of 2022</li>
         </ul>
 
         <h4>Goals</h4>
@@ -54,10 +54,10 @@ const Now: NextPage = () => {
           <li>
             Still learning to drive
             <ul>
-              <li>Wasn&apos;t quite ready before leaving UK</li>
+              <li>Wasn&apos;t quite ready before leaving the UK</li>
               <li>
-                I have my learners permit <small>(G1 in Ontario)</small> and
-                working through the approved training materials in our new
+                I have my learner&apos;s permit <small>(G1 in Ontario)</small>{" "}
+                and working through the approved training materials in our new
                 country.
               </li>
               <li>
@@ -109,8 +109,8 @@ const Now: NextPage = () => {
             gained a gym in my apartment building
           </li>
           <li>
-            Instead of 1:1 training, I get 3 days worth of workouts to do in the
-            week from my PT
+            Instead of 1:1 training, I get 3 days&apos; worth of workouts to do
+            in the week from my PT
           </li>
         </ul>
 
@@ -118,11 +118,10 @@ const Now: NextPage = () => {
         <ul>
           <li>Get comfortable with the new routine</li>
           <li>
-            Start walking further, or taking the dog to a bigger park for
-            exercise
+            Start walking further, or take the dog to a bigger park for exercise
           </li>
           <li>
-            Decide on a hobby sport, current thinkings;
+            Decide on a hobby sport, my current thinking;
             <ul>
               <li>Could go back to Rollerderby</li>
               <li>Could stick to regular roller-skating at rinks</li>

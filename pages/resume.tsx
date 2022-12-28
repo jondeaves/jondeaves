@@ -76,7 +76,7 @@ const Resume: NextPage = () => {
       title: "Web Developer",
       url: "https://www.binarytechnologies.co.uk/",
       company: "Arquila",
-      note: "Company was renamed to Binary Technologies sometime after my departure",
+      note: "Company was renamed Binary Technologies sometime after my departure",
       startDate: "2013-05-13",
       endDate: "2015-02-05",
       highlights: [
@@ -149,7 +149,7 @@ const Resume: NextPage = () => {
             <h4>NextJS</h4>
             <p>
               I&apos;m currently learning the NextJS framework through several
-              projects; including a re-write of my personal page.
+              projects; including a re-write of my website.
             </p>
           </GridItem>
 
@@ -165,7 +165,11 @@ const Resume: NextPage = () => {
         {experienceData.length > 2 && (
           <>
             <div className="pagebreak" />
-            <Accordion summary="Further experience" tag="further-experience">
+            <Accordion
+              summary="Further experience"
+              tag="further-experience"
+              defaultOpen={false}
+            >
               {experienceData
                 .slice(2, experienceData.length)
                 .map((experience, idx) => (

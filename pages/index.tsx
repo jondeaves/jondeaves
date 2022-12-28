@@ -26,9 +26,9 @@ const Home: NextPage = () => {
 
         <p>
           I try to keep things light and easy by not relying too much on fancy
-          graphics, animations or interactivity in my own corner of the web.
-          This speaks to what I find frustrating with a lot of modern sites that
-          have to be constantly sharing content, showing adverts and otherwise
+          graphics, animations or interactivity in my corner of the web. This
+          speaks to what I find frustrating with a lot of modern sites that have
+          to be constantly sharing content, showing adverts and otherwise
           bombarding your senses in the pursuit of clicks, impressions and
           money.
         </p>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
             <strong>
               <Link href="/now">Now</Link>
             </strong>{" "}
-            &mdash; my now page is a summary of what I am up-to right now.
+            &mdash; my now page is a summary of what I am up to right now.
           </li>
           <li>
             <strong>
@@ -62,7 +62,7 @@ const Home: NextPage = () => {
                 label="Storybook"
               />
             </strong>{" "}
-            &mdash; my storybook site is where I document most of the re-usable
+            &mdash; my storybook site is where I document most of the reusable
             components.
           </li>
         </ul>

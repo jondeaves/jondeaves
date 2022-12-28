@@ -3,12 +3,18 @@ import AccordionStyles from "./Accordion.module.css";
 
 type AccordionProps = {
   children: React.ReactNode;
+  defaultOpen?: boolean;
   summary: string;
   tag?: string;
 };
 
-const Accordion = ({ children, summary, tag }: AccordionProps) => {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+const Accordion = ({
+  children,
+  summary,
+  tag,
+  defaultOpen = true,
+}: AccordionProps) => {
+  const [isOpen, setIsOpen] = useState<boolean>(defaultOpen);
 
   const onToggle = () => {
     setIsOpen(!isOpen);
