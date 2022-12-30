@@ -2135,6 +2135,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@panelbear/panelbear-js@npm:^1.3.3":
+  version: 1.3.3
+  resolution: "@panelbear/panelbear-js@npm:1.3.3"
+  checksum: acd28dd5c5e94b39b9e825d6b39f39a1ac138100729c3b9dbc931e9cb80ac73ae187d4884a457de3ce91ee3f58bbbdedd23135338c41b57bda9305288a4f6c69
+  languageName: node
+  linkType: hard
+
+"@panelbear/panelbear-nextjs@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@panelbear/panelbear-nextjs@npm:1.0.5"
+  dependencies:
+    "@panelbear/panelbear-js": ^1.3.3
+  peerDependencies:
+    next: ^10 || ^11 || ^12 || ^13
+    react: ^16 || ^17 || ^18
+  checksum: 765788c81994d580b572b310ae4822fc1bb16fc11a0475b1f368671cb75692a0ce6c7ed1d56eba1d5298cf8da446695df7916a890f789774e00f485264e66285
+  languageName: node
+  linkType: hard
+
 "@pmmmwh/react-refresh-webpack-plugin@npm:^0.5.3":
   version: 0.5.8
   resolution: "@pmmmwh/react-refresh-webpack-plugin@npm:0.5.8"
@@ -9885,6 +9904,7 @@ __metadata:
   resolution: "jondeaves@workspace:."
   dependencies:
     "@babel/core": ^7.19.6
+    "@panelbear/panelbear-nextjs": ^1.0.5
     "@storybook/addon-actions": ^6.5.13
     "@storybook/addon-essentials": ^6.5.13
     "@storybook/addon-interactions": ^6.5.13

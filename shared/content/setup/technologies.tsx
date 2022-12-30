@@ -12,3 +12,5 @@ const TechnologySetup = () => {
 };
 
 export default TechnologySetup;
+
+// panelbear = analytics, trying it out
