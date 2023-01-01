@@ -5,7 +5,7 @@ type AccordionProps = {
   children: React.ReactNode;
   defaultOpen?: boolean;
   summary: string;
-  tag?: string;
+  tag: string;
 };
 
 const Accordion = ({
@@ -20,9 +20,21 @@ const Accordion = ({
     setIsOpen(!isOpen);
   };
 
+  const triggerId = `${tag}-trigger`;
+  const contentId = `${tag}-content`;
+
   return (
-    <div className={isOpen ? "" : AccordionStyles.closed}>
-      <button type="button" className="plain" onClick={onToggle} id={tag}>
+    <>
+      <button
+        type="button"
+        className={`plain ${AccordionStyles.trigger} ${
+          isOpen ? "" : AccordionStyles.closed
+        }`}
+        onClick={onToggle}
+        id={triggerId}
+        aria-expanded={isOpen}
+        aria-controls={contentId}
+      >
         <h3 className={AccordionStyles.summary}>
           {summary}{" "}
           <small className="hidden">
@@ -30,8 +42,17 @@ const Accordion = ({
           </small>
         </h3>
       </button>
-      <div className={AccordionStyles.content}>{children}</div>
-    </div>
+      <div
+        className={AccordionStyles.content}
+        id={contentId}
+        aria-labelledby={triggerId}
+        aria-hidden={!isOpen}
+        role="region"
+        hidden={!isOpen}
+      >
+        {children}
+      </div>
+    </>
   );
 };
 

@@ -40,7 +40,7 @@ const accordionContent = (
 );
 
 const Template: ComponentStory<typeof Accordion> = (args) => (
-  <Accordion {...args} />
+  <Accordion {...args} tag="storybook-accordion" />
 );
 
 export const Default = Template.bind({});
