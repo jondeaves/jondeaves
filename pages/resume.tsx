@@ -165,11 +165,7 @@ const Resume: NextPage = () => {
         {experienceData.length > 2 && (
           <>
             <div className="pagebreak" />
-            <Accordion
-              summary="Further experience"
-              tag="further-experience"
-              defaultOpen={false}
-            >
+            <Accordion summary="Further experience" tag="further-experience">
               {experienceData
                 .slice(2, experienceData.length)
                 .map((experience, idx) => (

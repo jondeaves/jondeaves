@@ -1,4 +1,5 @@
 import Accordion from "../../../components/Accordion";
+import ExternalLink from "../../../components/ExternalLink";
 
 const SoftwareSetup = () => {
   return (
@@ -11,52 +12,50 @@ const SoftwareSetup = () => {
       <h4 id="work">Work</h4>
       <ul>
         <li>
-          Alfred
+          <ExternalLink href="https://www.alfredapp.com/" label="Alfred" />
           <ul>
             <li>
               This is a quick launcher for Mac that is very powerful and can be
-              customized immensely.
+              customized immensely
             </li>
             <li>I use it to quickly launch programs and nothing else</li>
           </ul>
         </li>
         <li>
-          Chrome
+          <ExternalLink href="https://www.google.com/chrome/" label="Chrome" />
           <ul>
             <li>My primary browser for work and development needs</li>
           </ul>
         </li>
         <li>
-          Firefox
+          <ExternalLink
+            href="https://www.mozilla.org/firefox/"
+            label="Firefox"
+          />
           <ul>
-            <li>My primary browser for my personal PC</li>
+            <li>My primary browser for my PC</li>
           </ul>
         </li>
         <li>
-          GitKraken
+          <ExternalLink href="https://www.gitkraken.com/" label="GitKraken" />
           <ul>
+            <li>A great UI for Git interactions</li>
             <li>
-              A great UI for Git interactions, I only really use it if there is
-              something a little more involved with conflict resolutions or the
-              likes
+              I only really use it if there is something a little more involved
+              with conflict resolutions or I&apos;ve forgotten the name of a
+              branch
             </li>
           </ul>
         </li>
         <li>
-          GMail
-          <ul>
-            <li>Personal and work mail</li>
-          </ul>
-        </li>
-        <li>
-          iTerm
+          <ExternalLink href="https://iterm2.com/" label="iTerm2" />
           <ul>
             <li>A simple little &apos;pop-up&apos; terminal for my Mac</li>
             <li>Opens/closes on key command</li>
           </ul>
         </li>
         <li>
-          Kap
+          <ExternalLink href="https://getkap.co/" label="Kap" />
           <ul>
             <li>
               I use this to capture quick videos of my desktop, mostly to
@@ -65,33 +64,23 @@ const SoftwareSetup = () => {
           </ul>
         </li>
         <li>
-          Photoshop
+          <ExternalLink
+            href="https://www.adobe.com/ca/products/photoshop.html"
+            label="Photoshop"
+          />
           <ul>
             <li>Mostly used for simple image editing, resizing, etc</li>
           </ul>
         </li>
         <li>
-          Postman
+          <ExternalLink href="https://www.postman.com/" label="Postman" />
           <ul>
             <li>This is a great app for working with REST APIs</li>
             <li>You can save specific requests to re-run</li>
           </ul>
         </li>
         <li>
-          Proton (Mail + VPN)
-          <ul>
-            <li>
-              Proton Mail and VPN are privacy focused alternatives and have
-              served me well
-            </li>
-            <li>
-              I have this idea in my head of moving away from GMail for personal
-              things
-            </li>
-          </ul>
-        </li>
-        <li>
-          Spotify
+          <ExternalLink href="https://spotify.com/" label="Spotify" />
           <ul>
             <li>
               Everyone needs music in their lives, I chose this one after Google
@@ -99,24 +88,30 @@ const SoftwareSetup = () => {
             </li>
             <li>
               Fun story; When Google Play Music was being fazed out for YouTube
-              music, there was a fun bug where songs released after the new year
+              music, there was a bug where songs released after the new year
               wouldn&apos;t play
             </li>
           </ul>
         </li>
         <li>
-          Visual Studio Code
+          <ExternalLink
+            href="https://code.visualstudio.com/"
+            label="Visual Studio Code"
+          />
           <ul>
             <li>This is my go-to for most coding activities</li>
             <li>I also use it for taking notes in Markdown</li>
-            <li>Doesn&apos;t play well with Unit anymore</li>
+            <li>
+              Doesn&apos;t play well with{" "}
+              <ExternalLink href="https://unity.com/" label="Unity" /> anymore
+            </li>
           </ul>
         </li>
         <li>
-          Zoom
+          <ExternalLink href="https://zoom.us/" label="Zoom" />
           <ul>
             <li>
-              Pretty much the standard for video calls now, but pretty much only
+              Pretty much the standard for video calls now, but I only use it
               for work
             </li>
           </ul>
@@ -125,13 +120,13 @@ const SoftwareSetup = () => {
       <h4 id="fun">Fun</h4>
       <ul>
         <li>
-          Discord
+          <ExternalLink href="https://discord.com/" label="Discord" />
           <ul>
-            <li>Non-work related chat and video calls</li>
+            <li>Non-work chat and video calls</li>
           </ul>
         </li>
         <li>
-          OBS
+          <ExternalLink href="https://obsproject.com/" label="OBS" />
           <ul>
             <li>
               Sometimes I like to record myself playing games and then decide
@@ -140,29 +135,35 @@ const SoftwareSetup = () => {
           </ul>
         </li>
         <li>
-          Unity
+          <ExternalLink href="https://unity.com/" label="Unity" />
           <ul>
             <li>
-              I&apos;ll never make games as a living, but I definitely love
-              doing it as a hobby
+              I&apos;ll never make games as a living, but I love doing it as a
+              hobby
             </li>
             <li>
-              I used to be adament that I would stick with XNA/MonoGame and that
-              Unity was &quote;cheating&quote;, how opinions change in a decade.
+              I used to be adamant that I would stick with XNA/MonoGame and that
+              Unity was &quot;cheating&quot;, how opinions change in a decade
             </li>
           </ul>
         </li>
         <li>
-          Steam
+          <ExternalLink
+            href="https://store.steampowered.com/about/"
+            label="Steam"
+          />
           <ul>
             <li>Games, &apos;nuff said</li>
           </ul>
         </li>
       </ul>
-      <h4 id="personal">Personal</h4>
+      <h4 id="misc">Misc</h4>
       <ul>
         <li>
-          Lychee Slicer
+          <ExternalLink
+            href="https://mango3d.io/lychee-slicer-for-sla-3d-printers/"
+            label="Lychee Slicer"
+          />
           <ul>
             <li>
               I got my wife a 3D printer as an engagement gift, this program is
