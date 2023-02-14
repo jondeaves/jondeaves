@@ -8,8 +8,8 @@ const nextConfig = {
   rewrites: async () => {
     return [
       {
-        source: "/bear.js",
-        destination: "https://cdn.panelbear.com/analytics.js",
+        source: "/cronitor.js",
+        destination: "https://rum.cronitor.io/script.js",
       },
     ];
   },
