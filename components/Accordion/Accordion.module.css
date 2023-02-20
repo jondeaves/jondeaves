@@ -1,0 +1,51 @@
+.trigger {
+  display: block;
+}
+
+.summary {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.summary::before {
+  content: "▾";
+  left: 0;
+  position: absolute;
+}
+
+.content {
+  height: auto;
+  overflow: hidden;
+}
+
+.closed .summary::before {
+  content: "▸";
+}
+
+.closed .content {
+  height: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .summary {
+    padding-left: 1.5rem;
+  }
+}
+
+@media print {
+  .summary {
+    cursor: default;
+    padding-left: 0;
+  }
+
+  .summary::before,
+  .closed .summary::before {
+    content: "";
+    pointer-events: none;
+  }
+
+  .closed .content {
+    height: auto;
+  }
+}

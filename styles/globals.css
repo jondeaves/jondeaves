@@ -1,0 +1,393 @@
+@import url("./reset.css");
+
+:root {
+  --color-primary-background-color: #ffffff;
+
+  --color-secondary-background-rgb: 39, 39, 39;
+  --color-secondary-background-color: rgba(
+    var(--color-secondary-background-rgb),
+    1
+  );
+
+  --color-primary-font-color: #272727;
+  --color-secondary-font-color: #ffffff;
+  --color-tertiary-font-color: #ff9000;
+
+  --color-primary-border-color: #ff9000;
+  --color-muted: #999999;
+}
+
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI", Roboto,
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 17px;
+  letter-spacing: 0.04rem;
+  line-height: 1.2rem;
+  width: 100%;
+}
+
+.wrapper {
+  align-items: center;
+  background-color: var(--color-primary-background-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  color: var(--color-primary-font-color);
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+main {
+  flex-grow: 2;
+  max-width: 960px;
+  padding: 2rem;
+}
+
+hr {
+  border: 0 solid var(--color-primary-border-color);
+  border-bottom-width: 1px;
+  left: 50%;
+  margin: 1rem 0;
+  position: relative;
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  letter-spacing: 0.08rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+  line-height: 1rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  line-height: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+h6 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.04rem;
+  line-height: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+p {
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+p.lead {
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.4rem;
+}
+
+p.small,
+p small,
+small {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+p.nospace {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-primary-border-color);
+  position: relative;
+}
+
+a::after {
+  border-bottom: 2px solid var(--color-primary-border-color);
+  bottom: -1px;
+  content: "";
+  left: 0;
+  transition: width 0.15s ease-out;
+  position: absolute;
+  width: 0;
+}
+
+a:focus::after,
+a:active::after,
+a:hover::after,
+a:visited::after {
+  transition: width 0.3s ease-out;
+  width: 100%;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+code {
+  background-color: rgba(var(--color-secondary-background-rgb), 0.8);
+  border-radius: 0.25rem;
+  color: var(--color-secondary-font-color);
+  line-height: 1.7rem;
+  padding: 0.2rem 0.25rem 0.25rem 0.25rem;
+}
+
+blockquote {
+  border-left: 0.25rem solid var(--color-primary-border-color);
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+blockquote p {
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+  margin-bottom: 0;
+}
+
+figure {
+  margin-bottom: 1rem;
+}
+figure blockquote {
+  margin-bottom: 0;
+}
+figcaption,
+cite {
+  color: var(--color-muted);
+}
+figcaption {
+  padding-left: 0.75rem;
+}
+figcaption::before {
+  content: "— ";
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 1.5rem;
+}
+
+li {
+  display: list-item;
+  line-height: 1.5rem;
+  margin-bottom: 0.25rem;
+  text-align: -webkit-match-parent;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-top: 0.25rem;
+}
+
+ul.unstyled {
+  list-style: none;
+  padding: 0;
+}
+
+ul.large li {
+  line-height: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+ul.inline {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+ul.inline li {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+ul.inline li:not(:last-child) {
+  padding-right: 1rem;
+}
+
+ul.inline.slashed li {
+  position: relative;
+}
+
+ul.inline.slashed li:not(:last-child)::after {
+  content: " / ";
+  right: 0.4rem;
+  position: absolute;
+}
+
+dl {
+  margin-bottom: 1rem;
+}
+
+dl dt {
+  font-weight: 600;
+}
+
+dl dt:not(:first-child) {
+  margin-top: 1rem;
+}
+
+dl dd {
+  margin-left: 1.5rem;
+}
+
+dl dd p {
+  line-height: 1.2rem;
+  margin-bottom: 0;
+}
+
+button.plain {
+  appearance: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+picture img,
+figure img {
+  max-width: 100%;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  left: -999px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.spaced {
+  margin-top: 2rem;
+}
+
+.spaced-left {
+  margin-left: 2rem;
+}
+
+.spaced-below {
+  margin-bottom: 2rem;
+}
+
+.spaced-left-sm {
+  margin-left: 1rem;
+}
+
+.spaced-sm {
+  margin-top: 1rem;
+}
+
+.spaced-below-sm {
+  margin-bottom: 1.5rem;
+}
+
+.spaced-below-xs {
+  margin-bottom: 0.75rem;
+}
+
+.inline {
+  display: inline-block;
+}
+
+.filled-image {
+  position: relative;
+}
+
+@media screen and (min-width: 480px) {
+  ul {
+    padding-inline-start: 2.5rem;
+  }
+
+  figcaption {
+    padding-left: 1.5rem;
+  }
+}
+
+@media screen {
+  .hidden-screen {
+    display: none;
+  }
+}
+
+@media print {
+  main {
+    padding-top: 0;
+  }
+
+  abbr {
+    text-decoration: none;
+  }
+
+  a {
+    border-bottom: none;
+  }
+
+  a::after {
+    border-bottom: none;
+  }
+
+  li {
+    line-height: 1rem;
+  }
+
+  .hidden-print {
+    display: none;
+  }
+
+  .pagebreak {
+    page-break-before: always;
+  }
+}
