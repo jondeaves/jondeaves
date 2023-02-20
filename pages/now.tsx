@@ -10,7 +10,7 @@ const Now: NextPage = () => {
         <title>Jon Deaves as a point in time</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Engineer who makes things, usually with code and this is what he is up to now"
+          content="Jon Deaves is a Software Developer who makes things, usually with code and this is what he is up to now"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -27,7 +27,6 @@ const Now: NextPage = () => {
         </p>
 
         <h3 className="spaced-below-sm">Me time</h3>
-        <h4>Achievements</h4>
         <ul>
           <li>In October 2022 I married my now wife</li>
           <li>
@@ -60,30 +59,29 @@ const Now: NextPage = () => {
                 and working through the approved training materials in our new
                 country.
               </li>
-              <li>
-                <small>(Small win)</small> Drove home from picking up pizza and
-                parked in underground parking with limited input from my wife
-              </li>
             </ul>
           </li>
         </ul>
 
         <h3 className="spaced spaced-below-sm">Coding time</h3>
-        <h4>Achievements</h4>
         <ul>
           <li>
-            Passed my one-year mark with{" "}
-            <ExternalLink href="https://webflow.com" label="Webflow" />
+            Unfortunately, I had to finish employment with{" "}
+            <ExternalLink href="https://webflow.com" label="Webflow" />. They were fantastic in supporting my move to
+            Canada but could only offer a 90-day period where I could work for them without returning to the UK
           </li>
-          <li>Continuing to focus on React for my day-to-day</li>
           <li>
-            Preparing for{" "}
+            Took part in{" "}
             <ExternalLink
               href="https://globalgamejam.org/"
-              label="Global Game Jam"
-            />{" "}
-            by refreshing my knowledge on{" "}
-            <ExternalLink href="https://unity.com/" label="Unity" />
+              label="Global Game Jam 2023"
+            />
+
+            <ul>
+              <li>Built a silly prototype with <ExternalLink href="https://unity.com/" label="Unity" /></li>
+              <li>The game is called <ExternalLink href="https://globalgamejam.org/users/Jonathan%20Deaves/games" label="Couch Potato" /> and is based on <ExternalLink href="https://taskmaster.fandom.com/wiki/Get_this_potato_into_the_golf_hole" label="this segment of the show Taskmaster" /></li>
+              <li>Essentially you have to throw a Potato into a small hole, the fastest wins</li>
+            </ul>
           </li>
           <li>Launched my new website, built with NextJS</li>
         </ul>
@@ -97,12 +95,11 @@ const Now: NextPage = () => {
             <ExternalLink href="https://www.rust-lang.org/" label="Rust" />
           </li>
           <li>
-            Work on small game prototypes to keep my knowledge of Unity fresh
+            Work on small game prototypes to keep my knowledge of <ExternalLink href="https://unity.com/" label="Unity" /> fresh
           </li>
         </ul>
 
         <h3 className="spaced spaced-below-sm">Fitness</h3>
-        <h4>Achievements</h4>
         <ul>
           <li>
             Lost the gym that I was a member of for years due to the move, but
@@ -121,18 +118,19 @@ const Now: NextPage = () => {
             Start walking further, or take the dog to a bigger park for exercise
           </li>
           <li>
-            Decide on a hobby sport, my current thinking;
+            Decide on some hobbies, my options are;
             <ul>
-              <li>Could go back to Rollerderby</li>
+              <li>Could go back to Rollerderby, I have purchased new safety equipment in preparation for this</li>
               <li>Could stick to regular roller-skating at rinks</li>
               <li>Join an Archery club</li>
               <li>More regular bouldering sessions</li>
+              <li>Learn to ice skate</li>
             </ul>
           </li>
         </ul>
 
         <p className="small spaced">
-          This page was last updated on 21st December 2022.
+          This page was last updated on 20th February 2023.
         </p>
       </Layout>
     </>

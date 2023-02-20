@@ -26,7 +26,7 @@ const TechnologySetup = () => {
           </ul>
         </li>
         <li>
-          <ExternalLink href="https://panelbear.com/" label="PanelBear" />
+          <ExternalLink href="https://cronitor.io" label="Cronitor" />
           <ul>
             <li>Provides lightweight website analytics</li>
             <li>Much more privacy and security-focused</li>

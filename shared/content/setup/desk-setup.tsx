@@ -5,11 +5,9 @@ const DeskSetup = () => {
   return (
     <Accordion summary="Desk setup" tag="desk-setup">
       <p>
-        My desk setup at the moment is very temporary as I await the bulk of my
-        belongings getting shipped out to us, so I will explain the most recent
-        configuration before our move. To start with{" "}
-        <ExternalLink href="/desk.jpg" label="here is a photo" /> showing the
-        most recent desk setup that I could find.
+        My desk setup at the moment is very much in flux as we work through our shipment of belongings from the UK, so I
+        will try to detail what I have and what I am planning. To start with{" "}
+        <ExternalLink href="/desk.jpg" label="here is a photo" /> showing the setup I used before leaving the UK.
       </p>
 
       <p>The majority of my physical setup is as follows;</p>
@@ -18,18 +16,20 @@ const DeskSetup = () => {
         <li>
           Desk &mdash;{" "}
           <ExternalLink
-            href="https://www.ikea.com/ca/en/p/trotten-desk-sit-stand-white-s79429602/"
-            label="IKEA TROTTEN sit/stand desk"
+            href="https://www.lowes.ca/product/kitchen-countertops/leadvision-acacia-finger-jointed-countertop-255-in-x-72-in-x-15-in-894960"
+            label="LOWE's Leadvision Acacia Finger Jointed Countertop"
           />
           <ul>
             <li>
-              The hand crank can get a little annoying so I don&apos;t switch
-              positions much but still a great price for a sit/stand
+              I recently switched to this desktop after having used the           <ExternalLink
+            href="https://www.ikea.com/ca/en/p/trotten-desk-sit-stand-white-s79429602/"
+            label="IKEA TROTTEN sit/stand desk"
+          /> for a few years
             </li>
             <li>
-              The size was great as it lined up pretty perfectly with the space
-              I had available and gave me lots of desktop area to work with
+              I have a monitor and speakers on the desktop so the length is great to ensure things aren&apos;t too cramped
             </li>
+            <li>I have placed the countertop on two <ExternalLink href="https://www.ikea.com/ca/en/p/mittback-trestle-birch-30459997/" label="IKEA MITTBACK trestles" /></li>
           </ul>
         </li>
         <li>
@@ -171,8 +171,7 @@ const DeskSetup = () => {
           <ul>
             <li>This is a recent upgrade, so not pictured above</li>
             <li>
-              Didn&apos;t get much time with it before it got packed but was
-              very satisfying to type on
+              My previous mechanical keyboard was smaller and didn&apos;t have a Numpad, which I quickly began to miss
             </li>
           </ul>
         </li>
@@ -186,21 +185,22 @@ const DeskSetup = () => {
           <ul>
             <li>This is a recent upgrade, so not pictured above</li>
             <li>
-              Didn&apos;t get much time to use it before it got packed but
-              seemed like a great mouse
+              A great mouse which is surprisingly light to use. It&apos;s also wireless with a charging dock
             </li>
           </ul>
         </li>
 
         <li>
-          Work laptop &mdash;{" "}
+          Physical macro bindings &mdash;{" "}
           <ExternalLink
-            href="https://support.apple.com/kb/SP809"
-            label='MacBook Pro 16"'
+            href="https://www.elgato.com/en/stream-deck-mk2"
+            label="Stream Deck MK.2"
           />
           <ul>
-            <li>This is my work-provided laptop, it&apos;s the 2019 model</li>
-            <li>Specs; 2.3GHz i9, Intel UHD 630, 32GB RAM</li>
+            <li>This was definitely an indulgent purchase as I do not stream or really have a huge amount of use for it</li>
+            <li>
+              I do have it set-up to control my media playback and Hue lighting
+            </li>
           </ul>
         </li>
 
@@ -215,12 +215,7 @@ const DeskSetup = () => {
               I recently completed a new PC build, so different from the one
               pictured
             </li>
-            <li>Specs; 3.7GHz Ryzen 9, RX 6950 XT, 32GB RAM</li>
-            <li>
-              I have an issue where the power cuts off when performing intensive
-              things, mainly high settings on games, so I think I may need a
-              stronger power supply
-            </li>
+            <li>Specs; 3.7GHz Ryzen 9, RX 6950 XT, 32GB RAM, 2TB M.2 SSD</li>
           </ul>
         </li>
 
@@ -230,7 +225,6 @@ const DeskSetup = () => {
             <li>Google Home smart speaker</li>
             <li>Eero WiFi mesh network</li>
             <li>Various decorations and trinkets</li>
-            <li>Anti-fatigue mat, making the standing part a little better</li>
           </ul>
         </li>
       </ul>

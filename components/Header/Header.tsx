@@ -40,12 +40,12 @@ const Header = ({ isHomepage, shouldHeaderH1 = false }: HeaderProps) => {
           >
             a&nbsp;
           </p>
-          <h2 className={HeaderStyles.heading2}>Software Engineer</h2>
-          {isHomepage && (
+          <h2 className={HeaderStyles.heading2}>Software Developer</h2>
+          {/* {isHomepage && (
             <h3 className={HeaderStyles.heading3}>
-              <ExternalLink href="https://webflow.com" label="@Webflow" />
+              <ExternalLink href="[Company website]" label="@[Company name]" />
             </h3>
-          )}
+          )} */}
         </div>
       </div>
     </header>

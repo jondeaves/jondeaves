@@ -9,22 +9,12 @@ const SoftwareSetup = () => {
         my Mac and PC.
       </p>
 
-      <h4 id="work">Work</h4>
+      <h4 id="tech">Tech/Dev</h4>
       <ul>
-        <li>
-          <ExternalLink href="https://www.alfredapp.com/" label="Alfred" />
-          <ul>
-            <li>
-              This is a quick launcher for Mac that is very powerful and can be
-              customized immensely
-            </li>
-            <li>I use it to quickly launch programs and nothing else</li>
-          </ul>
-        </li>
         <li>
           <ExternalLink href="https://www.google.com/chrome/" label="Chrome" />
           <ul>
-            <li>My primary browser for work and development needs</li>
+            <li>My primary browser for development needs</li>
           </ul>
         </li>
         <li>
@@ -33,7 +23,7 @@ const SoftwareSetup = () => {
             label="Firefox"
           />
           <ul>
-            <li>My primary browser for my PC</li>
+            <li>My primary browser for my non-development needs</li>
           </ul>
         </li>
         <li>
@@ -44,22 +34,6 @@ const SoftwareSetup = () => {
               I only really use it if there is something a little more involved
               with conflict resolutions or I&apos;ve forgotten the name of a
               branch
-            </li>
-          </ul>
-        </li>
-        <li>
-          <ExternalLink href="https://iterm2.com/" label="iTerm2" />
-          <ul>
-            <li>A simple little &apos;pop-up&apos; terminal for my Mac</li>
-            <li>Opens/closes on key command</li>
-          </ul>
-        </li>
-        <li>
-          <ExternalLink href="https://getkap.co/" label="Kap" />
-          <ul>
-            <li>
-              I use this to capture quick videos of my desktop, mostly to
-              include in pull requests
             </li>
           </ul>
         </li>
@@ -111,8 +85,7 @@ const SoftwareSetup = () => {
           <ExternalLink href="https://zoom.us/" label="Zoom" />
           <ul>
             <li>
-              Pretty much the standard for video calls now, but I only use it
-              for work
+              Pretty much the standard for video calls now
             </li>
           </ul>
         </li>
@@ -122,7 +95,7 @@ const SoftwareSetup = () => {
         <li>
           <ExternalLink href="https://discord.com/" label="Discord" />
           <ul>
-            <li>Non-work chat and video calls</li>
+            <li>Chat and video calls</li>
           </ul>
         </li>
         <li>

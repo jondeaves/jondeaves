@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Accordion from "../components/Accordion";
 import ExternalLink from "../components/ExternalLink";
 import Layout from "../components/Layout";
 import DeskSetup from "../shared/content/setup/desk-setup";
@@ -14,7 +13,7 @@ const Setup: NextPage = () => {
         <title>Jon Deaves&apos; setup and tech</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Engineer who makes things, usually with code and this is how he does it"
+          content="Jon Deaves is a Software Developer who makes things, usually with code and this is how he does it"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

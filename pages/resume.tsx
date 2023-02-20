@@ -14,10 +14,12 @@ const Resume: NextPage = () => {
       url: "https://webflow.com/",
       company: "Webflow",
       startDate: "2021-09-01",
+      endDate: "2023-02-07",
       highlights: [
-        "Working mainly with React and CSS-in-JS supported by Jest, Cypress and BuildKite",
-        "My work has focused on the Audit panel and default element accessibility, which will allow users to ensure the sites they build can meet various accessibility requirements.",
-        "As part of the Productivity team, my work on automating our accessibility testing is helping to educate our engineers on building accessible by default.",
+        "Worked mainly with React and CSS-in-JS supported by Jest, Cypress and BuildKite",
+        "My work initially focused on the Audit panel and default element accessibility, which helps users ensure the sites they build can meet various accessibility requirements",
+        "As part of the Productivity team, my work on automating our accessibility testing helped educate engineers on building accessible by default",
+        "I also had the opportunity to assist the design system team. Helping to build and update design system components with a particular focus on accessibility",
       ],
     },
     {
@@ -27,9 +29,9 @@ const Resume: NextPage = () => {
       startDate: "2018-05-22",
       endDate: "2021-08-24",
       highlights: [
-        "Working mainly with React, Redux and CSS-in-JS supported by Jest, Cypress and BuildKite",
-        "Working as part of a scrum team to build and maintain Deposit and Withdrawal pages",
-        "Lead a team of engineers, from Intern to Lead Engineer, working across the account and wallet screens",
+        "Worked mainly with React, Redux and CSS-in-JS supported by Jest, Cypress and BuildKite",
+        "Worked as part of a scrum team to build and maintain Deposit and Withdrawal pages",
+        "Led a team of engineers, from intern to lead engineer, who worked across the account and wallet screens",
       ],
     },
 
@@ -40,7 +42,7 @@ const Resume: NextPage = () => {
       startDate: "2018-01-08",
       endDate: "2018-05-18",
       highlights: [
-        "Working with React as part of a multi-disciplined scrum team",
+        "Worked with React as part of a multi-disciplined scrum team",
         "Took ownership of improvements to code quality and consistency for the web team",
         "Created and maintained the CI pipelines for web and backend",
       ],
@@ -53,9 +55,9 @@ const Resume: NextPage = () => {
       startDate: "2016-01-25",
       endDate: "2018-01-05",
       highlights: [
-        "Working with HTML, CSS, NodeJS and Handlebars as part of a multi-disciplined scrum team",
-        "Developing the online jury response system for England and Wales ensuring strict adherence to the GDS Guidelines while using the publicly available design system",
-        "Developing a detailed suite of end-to-end tests which made use of Cucumber to translate business requirements into test steps",
+        "Worked with HTML, CSS, NodeJS and Handlebars as part of a multi-disciplined scrum team",
+        "Developed the online jury response system for England and Wales ensuring strict adherence to the GDS Guidelines while using the publicly available design system",
+        "Developed a detailed suite of end-to-end tests which made use of Cucumber to translate business requirements into test steps",
       ],
     },
 
@@ -66,9 +68,9 @@ const Resume: NextPage = () => {
       startDate: "2015-02-16",
       endDate: "2016-01-22",
       highlights: [
-        "Working with HTML, CSS, jQuery, PHP and MySQL",
+        "Worked with HTML, CSS, jQuery, PHP and MySQL",
         "Develop and maintain client websites",
-        "Work closely with the design team to implement pixel-perfect, modern and performant web experiences",
+        "Worked closely with the design team to implement pixel-perfect, modern and performant web experiences",
       ],
     },
 
@@ -80,8 +82,8 @@ const Resume: NextPage = () => {
       startDate: "2013-05-13",
       endDate: "2015-02-05",
       highlights: [
-        "Working with HTML, CSS, jQuery, PHP and MySQL",
-        "Work as part of a small feature development team on the main system",
+        "Worked with HTML, CSS, jQuery, PHP and MySQL",
+        "Worked as part of a small feature development team building business management software for small to medium businesses",
       ],
     },
 
@@ -92,7 +94,9 @@ const Resume: NextPage = () => {
       startDate: "2011-12-10",
       endDate: "2013-05-10",
       highlights: [
-        "Working with Classic ASP and PrototypeJS as part of a small feature development team",
+        "Worked with Classic ASP and PrototypeJS as part of a small feature development team",
+        "Built new features and integrations to the existing self-catering management system",
+        "Built client websites, often integrated tightly with the SuperControl system",
       ],
     },
   ];

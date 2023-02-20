@@ -9,17 +9,17 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Jon Deaves, Software Engineer</title>
+        <title>Jon Deaves, Software Developer</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Engineer who makes things, usually with code"
+          content="Jon Deaves is a Software Developer who makes things, usually with code"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout isHomepage={true} shouldHeaderH1={true}>
         <p className="lead">
-          I&apos;m an experienced engineer specialising in interactive web
+          I&apos;m an experienced developer specialising in interactive web
           applications and I take pride in creating modern, responsive and
           progressive user experiences.
         </p>
