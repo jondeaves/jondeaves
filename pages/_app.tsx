@@ -8,7 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   useCronitor(isDev ? "b65c92e9edc0881fe75c99416e13ec23" : "e6be6b067ce300f80f8ef9753938ad9a", {
     debug: isDev,
-    scriptSrc: "/cronitor.js",
   });
 
   return <Component {...pageProps} />;
