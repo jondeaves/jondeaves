@@ -18,8 +18,7 @@ const Now: NextPage = () => {
       <Layout>
         <h1 className="inline">Now</h1>
         <p className="small spaced-left-sm inline">
-          as in{" "}
-          <ExternalLink href="https://nownownow.com/about" label="nownownow" />
+          as in <ExternalLink href="https://nownownow.com/about" label="nownownow" />
         </p>
 
         <p className="lead">
