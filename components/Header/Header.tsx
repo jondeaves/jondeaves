@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import ExternalLink from "../ExternalLink";
+// import ExternalLink from "../ExternalLink";
 import HeaderStyles from "./Header.module.css";
 
 export type HeaderProps = {
