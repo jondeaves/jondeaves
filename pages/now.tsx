@@ -28,20 +28,9 @@ const Now: NextPage = () => {
 
         <h3 className="spaced-below-sm">Me time</h3>
         <ul>
-          <li>In October 2022 I married my now wife</li>
-          <li>
-            In November 2022 my family and I moved to Ontario, Canada
-            <ul>
-              <li>
-                Moving was very stressful and not quite finished as we await our
-                shipment of belongings
-              </li>
-              <li>
-                We are near Toronto and enjoying the chance to explore new
-                areas, visiting small towns most weekends
-              </li>
-            </ul>
-          </li>
+          <li>In October 2022, I married my now wife</li>
+          <li>In November 2022, my family and I moved to Ontario, Canada</li>
+          <li>In March 2023, I finally passed my driving test after 16 years</li>
         </ul>
 
         <h4>Goals</h4>
@@ -51,13 +40,15 @@ const Now: NextPage = () => {
             move, so need to re-focus on that
           </li>
           <li>
-            Still learning to drive
+            Settle on a more permanent place to live
             <ul>
-              <li>Wasn&apos;t quite ready before leaving the UK</li>
               <li>
-                I have my learner&apos;s permit <small>(G1 in Ontario)</small>{" "}
-                and working through the approved training materials in our new
-                country.
+                We got a rental property in a great location but at a higher cost,
+                thinking of it as a treat to enjoy our new country
+              </li>
+              <li>
+                Many of our road trips serve as chances to explore areas to see if
+                they would be nice places to settle down
               </li>
             </ul>
           </li>
@@ -79,21 +70,35 @@ const Now: NextPage = () => {
 
             <ul>
               <li>Built a silly prototype with <ExternalLink href="https://unity.com/" label="Unity" /></li>
-              <li>The game is called <ExternalLink href="https://globalgamejam.org/users/Jonathan%20Deaves/games" label="Couch Potato" /> and is based on <ExternalLink href="https://taskmaster.fandom.com/wiki/Get_this_potato_into_the_golf_hole" label="this segment of the show Taskmaster" /></li>
+              <li>
+                The game is called <ExternalLink href="https://globalgamejam.org/2023/games/couch-potato-1" label="Couch Potato" />
+                and is based on <ExternalLink href="https://taskmaster.fandom.com/wiki/Get_this_potato_into_the_golf_hole" label="this segment of the show Taskmaster" />
+              </li>
               <li>Essentially you have to throw a Potato into a small hole, the fastest wins</li>
             </ul>
           </li>
-          <li>Launched my new website, built with NextJS</li>
+          <li>
+            Continued my journey into <ExternalLink href="https://flutter.dev/" label="Flutter" /> development
+            <ul>
+              <li>
+                The project is called Pongstars and has been an on-and-off way of learning Flutter for several years
+              </li>
+              <li>
+                The app aims to provide a method of tracking and recording Elo rankings for table-tennis leagues
+              </li>
+              <li>
+                <ExternalLink href="https://supabase.com" label="Supabase" /> for Authentication, Postgres and Edge
+                functions. Includes the ability to subscribe to changes in the database for real-time updates
+              </li>
+              <li>
+                <ExternalLink href="https://firebase.google.com/" label="Firebase" /> for Push notifications
+              </li>
+            </ul>
+          </li>
         </ul>
 
         <h4>Goals</h4>
         <ul>
-          <li>
-            Get back to working with{" "}
-            <ExternalLink href="https://flutter.dev/" label="Flutter" /> for
-            hobby projects and learning{" "}
-            <ExternalLink href="https://www.rust-lang.org/" label="Rust" />
-          </li>
           <li>
             Work on small game prototypes to keep my knowledge of <ExternalLink href="https://unity.com/" label="Unity" /> fresh
           </li>
@@ -106,17 +111,12 @@ const Now: NextPage = () => {
             gained a gym in my apartment building
           </li>
           <li>
-            Instead of 1:1 training, I get 3 days&apos; worth of workouts to do
-            in the week from my PT
+            Went for my first run in a long-time and impressed myself with a distance of 3km at a pace of 5m30s per km.
           </li>
         </ul>
 
         <h4>Goals</h4>
         <ul>
-          <li>Get comfortable with the new routine</li>
-          <li>
-            Start walking further, or take the dog to a bigger park for exercise
-          </li>
           <li>
             Decide on some hobbies, my options are;
             <ul>
@@ -124,13 +124,13 @@ const Now: NextPage = () => {
               <li>Could stick to regular roller-skating at rinks</li>
               <li>Join an Archery club</li>
               <li>More regular bouldering sessions</li>
-              <li>Learn to ice skate</li>
+              <li>Learn to ice skate, I did pick up a basic pair that I can use in the upcoming winter</li>
             </ul>
           </li>
         </ul>
 
         <p className="small spaced">
-          This page was last updated on 20th February 2023.
+          This page was last updated on 16th August 2023.
         </p>
       </Layout>
     </>
