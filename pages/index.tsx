@@ -1,9 +1,9 @@
-/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import ExternalLink from "../components/ExternalLink";
 import Layout from "../components/Layout";
+import TagLine from "../components/TagLine";
 
 const Home: NextPage = () => {
   return (
@@ -18,10 +18,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Layout isHomepage={true} shouldHeaderH1={true}>
-        <p className="lead">
-          I&apos;m an experienced developer specialising in interactive web
-          applications and I take pride in creating delightful user experiences.
-        </p>
+        <TagLine />
 
         <p>
           I try to keep things light and easy by not relying too much on fancy

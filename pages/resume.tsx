@@ -5,6 +5,7 @@ import ExperienceBlock from "../components/ExperienceBlock";
 import Grid from "../components/Grid";
 import GridItem from "../components/Grid/GridItem";
 import Layout from "../components/Layout";
+import TagLine from "../components/TagLine";
 import { Experience } from "../shared/types/Experience";
 
 const Resume: NextPage = () => {
@@ -113,11 +114,7 @@ const Resume: NextPage = () => {
       </Head>
 
       <Layout shouldHeaderH1={true}>
-        <p className="lead">
-          I&apos;m an experienced developer specialising in interactive web
-          applications and I take pride in creating modern, responsive and
-          progressive user experiences.
-        </p>
+        <TagLine />
 
         <h3>Recent experience</h3>
 
