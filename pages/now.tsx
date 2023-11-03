@@ -56,6 +56,9 @@ const Now: NextPage = () => {
         <h3 className="spaced spaced-below-sm">Coding time</h3>
         <ul>
           <li>
+            I have now obtained my open work permit for Canada and can start looking for new opportunities
+          </li>
+          <li>
             Unfortunately, I had to finish employment with{" "}
             <ExternalLink href="https://webflow.com" label="Webflow" />. They were fantastic in supporting my move to
             Canada but could only offer a 90-day period where I could work for them without returning to the UK
@@ -70,7 +73,7 @@ const Now: NextPage = () => {
             <ul>
               <li>Built a silly prototype with <ExternalLink href="https://unity.com/" label="Unity" /></li>
               <li>
-                The game is called <ExternalLink href="https://globalgamejam.org/2023/games/couch-potato-1" label="Couch Potato" />
+                The game is called <ExternalLink href="https://globalgamejam.org/2023/games/couch-potato-1" label="Couch Potato" />{" "}
                 and is based on <ExternalLink href="https://taskmaster.fandom.com/wiki/Get_this_potato_into_the_golf_hole" label="this segment of the show Taskmaster" />
               </li>
               <li>Essentially you have to throw a Potato into a small hole, the fastest wins</li>
@@ -98,6 +101,9 @@ const Now: NextPage = () => {
 
         <h4>Goals</h4>
         <ul>
+          <li>
+            Work on some more web development projects to keep up-to-date with the ever changing world of front-end development
+          </li>
           <li>
             Work on small game prototypes to keep my knowledge of <ExternalLink href="https://unity.com/" label="Unity" /> fresh
           </li>
@@ -129,7 +135,7 @@ const Now: NextPage = () => {
         </ul>
 
         <p className="small spaced">
-          This page was last updated on 16th August 2023.
+          This page was last updated on 3rd November 2023.
         </p>
       </Layout>
     </>

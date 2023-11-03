@@ -44,8 +44,7 @@ const TechnologySetup = () => {
               served me well
             </li>
             <li>
-              I have this idea in my head of moving away from Google for
-              personal, it&apos;s a process
+              I have this idea in my head of moving away from Google, it&apos;s a process
             </li>
           </ul>
         </li>

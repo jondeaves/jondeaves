@@ -47,23 +47,11 @@ const SoftwareSetup = () => {
           </ul>
         </li>
         <li>
-          <ExternalLink href="https://www.postman.com/" label="Postman" />
-          <ul>
-            <li>This is a great app for working with REST APIs</li>
-            <li>You can save specific requests to re-run</li>
-          </ul>
-        </li>
-        <li>
-          <ExternalLink href="https://spotify.com/" label="Spotify" />
+          <ExternalLink href="https://music.youtube.com/" label="YouTube music" />
           <ul>
             <li>
-              Everyone needs music in their lives, I chose this one after Google
-              play music died a fiery death
-            </li>
-            <li>
-              Fun story; When Google Play Music was being fazed out for YouTube
-              music, there was a bug where songs released after the new year
-              wouldn&apos;t play
+              Everyone needs music in their lives, I&apos;ve jumped between this and Spotify
+              quite regularly
             </li>
           </ul>
         </li>
@@ -90,12 +78,13 @@ const SoftwareSetup = () => {
           </ul>
         </li>
       </ul>
+
       <h4 id="fun">Fun</h4>
       <ul>
         <li>
           <ExternalLink href="https://discord.com/" label="Discord" />
           <ul>
-            <li>Chat and video calls</li>
+            <li>Chat and video calls, mostly for non-work</li>
           </ul>
         </li>
         <li>
@@ -115,8 +104,8 @@ const SoftwareSetup = () => {
               hobby
             </li>
             <li>
-              I used to be adamant that I would stick with XNA/MonoGame and that
-              Unity was &quot;cheating&quot;, how opinions change in a decade
+              The recent changes, community outrage and back-peddling have me considering
+              finding new engines to work with
             </li>
           </ul>
         </li>
@@ -127,22 +116,6 @@ const SoftwareSetup = () => {
           />
           <ul>
             <li>Games, &apos;nuff said</li>
-          </ul>
-        </li>
-      </ul>
-      <h4 id="misc">Misc</h4>
-      <ul>
-        <li>
-          <ExternalLink
-            href="https://mango3d.io/lychee-slicer-for-sla-3d-printers/"
-            label="Lychee Slicer"
-          />
-          <ul>
-            <li>
-              I got my wife a 3D printer as an engagement gift, this program is
-              a nice and simple way of making sure the 3D files are suitable for
-              our printer
-            </li>
           </ul>
         </li>
       </ul>

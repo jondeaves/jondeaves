@@ -20,8 +20,7 @@ const Home: NextPage = () => {
       <Layout isHomepage={true} shouldHeaderH1={true}>
         <p className="lead">
           I&apos;m an experienced developer specialising in interactive web
-          applications and I take pride in creating modern, responsive and
-          progressive user experiences.
+          applications and I take pride in creating delightful user experiences.
         </p>
 
         <p>
@@ -33,47 +32,45 @@ const Home: NextPage = () => {
           money.
         </p>
 
-        <p>Here are some of the things you can read about on this site;</p>
+        <h3 className="spaced">Things to read</h3>
+
         <ul className="unstyled">
-          <li>
+          {/* <li>
+            My main pursuit is{" "}
             <strong>
-              <Link href="/now">Now</Link>
-            </strong>{" "}
-            &mdash; my now page is a summary of what I am up to right now.
+              <Link href="/web-dev">web development</Link>
+            </strong>
           </li>
           <li>
+            My eternal hobby is{" "}
             <strong>
-              <Link href="/resume">Resume</Link>
-            </strong>{" "}
-            &mdash; my resume page is a non-exhaustive history of my
-            professional career.
+              <Link href="/game-dev">game development</Link>
+            </strong>
+          </li> */}
+          <li>
+            My non-exhaustive history is contained in my{" "}
+            <strong>
+              <Link href="/resume">resume</Link>
+            </strong>
           </li>
           <li>
-            <strong>
-              <Link href="/setup">Setup</Link>
-            </strong>{" "}
-            &mdash; my setup page is a summary of what I use in my day-to-day
-            life.
+            My <strong><Link href="/setup">setup</Link></strong>{" "}
+            page is what I use
           </li>
           <li>
+            My <strong><Link href="/now">now</Link></strong>{" "} page
+            is what I am doing
+          </li>
+          <li>
+            My reusable components are documented in{" "}
             <strong>
               <ExternalLink
                 href="https://storybook.jondeaves.me/"
                 label="Storybook"
               />
-            </strong>{" "}
-            &mdash; my storybook site is where I document most of the reusable
-            components.
+            </strong>
           </li>
         </ul>
-
-        <figure className="spaced">
-          <img
-            src="/dog.png"
-            alt="My dog staring longingly at the camera from his small, dog-sized, couch"
-          />
-          <figcaption>Here is some dog-tax for good measure</figcaption>
-        </figure>
       </Layout>
     </>
   );

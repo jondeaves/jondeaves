@@ -30,7 +30,8 @@ const Setup: NextPage = () => {
         <TechnologySetup />
 
         <p className="small spaced">
-          This was inspired by the person who made{" "}
+          This page was last updated on 3rd November 2023 and
+          was inspired by the person who made{" "}
           <ExternalLink href="https://nownownow.com/about" label="nownownow" />,
           see{" "}
           <ExternalLink href="https://sive.rs/uses" label="Derek Sivers page" />
