@@ -9,7 +9,7 @@ const WebDev: NextPage = () => {
         <title>Jon Deaves&apos; web development projects</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Developer who makes websites"
+          content="Jon Deaves is a Web Developer who makes websites"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

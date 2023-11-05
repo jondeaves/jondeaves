@@ -9,6 +9,11 @@
     1
   );
 
+  --color-tertiary-background-color: rgba(
+    var(--color-secondary-background-rgb),
+    0.1
+  );
+
   --color-primary-font-color: #272727;
   --color-secondary-font-color: #ffffff;
   --color-tertiary-font-color: #ff9000;
@@ -113,6 +118,10 @@ h6 {
   letter-spacing: 0.04rem;
   line-height: 1rem;
   margin-bottom: 0.6rem;
+}
+
+.font-4 {
+  font-size: 1.2rem;
 }
 
 p {
@@ -230,6 +239,16 @@ ul ul {
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-top: 0.25rem;
+}
+
+ul.condensed {
+  margin-top: 0;
+}
+
+ul.condensed li {
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  line-height: 1.2rem;
 }
 
 ul.unstyled {
@@ -363,10 +382,6 @@ figure img {
 }
 
 @media print {
-  main {
-    padding-top: 0;
-  }
-
   abbr {
     text-decoration: none;
   }

@@ -2,7 +2,7 @@
 
 I make things. Usually with code.
 
-**Work**: Freelance Software Developer<br />
+**Work**: Freelance Web Developer<br />
 **npm**: [https://npmjs.com/~jondeaves](https://npmjs.com/~jondeaves)<br />
 **GitHub**: [https://github.com/jondeaves](https://github.com/jondeaves)<br />
 **LinkedIn**: [https://linkedin.com/in/jondeaves](https://linkedin.com/in/jondeaves)<br />

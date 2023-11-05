@@ -10,7 +10,7 @@ const Now: NextPage = () => {
         <title>Jon Deaves as a point in time</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Developer who makes things, usually with code and this is what he is up to now"
+          content="Jon Deaves is a Web Developer who makes things, usually with code and this is what he is up to now"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

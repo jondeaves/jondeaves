@@ -13,7 +13,7 @@ const Setup: NextPage = () => {
         <title>Jon Deaves&apos; setup and tech</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Developer who makes things, usually with code and this is how he does it"
+          content="Jon Deaves is a Web Developer who makes things, usually with code and this is how he does it"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>

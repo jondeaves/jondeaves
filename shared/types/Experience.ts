@@ -1,4 +1,5 @@
 export type Experience = {
+  titles?: ExperienceTitle[];
   title: string;
   url?: string;
   note?: string;
@@ -6,4 +7,10 @@ export type Experience = {
   startDate: string;
   endDate?: string;
   highlights: string[];
+};
+
+export type ExperienceTitle = {
+  title: string;
+  startDate: string;
+  endDate?: string;
 };

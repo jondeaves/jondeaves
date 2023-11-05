@@ -1,0 +1,81 @@
+.wrapper {
+  height: 100vh;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.wrapper header > div {
+  padding: 0;
+}
+
+.wrapper aside {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem 0 0;
+}
+
+.wrapper main {
+  padding: 2rem 1rem 1rem 0;
+}
+
+.asideHeading {
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.asideContent {
+  background-color: var(--color-tertiary-background-color);
+  flex-grow: 1;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.wrapper header h1 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.wrapper header h2 {
+  font-size: 1.2rem;
+  line-height: 1rem;
+}
+
+.asideHeading {
+  background-color: var(--color-secondary-background-color);
+}
+
+.asideHeading a {
+  color: var(--color-secondary-font-color);
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+@media print {
+  .wrapper h1 {
+    margin-bottom: 0.6rem;
+  }
+}
+
+
+/**
+#main-resume {
+  display: flex;
+  flex-direction: row;
+}
+
+#main-resume aside {
+  background-color: black;
+  border-right: 1px solid var(--color-primary-border-color);
+  min-width: 300px;
+  padding: 2rem;
+}
+
+#main-resume section {
+  padding: 2rem 0 0 2rem;
+}
+
+**/
