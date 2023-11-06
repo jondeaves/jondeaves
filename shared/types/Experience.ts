@@ -1,12 +1,12 @@
 export type Experience = {
-  titles?: ExperienceTitle[];
   title: string;
   url?: string;
-  note?: string;
   company: string;
+  location: string;
   startDate: string;
   endDate?: string;
   highlights: string[];
+  technologies: string[];
 };
 
 export type ExperienceTitle = {

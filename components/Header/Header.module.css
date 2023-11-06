@@ -21,7 +21,6 @@
 }
 
 .heading1 a {
-  border-bottom-color: transparent;
   color: var(--color-tertiary-font-color);
 }
 

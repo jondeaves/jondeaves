@@ -14,7 +14,7 @@ const Header = ({ isHomepage, shouldHeaderH1 = false }: HeaderProps) => {
     {
       className: HeaderStyles.heading1,
     },
-    isHomepage ? <>Jon Deaves</> : <Link href="/">Jon Deaves</Link>,
+    isHomepage ? <>Jon Deaves</> : <Link href="/" className="unstyled">Jon Deaves</Link>,
   );
 
   return (

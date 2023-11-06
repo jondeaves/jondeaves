@@ -1,2 +1,8 @@
-.griditem {
+.gridItem {
+  display: flex;
+  justify-content: left;
+}
+
+.gridItemRight {
+  justify-content: right;;
 }
