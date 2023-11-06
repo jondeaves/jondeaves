@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import ExperienceBlock from "./ExperienceBlock";
+import { Experience } from "../../shared/types/Experience";
 
 export default {
   title: "Components/ExperienceBlock",
@@ -17,9 +18,10 @@ export default {
   },
 } as ComponentMeta<typeof ExperienceBlock>;
 
-const experienceWithEndDateMock = {
+const experienceWithEndDateMock: Experience = {
   title: "Senior Software Engineer",
   company: "Company Inc",
+  location: "Remote",
   startDate: "2011-01-01",
   endDate: "2021-12-31",
   highlights: [
@@ -27,6 +29,7 @@ const experienceWithEndDateMock = {
     "Making pages of the web app look and function amazingly",
     "Putting particular focus within the area of accessibility",
   ],
+  technologies: ["HTML", "CSS", "JavaScript", "React"],
 };
 
 const experienceWithoutEndDateMock = {
