@@ -272,12 +272,12 @@ ul.unstyled {
   padding: 0;
 }
 
-ul.unstyled li {
+li.flexed {
   display: flex;
   align-items: center;
 }
 
-ul.unstyled li > *:first-child {
+li.flexed > *:first-child {
   margin-right: 0.4rem;
 }
 

@@ -51,11 +51,10 @@ const Home: NextPage = () => {
             </strong>
           </li>
           <li>
-            My <strong><Link href="/setup">setup</Link></strong>{" "}
-            page is what I use
+            My <strong><Link href="/setup">setup</Link></strong> page is what I use
           </li>
           <li>
-            My <strong><Link href="/now">now</Link></strong>{" "} page
+            My <strong><Link href="/now">now</Link></strong> page
             is what I am doing
           </li>
           <li>

@@ -187,15 +187,15 @@ const Resume: NextPage = () => {
             <Header shouldHeaderH1={true} />
 
             <ul className="unstyled condensed">
-              <li>
+              <li className="flexed">
                 <Public fontSize="small" sx={{ fill: "white" }} />
                 <ExternalLink href="https://jondeaves.me" label="jondeaves.me" unstyled />
               </li>
-              <li>
+              <li className="flexed">
                 <LinkedIn fontSize="small" sx={{ fill: "white" }} />
                 <ExternalLink href="https://www.linkedin.com/in/jondeaves/" label="linkedin.com/in/jondeaves" unstyled />
               </li>
-              <li>
+              <li className="flexed">
                 <GitHub fontSize="small" sx={{ fill: "white" }} />
                 <ExternalLink href="https://github.com/jondeaves" label="github.com/jondeaves" unstyled />
               </li>
