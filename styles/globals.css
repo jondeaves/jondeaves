@@ -125,6 +125,14 @@ h6 {
   font-size: 1.2rem;
 }
 
+.font-5 {
+  font-size: 1rem;
+}
+
+.font-5-5 {
+  font-size: 0.9rem;
+}
+
 p {
   font-size: 1rem;
   letter-spacing: 0.05rem;

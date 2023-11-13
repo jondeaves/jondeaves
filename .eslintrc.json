@@ -17,6 +17,9 @@
     "quotes": [
       "error",
       "double"
-    ]
+    ],
+    // "max-len": [
+    //   "error", { "code": 80 }
+    // ]
   }
 }

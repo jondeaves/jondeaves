@@ -1,8 +1,9 @@
 const TagLine = () => {
   return (
     <p className="lead">
-      I&apos;m an experienced developer specialising in interactive web
-      applications and I take pride in creating delightful user experiences.
+      Experienced developer specializing in interactive web applications with a
+      passion for creating delightful user experiences. Proficient in HTML, CSS,
+      JavaScript/TypeScript, and various web technologies.
     </p>
   );
 };

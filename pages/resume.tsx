@@ -23,9 +23,9 @@ const Resume: NextPage = () => {
       startDate: "2021-09-01",
       endDate: "2023-02-07",
       highlights: [
-        "My work initially focused on the Audit panel and default element accessibility, which helps users ensure the sites they build can meet various accessibility requirements",
-        "As part of the Productivity team, my work on automating our accessibility testing helped educate engineers on building with accessibility in mind by default. A strong focus on documentation and communication with many other teams were key to the success of the project",
-        "I also had the opportunity to assist the design system team. Helping to build and update design system components with a particular focus on accessibility",
+        "Worked with fellow A11Y colleagues to enhance accessibility in the Audit panel and default element accessibility, resulting in improved user experience",
+        "Led the team's work to automate accessibility testing, fostering a culture of accessibility-first development. A strong focus on documentation and communication with many other teams were key to the success of the project",
+        "Collaborated with the design system team to build and update components with a strong focus on accessibility",
       ],
       technologies: [
         "HTML",
@@ -35,7 +35,10 @@ const Resume: NextPage = () => {
         "Next.js",
         "Jest",
         "Cypress",
-        "A11Y",
+        "Axe-core",
+        "BuildKite",
+        "Docker",
+        "Jira",
       ],
     },
     {
@@ -46,9 +49,9 @@ const Resume: NextPage = () => {
       startDate: "2018-05-22",
       endDate: "2021-08-24",
       highlights: [
-        "Worked as part of a scrum team to build and maintain Deposit and Withdrawal pages",
-        "Led a team of engineers, from intern to lead engineer, who worked across the account and wallet screens",
-        "Worked closely with Designers, Product owners and business analysts to ensure project success",
+        "Worked within a scrum team to build and maintain Deposit and Withdrawal pages",
+        "Led a team of front-end engineers, working across the account and wallet screens",
+        "Collaborated with Designers, Product Owners, and Business Analysts to ensure project success",
       ],
       technologies: [
         "HTML",
@@ -58,6 +61,11 @@ const Resume: NextPage = () => {
         "Redux",
         "Jest",
         "Cypress",
+        "Fela",
+        "Node.js",
+        "BuildKite",
+        "Storybook",
+        "Jira",
       ],
     },
 
@@ -70,15 +78,17 @@ const Resume: NextPage = () => {
       endDate: "2018-05-18",
       highlights: [
         "Worked with React as part of a multi-disciplined scrum team",
-        "Took ownership of improvements to code quality and consistency for the web team",
-        "Created and maintained the CI pipelines for web and backend",
+        "Took ownership of code quality through the creation of automation pipelines, ensuring consistent and high-quality code across the web and back-end teams",
       ],
       technologies: [
         "HTML",
         "CSS",
-        "JS/TS",
+        "JS",
         "React",
         "Jenkins",
+        "Docker",
+        "Bootstrap",
+        "Jira",
       ],
     },
 
@@ -90,17 +100,19 @@ const Resume: NextPage = () => {
       startDate: "2016-01-25",
       endDate: "2018-01-05",
       highlights: [
-        "Worked with HTML, CSS, NodeJS, and Handlebars as part of a multi-disciplined scrum team",
-        "Developed the online jury response system for England and Wales ensuring strict adherence to the GDS Guidelines while using the publicly available design system",
-        "Developed a detailed suite of end-to-end tests which made use of Cucumber to translate business requirements into test steps",
+        "Developed the online jury response system for England and Wales, ensuring strict adherence to the GDS Guidelines and utilizing a publicly available design system",
+        "Created a detailed suite of end-to-end tests to translate business requirements into test steps",
       ],
       technologies: [
         "HTML",
         "CSS",
-        "JS/TS",
+        "JS",
         "Angular",
+        "Bootstrap",
         "Node.js",
-        "A11Y",
+        "Handlebars",
+        "Linux servers",
+        "Jira",
       ],
     },
 
@@ -112,17 +124,17 @@ const Resume: NextPage = () => {
       startDate: "2015-02-16",
       endDate: "2016-01-22",
       highlights: [
-        "Develop and maintain client websites",
-        "Worked closely with the design team to implement pixel-perfect, modern, and performant web experiences",
+        "Developed and maintained client websites, specializing in E-Commerce solutions",
+        "Collaborated closely with the design team to ensure pixel-perfect, modern, and high-performing web experiences",
       ],
       technologies: [
         "HTML",
         "CSS",
-        "JS/TS",
+        "JS",
         "jQuery",
         "PHP",
         "MySQL",
-        "E-commerce",
+        "E-Commerce",
       ],
     },
 
@@ -134,16 +146,17 @@ const Resume: NextPage = () => {
       startDate: "2013-05-13",
       endDate: "2015-02-05",
       highlights: [
-        "Worked as part of a small feature development team building business management software for small to medium businesses",
+        "Played a key role in developing business management software for small to medium businesses",
+        "Successfully translated paper-based workflows into efficient digital solutions, leading to increased productivity and revenue",
       ],
       technologies: [
         "HTML",
         "CSS",
-        "JS/TS",
+        "JS",
         "jQuery",
         "PHP",
         "MySQL",
-        "Server management",
+        "Linux servers",
       ],
     },
 
@@ -155,17 +168,16 @@ const Resume: NextPage = () => {
       startDate: "2011-12-10",
       endDate: "2013-05-10",
       highlights: [
-        "Worked with Classic ASP and PrototypeJS as part of a small feature development team",
-        "Built new features and integrations to the existing self-catering management system",
-        "Built client websites, often integrated tightly with the SuperControl system",
+        "Developed new features and integrations for self-catering management systems",
+        "Developed client websites, often tightly integrated with SuperControl, enhancing the overall user experience",
       ],
       technologies: [
         "HTML",
         "CSS",
-        "JS/TS",
+        "JS",
         "Prototype.js",
         "Classic ASP",
-        "Server management",
+        "Windows servers",
       ],
     },
   ];
@@ -213,18 +225,40 @@ const Resume: NextPage = () => {
             </ul>
 
             <h3 className="spaced-below-xs font-4 spaced-sm">Skills</h3>
-            <ul className="unstyled condensed inline comma">
-              <li>A11Y</li>
+            <h4 className="font-5-5 spaced-below-xs spaced-sm">Languages</h4>
+            <ul className="unstyled condensed">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
               <li>TypeScript</li>
+              <li>PHP</li>
+              <li>Dart</li>
+            </ul>
+
+            <h4 className="font-5-5 spaced-below-xs spaced-sm">Frameworks</h4>
+            <ul className="unstyled condensed">
               <li>Node.js</li>
+              <li>Laravel</li>
+              <li>Flutter</li>
+            </ul>
+
+            <h4 className="font-5-5 spaced-below-xs spaced-sm">Libraries</h4>
+            <ul className="unstyled condensed">
               <li>React</li>
-              <li>Automation</li>
-              <li>Project management</li>
+              <li>Jest</li>
+              <li>Cypress</li>
+              <li>Next.js</li>
+              <li>jQuery</li>
+            </ul>
+
+            <h4 className="font-5-5 spaced-below-xs spaced-sm">Tools</h4>
+            <ul className="unstyled condensed">
+              <li>BuildKite</li>
+              <li>Firebase</li>
+              <li>Jira</li>
               <li>Linux</li>
               <li>Postgres</li>
+              <li>Vercel</li>
             </ul>
           </section>
         </aside>
