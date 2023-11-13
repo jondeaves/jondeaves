@@ -42,11 +42,6 @@ const experienceWithUrlMock = {
   url: "https://google.co.uk",
 };
 
-const experienceWithNoteMock = {
-  ...experienceWithEndDateMock,
-  note: "This is a note about the experience item",
-};
-
 const Template: ComponentStory<typeof ExperienceBlock> = (args) => (
   <ExperienceBlock {...args} />
 );
@@ -64,9 +59,4 @@ WithoutEndDate.args = {
 export const WithUrl = Template.bind({});
 WithUrl.args = {
   experience: experienceWithUrlMock,
-};
-
-export const WithNote = Template.bind({});
-WithNote.args = {
-  experience: experienceWithNoteMock,
 };
