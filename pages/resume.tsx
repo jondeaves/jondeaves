@@ -215,17 +215,23 @@ const Resume: NextPage = () => {
           </section>
 
           <section className={ResumeLayoutStyles.asideContent}>
-            <h3 className="spaced-below-xs font-4">Education</h3>
+            <h3 className="spaced-below-xxs font-4">Education</h3>
             <ul className="unstyled condensed">
               <li>HNC</li>
               <li>Computing</li>
               <li className={ResumeLayoutStyles.collegeName}>Dumfries & Galloway College</li>
-              <li><CalendarMonth fontSize="small" aria-label="Dates" /> August 2007 - May 2008</li>
-              <li><Place fontSize="small" aria-label="Location" /> Dumfries, Scotland, UK</li>
+              <li className="flexed"><CalendarMonth fontSize="small" aria-label="Dates" /> August 2007 - May 2008</li>
+              <li className="flexed"><Place fontSize="small" aria-label="Location" /> Dumfries, Scotland, UK</li>
             </ul>
 
-            <h3 className="spaced-below-xs font-4 spaced-sm">Skills</h3>
-            <h4 className="font-5-5 spaced-below-xs spaced-sm">Languages</h4>
+            <h3 className="spaced-below-xxs font-4 spaced">Focus areas</h3>
+            <ul className="unstyled condensed">
+              <li>Accessibility</li>
+              <li>Usability</li>
+            </ul>
+
+            <h3 className="spaced-below-xs font-4 spaced">Skills</h3>
+            <h4 className="font-5-5 spaced-below-xxs">Languages</h4>
             <ul className="unstyled condensed">
               <li>HTML</li>
               <li>CSS</li>
@@ -235,14 +241,14 @@ const Resume: NextPage = () => {
               <li>Dart</li>
             </ul>
 
-            <h4 className="font-5-5 spaced-below-xs spaced-sm">Frameworks</h4>
+            <h4 className="font-5-5 spaced-below-xxs spaced-sm">Frameworks</h4>
             <ul className="unstyled condensed">
               <li>Node.js</li>
               <li>Laravel</li>
               <li>Flutter</li>
             </ul>
 
-            <h4 className="font-5-5 spaced-below-xs spaced-sm">Libraries</h4>
+            <h4 className="font-5-5 spaced-below-xxs spaced-sm">Libraries</h4>
             <ul className="unstyled condensed">
               <li>React</li>
               <li>Jest</li>
@@ -251,7 +257,7 @@ const Resume: NextPage = () => {
               <li>jQuery</li>
             </ul>
 
-            <h4 className="font-5-5 spaced-below-xs spaced-sm">Tools</h4>
+            <h4 className="font-5-5 spaced-below-xxs spaced-sm">Tools</h4>
             <ul className="unstyled condensed">
               <li>BuildKite</li>
               <li>Firebase</li>

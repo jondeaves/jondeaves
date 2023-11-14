@@ -3,7 +3,7 @@
 :root {
   --color-primary-background-color: #ffffff;
 
-  --color-secondary-background-rgb: 39, 39, 39;
+  --color-secondary-background-rgb: 51, 49, 50;
   --color-secondary-background-color: rgba(
     var(--color-secondary-background-rgb),
     1
@@ -14,7 +14,10 @@
     0.1
   );
 
-  --color-primary-font-color: #272727;
+  --color-primary-font-color: rgba(
+    var(--color-secondary-background-rgb),
+    1
+  );
   --color-secondary-font-color: #ffffff;
   --color-tertiary-font-color: #ff9000;
 
@@ -372,11 +375,15 @@ figure img {
 }
 
 .spaced {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .spaced-sm {
   margin-top: 1rem;
+}
+
+.spaced-xxs {
+  margin-top: 0.4rem;
 }
 
 .spaced-left {
@@ -397,6 +404,10 @@ figure img {
 
 .spaced-below-xs {
   margin-bottom: 0.75rem;
+}
+
+.spaced-below-xxs {
+  margin-bottom: 0.4rem;
 }
 
 .inline {

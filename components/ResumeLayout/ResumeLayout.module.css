@@ -13,19 +13,17 @@
   padding: 0;
 }
 
-.wrapper main {
-  max-width: auto;
-  padding: 2rem 1rem 1rem 1rem;
+.wrapper main, .asideHeading, .asideContent {
+  padding: 1.5rem;
 }
 
-.asideHeading {
-  padding: 2rem 1rem 1rem 1rem;
+.wrapper main {
+  max-width: auto;
 }
 
 .asideContent {
   background-color: var(--color-tertiary-background-color);
   flex-grow: 1;
-  padding: 1rem 1rem 1rem 1rem;
 }
 
 .wrapper header h1 {
@@ -55,15 +53,12 @@
 
 @media (min-width: 980px) {
   .wrapper {
-    /* display: flex; */
-
     column-gap: 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 
   .wrapper main {
-    /* flex-grow: 1; */
     padding-left: 0;
   }
 
