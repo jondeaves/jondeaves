@@ -44,7 +44,6 @@ export default {
             active (click inside) and press the tab key, this will be done
             automatically on first load of the story.
           </p>
-          <p>See the &quote;Actions&quote; tab for output of the click.</p>
         </>
       );
     },

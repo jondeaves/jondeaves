@@ -14,7 +14,7 @@ const Header = ({ isHomepage, shouldHeaderH1 = false }: HeaderProps) => {
     {
       className: HeaderStyles.heading1,
     },
-    isHomepage ? <>Jon Deaves</> : <Link href="/">Jon Deaves</Link>,
+    isHomepage ? <>Jon Deaves</> : <Link href="/" className="unstyled">Jon Deaves</Link>,
   );
 
   return (
@@ -40,7 +40,7 @@ const Header = ({ isHomepage, shouldHeaderH1 = false }: HeaderProps) => {
           >
             a&nbsp;
           </p>
-          <h2 className={HeaderStyles.heading2}>Software Developer</h2>
+          <h2 className={HeaderStyles.heading2}>Web Developer</h2>
           {/* {isHomepage && (
             <h3 className={HeaderStyles.heading3}>
               <ExternalLink href="[Company website]" label="@[Company name]" />

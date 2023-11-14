@@ -55,3 +55,9 @@ export const Default = Template.bind({});
 Default.args = {
   isHomepage: false,
 };
+
+
+export const HomePage = Template.bind({});
+HomePage.args = {
+  isHomepage: true,
+};

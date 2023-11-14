@@ -2,6 +2,7 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import ExperienceBlock from "./ExperienceBlock";
+import { Experience } from "../../shared/types/Experience";
 
 export default {
   title: "Components/ExperienceBlock",
@@ -17,9 +18,10 @@ export default {
   },
 } as ComponentMeta<typeof ExperienceBlock>;
 
-const experienceWithEndDateMock = {
+const experienceWithEndDateMock: Experience = {
   title: "Senior Software Engineer",
   company: "Company Inc",
+  location: "Remote",
   startDate: "2011-01-01",
   endDate: "2021-12-31",
   highlights: [
@@ -27,6 +29,7 @@ const experienceWithEndDateMock = {
     "Making pages of the web app look and function amazingly",
     "Putting particular focus within the area of accessibility",
   ],
+  technologies: ["HTML", "CSS", "JavaScript", "React"],
 };
 
 const experienceWithoutEndDateMock = {
@@ -37,11 +40,6 @@ const experienceWithoutEndDateMock = {
 const experienceWithUrlMock = {
   ...experienceWithEndDateMock,
   url: "https://google.co.uk",
-};
-
-const experienceWithNoteMock = {
-  ...experienceWithEndDateMock,
-  note: "This is a note about the experience item",
 };
 
 const Template: ComponentStory<typeof ExperienceBlock> = (args) => (
@@ -61,9 +59,4 @@ WithoutEndDate.args = {
 export const WithUrl = Template.bind({});
 WithUrl.args = {
   experience: experienceWithUrlMock,
-};
-
-export const WithNote = Template.bind({});
-WithNote.args = {
-  experience: experienceWithNoteMock,
 };

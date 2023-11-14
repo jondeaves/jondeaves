@@ -9,10 +9,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Jon Deaves, Software Developer</title>
+        <title>Jon Deaves, Web Developer</title>
         <meta
           name="description"
-          content="Jon Deaves is a Software Developer who makes things, usually with code"
+          content="Jon Deaves is a Web Developer who makes things, usually with code"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -51,11 +51,10 @@ const Home: NextPage = () => {
             </strong>
           </li>
           <li>
-            My <strong><Link href="/setup">setup</Link></strong>{" "}
-            page is what I use
+            My <strong><Link href="/setup">setup</Link></strong> page is what I use
           </li>
           <li>
-            My <strong><Link href="/now">now</Link></strong>{" "} page
+            My <strong><Link href="/now">now</Link></strong> page
             is what I am doing
           </li>
           <li>

@@ -21,7 +21,6 @@
 }
 
 .heading1 a {
-  border-bottom-color: transparent;
   color: var(--color-tertiary-font-color);
 }
 
@@ -73,21 +72,5 @@
   .textDoubleSpaced {
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
-  }
-}
-
-@media print {
-  .header {
-    background-color: transparent;
-    padding-bottom: 0;
-  }
-
-  .inner {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-  }
-
-  .heading2 {
-    color: var(--color-primary-font-color);
   }
 }

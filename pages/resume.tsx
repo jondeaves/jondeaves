@@ -1,12 +1,17 @@
+import { Fragment } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import Accordion from "../components/Accordion";
-import ExperienceBlock from "../components/ExperienceBlock";
-import Grid from "../components/Grid";
-import GridItem from "../components/Grid/GridItem";
-import Layout from "../components/Layout";
-import TagLine from "../components/TagLine";
+import { CalendarMonth, GitHub, LinkedIn, Place, Public } from "@mui/icons-material";
+
 import { Experience } from "../shared/types/Experience";
+
+import ExperienceBlock from "../components/ExperienceBlock";
+import TagLine from "../components/TagLine";
+import ExternalLink from "../components/ExternalLink";
+import ResumeLayout from "../components/ResumeLayout";
+import Header from "../components/Header";
+
+import ResumeLayoutStyles from "../components/ResumeLayout/ResumeLayout.module.css";
 
 const Resume: NextPage = () => {
   const experienceData: Experience[] = [
@@ -14,25 +19,53 @@ const Resume: NextPage = () => {
       title: "Software Engineer",
       url: "https://webflow.com/",
       company: "Webflow",
+      location: "Remote",
       startDate: "2021-09-01",
       endDate: "2023-02-07",
       highlights: [
-        "Worked mainly with React and CSS-in-JS supported by Jest, Cypress and BuildKite",
-        "My work initially focused on the Audit panel and default element accessibility, which helps users ensure the sites they build can meet various accessibility requirements",
-        "As part of the Productivity team, my work on automating our accessibility testing helped educate engineers on building accessible by default",
-        "I also had the opportunity to assist the design system team. Helping to build and update design system components with a particular focus on accessibility",
+        "Worked with fellow A11Y colleagues to enhance accessibility in the Audit panel and default element accessibility, resulting in improved user experience",
+        "Led the team's work to automate accessibility testing, fostering a culture of accessibility-first development. A strong focus on documentation and communication with many other teams were key to the success of the project",
+        "Collaborated with the design system team to build and update components with a strong focus on accessibility",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS/TS",
+        "React",
+        "Next.js",
+        "Jest",
+        "Cypress",
+        "Axe-core",
+        "BuildKite",
+        "Docker",
+        "Jira",
       ],
     },
     {
       title: "Senior Software Engineer",
       url: "https://www.fanduel.com/",
       company: "FanDuel",
+      location: "Glasgow, UK",
       startDate: "2018-05-22",
       endDate: "2021-08-24",
       highlights: [
-        "Worked mainly with React, Redux and CSS-in-JS supported by Jest, Cypress and BuildKite",
-        "Worked as part of a scrum team to build and maintain Deposit and Withdrawal pages",
-        "Led a team of engineers, from intern to lead engineer, who worked across the account and wallet screens",
+        "Worked within a scrum team to build and maintain Deposit and Withdrawal pages",
+        "Led a team of front-end engineers, working across the account and wallet screens",
+        "Collaborated with Designers, Product Owners, and Business Analysts to ensure project success",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS/TS",
+        "React",
+        "Redux",
+        "Jest",
+        "Cypress",
+        "Fela",
+        "Node.js",
+        "BuildKite",
+        "Storybook",
+        "Jira",
       ],
     },
 
@@ -40,12 +73,22 @@ const Resume: NextPage = () => {
       title: "UI Developer",
       url: "https://deepmatter.io/",
       company: "DeepMatter",
+      location: "Glasgow, UK",
       startDate: "2018-01-08",
       endDate: "2018-05-18",
       highlights: [
         "Worked with React as part of a multi-disciplined scrum team",
-        "Took ownership of improvements to code quality and consistency for the web team",
-        "Created and maintained the CI pipelines for web and backend",
+        "Took ownership of code quality through the creation of automation pipelines, ensuring consistent and high-quality code across the web and back-end teams",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS",
+        "React",
+        "Jenkins",
+        "Docker",
+        "Bootstrap",
+        "Jira",
       ],
     },
 
@@ -53,12 +96,23 @@ const Resume: NextPage = () => {
       title: "UI Developer",
       url: "https://www.cgi.com/",
       company: "CGI UK",
+      location: "Glasgow, UK",
       startDate: "2016-01-25",
       endDate: "2018-01-05",
       highlights: [
-        "Worked with HTML, CSS, NodeJS and Handlebars as part of a multi-disciplined scrum team",
-        "Developed the online jury response system for England and Wales ensuring strict adherence to the GDS Guidelines while using the publicly available design system",
-        "Developed a detailed suite of end-to-end tests which made use of Cucumber to translate business requirements into test steps",
+        "Developed the online jury response system for England and Wales, ensuring strict adherence to the GDS Guidelines and utilizing a publicly available design system",
+        "Created a detailed suite of end-to-end tests to translate business requirements into test steps",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS",
+        "Angular",
+        "Bootstrap",
+        "Node.js",
+        "Handlebars",
+        "Linux servers",
+        "Jira",
       ],
     },
 
@@ -66,12 +120,21 @@ const Resume: NextPage = () => {
       title: "Web Developer",
       url: "https://www.weareeveryone.com/",
       company: "Everyone",
+      location: "Glasgow, UK",
       startDate: "2015-02-16",
       endDate: "2016-01-22",
       highlights: [
-        "Worked with HTML, CSS, jQuery, PHP and MySQL",
-        "Develop and maintain client websites",
-        "Worked closely with the design team to implement pixel-perfect, modern and performant web experiences",
+        "Developed and maintained client websites, specializing in E-Commerce solutions",
+        "Collaborated closely with the design team to ensure pixel-perfect, modern, and high-performing web experiences",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS",
+        "jQuery",
+        "PHP",
+        "MySQL",
+        "E-Commerce",
       ],
     },
 
@@ -79,12 +142,21 @@ const Resume: NextPage = () => {
       title: "Web Developer",
       url: "https://www.binarytechnologies.co.uk/",
       company: "Arquila",
-      note: "Company was renamed Binary Technologies sometime after my departure",
+      location: "Glasgow, UK",
       startDate: "2013-05-13",
       endDate: "2015-02-05",
       highlights: [
-        "Worked with HTML, CSS, jQuery, PHP and MySQL",
-        "Worked as part of a small feature development team building business management software for small to medium businesses",
+        "Played a key role in developing business management software for small to medium businesses",
+        "Successfully translated paper-based workflows into efficient digital solutions, leading to increased productivity and revenue",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS",
+        "jQuery",
+        "PHP",
+        "MySQL",
+        "Linux servers",
       ],
     },
 
@@ -92,12 +164,20 @@ const Resume: NextPage = () => {
       title: "Web Developer",
       url: "https://supercontrol.co.uk/",
       company: "SuperControl",
+      location: "Glasgow, UK",
       startDate: "2011-12-10",
       endDate: "2013-05-10",
       highlights: [
-        "Worked with Classic ASP and PrototypeJS as part of a small feature development team",
-        "Built new features and integrations to the existing self-catering management system",
-        "Built client websites, often integrated tightly with the SuperControl system",
+        "Developed new features and integrations for self-catering management systems",
+        "Developed client websites, often tightly integrated with SuperControl, enhancing the overall user experience",
+      ],
+      technologies: [
+        "HTML",
+        "CSS",
+        "JS",
+        "Prototype.js",
+        "Classic ASP",
+        "Windows servers",
       ],
     },
   ];
@@ -105,7 +185,7 @@ const Resume: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Resume for Jon Deaves, Software Developer</title>
+        <title>Resume for Jon Deaves, Web Developer</title>
         <meta
           name="description"
           content="Jon Deaves is a Software Engineer who makes things, usually with code"
@@ -113,69 +193,96 @@ const Resume: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Layout shouldHeaderH1={true}>
-        <TagLine />
+      <ResumeLayout>
+        <aside>
+          <section className={ResumeLayoutStyles.asideHeading}>
+            <Header shouldHeaderH1={true} />
 
-        <h3>Recent experience</h3>
+            <ul className="unstyled condensed">
+              <li className="flexed">
+                <Public fontSize="small" sx={{ fill: "white" }} />
+                <ExternalLink href="https://jondeaves.me" label="jondeaves.me" unstyled />
+              </li>
+              <li className="flexed">
+                <LinkedIn fontSize="small" sx={{ fill: "white" }} />
+                <ExternalLink href="https://www.linkedin.com/in/jondeaves/" label="linkedin.com/in/jondeaves" unstyled />
+              </li>
+              <li className="flexed">
+                <GitHub fontSize="small" sx={{ fill: "white" }} />
+                <ExternalLink href="https://github.com/jondeaves" label="github.com/jondeaves" unstyled />
+              </li>
+            </ul>
+          </section>
 
-        {experienceData.slice(0, 2).map((experience, idx) => (
-          <ExperienceBlock key={idx} experience={experience} />
-        ))}
+          <section className={ResumeLayoutStyles.asideContent}>
+            <h3 className="spaced-below-xxs font-4">Education</h3>
+            <ul className="unstyled condensed">
+              <li>HNC</li>
+              <li>Computing</li>
+              <li className={ResumeLayoutStyles.collegeName}>Dumfries & Galloway College</li>
+              <li className="flexed"><CalendarMonth fontSize="small" aria-label="Dates" /> August 2007 - May 2008</li>
+              <li className="flexed"><Place fontSize="small" aria-label="Location" /> Dumfries, Scotland, UK</li>
+            </ul>
 
-        {experienceData.length > 2 && (
-          <p className="small">
-            <a href="#further-experience">
-              ** Further experience is continued below.
-            </a>
-          </p>
-        )}
+            <h3 className="spaced-below-xxs font-4 spaced">Focus areas</h3>
+            <ul className="unstyled condensed">
+              <li>Accessibility</li>
+              <li>Usability</li>
+            </ul>
 
-        <h3 className="spaced">Core skills</h3>
-        <ul className="inline slashed">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>TS</li>
-          <li>NodeJS</li>
-          <li>React</li>
-        </ul>
+            <h3 className="spaced-below-xs font-4 spaced">Skills</h3>
+            <h4 className="font-5-5 spaced-below-xxs">Languages</h4>
+            <ul className="unstyled condensed">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>PHP</li>
+              <li>Dart</li>
+            </ul>
 
-        <h3 className="spaced">Learning</h3>
-        <p>
-          These are technologies or skills that I work with in my own time and
-          therefore likely don&apos;t have commercial experience with.
-        </p>
-        <Grid>
-          <GridItem>
-            <h4>NextJS</h4>
-            <p>
-              I&apos;m currently learning the NextJS framework through several
-              projects; including a re-write of my website.
-            </p>
-          </GridItem>
+            <h4 className="font-5-5 spaced-below-xxs spaced-sm">Frameworks</h4>
+            <ul className="unstyled condensed">
+              <li>Node.js</li>
+              <li>Laravel</li>
+              <li>Flutter</li>
+            </ul>
 
-          <GridItem>
-            <h4>Flutter</h4>
-            <p>
-              I have built several Flutter apps as learning experiences,
-              including an app to organize Table Tennis leagues.
-            </p>
-          </GridItem>
-        </Grid>
+            <h4 className="font-5-5 spaced-below-xxs spaced-sm">Libraries</h4>
+            <ul className="unstyled condensed">
+              <li>React</li>
+              <li>Jest</li>
+              <li>Cypress</li>
+              <li>Next.js</li>
+              <li>jQuery</li>
+            </ul>
 
-        {experienceData.length > 2 && (
-          <>
-            <div className="pagebreak" />
-            <Accordion summary="Further experience" tag="further-experience">
-              {experienceData
-                .slice(2, experienceData.length)
-                .map((experience, idx) => (
-                  <ExperienceBlock key={idx} experience={experience} />
-                ))}
-            </Accordion>
-          </>
-        )}
-      </Layout>
+            <h4 className="font-5-5 spaced-below-xxs spaced-sm">Tools</h4>
+            <ul className="unstyled condensed">
+              <li>BuildKite</li>
+              <li>Firebase</li>
+              <li>Jira</li>
+              <li>Linux</li>
+              <li>Postgres</li>
+              <li>Vercel</li>
+            </ul>
+          </section>
+        </aside>
+
+        <main>
+          <TagLine />
+
+          <h3>Experience</h3>
+
+          {experienceData.map((experience, idx) => (
+            <Fragment key={experience.company}>
+              {idx !== 0 && idx % 4 === 0 ? <div className="pagebreak" /> : <></>}
+              <ExperienceBlock experience={experience} />
+            </Fragment>
+          ))}
+        </main>
+
+      </ResumeLayout>
     </>
   );
 };
