@@ -6,20 +6,8 @@
     "plugin:storybook/recommended"
   ],
   "rules": {
-    "semi": [
-      "error",
-      "always"
-    ],
-    "comma-dangle": [
-      "error",
-      "always-multiline"
-    ],
-    "quotes": [
-      "error",
-      "double"
-    ]
-    // "max-len": [
-    //   "error", { "code": 80 }
-    // ]
+    "semi": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
+    "quotes": ["error", "double"]
   }
 }

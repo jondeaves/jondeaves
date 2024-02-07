@@ -1,11 +1,12 @@
+import { PropsWithChildren } from "react";
+
 import GridItemStyles from "./GridItem.module.css";
 
-type GridItemProps = {
-  children: React.ReactNode;
+interface GridItemProps extends PropsWithChildren {
   right?: boolean;
-};
+}
 
-const GridItem = ({ children, right }: GridItemProps) => {
+export const GridItem = ({ children, right = false }: GridItemProps) => {
   const stylesApplied = [GridItemStyles.gridItem];
 
   if (right) {
@@ -14,9 +15,3 @@ const GridItem = ({ children, right }: GridItemProps) => {
 
   return <div className={stylesApplied.join(" ")}>{children}</div>;
 };
-
-GridItem.defaultProps = {
-  right: false,
-};
-
-export default GridItem;

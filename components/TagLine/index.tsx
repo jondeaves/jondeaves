@@ -1,1 +1,1 @@
-export { default } from "./TagLine";
+export * from "./TagLine";

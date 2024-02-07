@@ -1,12 +1,13 @@
-import BackToHomeLink from "../BackToHomeLink";
-import ExternalLink from "../ExternalLink";
+import { BackToHomeLink } from "@/components/BackToHomeLink";
+import { ExternalLink } from "@/components/ExternalLink";
+
 import FooterStyles from "./Footer.module.css";
 
-export type FooterProps = {
+interface FooterProps {
   isHomepage?: boolean;
-};
+}
 
-const Footer = ({ isHomepage = false }: FooterProps) => {
+export const Footer = ({ isHomepage = false }: FooterProps) => {
   const socialLinks = [
     {
       label: "LinkedIn",
@@ -39,5 +40,3 @@ const Footer = ({ isHomepage = false }: FooterProps) => {
     </footer>
   );
 };
-
-export default Footer;

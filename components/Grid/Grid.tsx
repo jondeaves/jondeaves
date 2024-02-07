@@ -1,16 +1,12 @@
 import GridStyles from "./Grid.module.css";
 
-type GridProps = {
+interface GridProps {
   children: React.ReactNode;
   size?: "medium" | "large";
-};
+}
 
-const Grid = ({ children, size = "medium" }: GridProps) => {
-  return (
-    <div className={size === "medium" ? GridStyles.grid : GridStyles.gridLg}>
-      {children}
-    </div>
-  );
-};
-
-export default Grid;
+export const Grid = ({ children, size = "medium" }: GridProps) => (
+  <div className={size === "medium" ? GridStyles.grid : GridStyles.gridLg}>
+    {children}
+  </div>
+);

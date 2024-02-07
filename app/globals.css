@@ -14,10 +14,7 @@
     0.1
   );
 
-  --color-primary-font-color: rgba(
-    var(--color-secondary-background-rgb),
-    1
-  );
+  --color-primary-font-color: rgba(var(--color-secondary-background-rgb), 1);
   --color-secondary-font-color: #ffffff;
   --color-tertiary-font-color: #ff9000;
 
@@ -158,7 +155,7 @@ small {
 }
 
 .tiny {
-  font-size: 0.7rem!important;
+  font-size: 0.7rem !important;
 }
 
 p.nospace {
@@ -199,6 +196,11 @@ strong {
 
 em {
   font-style: italic;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
 }
 
 code {
@@ -311,7 +313,8 @@ ul.inline li:not(:last-child) {
   padding-right: 1rem;
 }
 
-ul.inline.slashed li, ul.inline.comma li {
+ul.inline.slashed li,
+ul.inline.comma li {
   position: relative;
 }
 

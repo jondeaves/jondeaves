@@ -1,1 +1,1 @@
-export { default } from "./BackToHomeLink";
+export * from "./BackToHomeLink";
