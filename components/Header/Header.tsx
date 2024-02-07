@@ -1,20 +1,28 @@
 import React from "react";
 import Link from "next/link";
-// import ExternalLink from "../ExternalLink";
+
+import { ExternalLink } from "@/components/ExternalLink";
+
 import HeaderStyles from "./Header.module.css";
 
-export type HeaderProps = {
+interface HeaderProps {
   isHomepage: boolean;
-  shouldHeaderH1?: boolean;
-};
+  isH1?: boolean;
+}
 
-const Header = ({ isHomepage, shouldHeaderH1 = false }: HeaderProps) => {
+export const Header = ({ isHomepage = false, isH1 = false }: HeaderProps) => {
   const TitleElement = React.createElement(
-    shouldHeaderH1 ? "h1" : "h2",
+    isH1 ? "h1" : "h2",
     {
       className: HeaderStyles.heading1,
     },
-    isHomepage ? <>Jon Deaves</> : <Link href="/" className="unstyled">Jon Deaves</Link>,
+    isHomepage ? (
+      <>Jon Deaves</>
+    ) : (
+      <Link href="/" className="unstyled">
+        Jon Deaves
+      </Link>
+    ),
   );
 
   return (
@@ -41,19 +49,13 @@ const Header = ({ isHomepage, shouldHeaderH1 = false }: HeaderProps) => {
             a&nbsp;
           </p>
           <h2 className={HeaderStyles.heading2}>Web Developer</h2>
-          {/* {isHomepage && (
+          {isHomepage && (
             <h3 className={HeaderStyles.heading3}>
-              <ExternalLink href="[Company website]" label="@[Company name]" />
+              <ExternalLink href="https://logo.com/" label="@LOGO.com" />
             </h3>
-          )} */}
+          )}
         </div>
       </div>
     </header>
   );
 };
-
-Header.defaultProps = {
-  isHomepage: false,
-};
-
-export default Header;

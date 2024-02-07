@@ -1,12 +1,12 @@
 import React from "react";
 
-type HeadingProps = {
+interface HeadingProps {
   children: React.ReactNode;
   className?: string;
-  level: 1 | 2 | 3 | 4 | 5 | 6;
-};
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
+}
 
-const Heading = ({ children, className, level }: HeadingProps) => {
+export const Heading = ({ children, className, level = 3 }: HeadingProps) => {
   const HeadingComponent = React.createElement(
     `h${level}`,
     {
@@ -17,9 +17,3 @@ const Heading = ({ children, className, level }: HeadingProps) => {
 
   return HeadingComponent;
 };
-
-Heading.defaultProps = {
-  level: 3,
-};
-
-export default Heading;

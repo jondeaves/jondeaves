@@ -1,14 +1,15 @@
 import { useState } from "react";
+
 import AccordionStyles from "./Accordion.module.css";
 
-type AccordionProps = {
+interface AccordionProps {
   children: React.ReactNode;
   defaultOpen?: boolean;
   summary: string;
   tag: string;
-};
+}
 
-const Accordion = ({
+export const Accordion = ({
   children,
   summary,
   tag,
@@ -55,5 +56,3 @@ const Accordion = ({
     </>
   );
 };
-
-export default Accordion;

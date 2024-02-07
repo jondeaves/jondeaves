@@ -1,6 +1,6 @@
 # Hi, I'm Jon
 
-I'm a Web Developer who specializes in interactive web applications with a passion for creating delightful user experiences. Proficient in HTML, CSS, JavaScript, TypeScript, and various web technologies.
+I'm an experienced developer specializing in interactive web applications with a passion for creating delightful user experiences. Proficient in HTML, CSS, JavaScript/TypeScript, and various web technologies.
 
 I try to keep things light and easy by not relying too much on fancy graphics, animations or interactivity in my corner of the web. This speaks to what I find frustrating with a lot of modern sites that have to be constantly sharing content, showing adverts and otherwise bombarding your senses in the pursuit of clicks, impressions and money.
 
