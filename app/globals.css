@@ -24,9 +24,10 @@
 
 html,
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial,
-    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI", Roboto,
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI", Roboto, "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 17px;
   letter-spacing: 0.04rem;
   line-height: 1.2rem;
