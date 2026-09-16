@@ -51,7 +51,10 @@ export const Header = ({ isHomepage = false, isH1 = false }: HeaderProps) => {
           <h2 className={HeaderStyles.heading2}>Web Developer</h2>
           {isHomepage && (
             <h3 className={HeaderStyles.heading3}>
-              <ExternalLink href="https://logo.com/" label="@LOGO.com" />
+              <ExternalLink
+                href="https://www.cascadedebt.com/"
+                label="@Cascade Debt"
+              />
             </h3>
           )}
         </div>

@@ -23,26 +23,6 @@ export const SoftwareSetup = () => (
         </ul>
       </li>
       <li>
-        <ExternalLink href="https://www.gitkraken.com/" label="GitKraken" />
-        <ul>
-          <li>A great UI for Git interactions</li>
-          <li>
-            I only really use it if there is something a little more involved
-            with conflict resolutions or I&apos;ve forgotten the name of a
-            branch
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ExternalLink
-          href="https://www.adobe.com/ca/products/photoshop.html"
-          label="Photoshop"
-        />
-        <ul>
-          <li>Mostly used for simple image editing, resizing, etc</li>
-        </ul>
-      </li>
-      <li>
         <ExternalLink href="https://music.youtube.com/" label="YouTube music" />
         <ul>
           <li>
@@ -52,23 +32,11 @@ export const SoftwareSetup = () => (
         </ul>
       </li>
       <li>
-        <ExternalLink
-          href="https://code.visualstudio.com/"
-          label="Visual Studio Code"
-        />
+        <ExternalLink href="https://zed.dev/" label="Zed" />
         <ul>
-          <li>This is my go-to for most coding activities</li>
+          <li>Recently switchedc to this for most coding activities</li>
           <li>I also use it for taking notes in Markdown</li>
-          <li>
-            Doesn&apos;t play well with{" "}
-            <ExternalLink href="https://unity.com/" label="Unity" /> anymore
-          </li>
-        </ul>
-      </li>
-      <li>
-        <ExternalLink href="https://zoom.us/" label="Zoom" />
-        <ul>
-          <li>Pretty much the standard for video calls now</li>
+          <li>The integrated agent panel is nice and simple to work with</li>
         </ul>
       </li>
     </ul>
@@ -97,10 +65,7 @@ export const SoftwareSetup = () => (
             I&apos;ll never make games as a living, but I love doing it as a
             hobby
           </li>
-          <li>
-            The recent changes, community outrage and back-peddling have me
-            considering finding new engines to work with
-          </li>
+          <li>Recently been playing with Claude and Unity connected via MCP</li>
         </ul>
       </li>
       <li>

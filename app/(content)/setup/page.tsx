@@ -26,8 +26,8 @@ export default function Setup() {
       <TechnologySetup />
 
       <p className="small spaced">
-        This page was last updated on 7th February 2024 and was inspired by the
-        person who made{" "}
+        This page was last updated on 16th September 2026 and was inspired by
+        the person who made{" "}
         <ExternalLink href="https://nownownow.com/about" label="nownownow" />,
         see{" "}
         <ExternalLink href="https://sive.rs/uses" label="Derek Sivers page" />.
