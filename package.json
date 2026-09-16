@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "prettier --check .",
     "lint:format": "prettier --write .",
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "npx only-allow npm",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
